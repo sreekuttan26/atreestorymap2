@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import Heading from './Heading'
+import Bodytext from './Bodytext'
 gsap.registerPlugin(ScrollTrigger)
 
 const Stakeholders = () => {
@@ -43,7 +44,7 @@ const Stakeholders = () => {
       title: 'Researchers',
       image: '/researcher.png',
       description:
-        "Researchers emerged as key allies when residents sought support to save the lake. They contributed scientific expertise to restore its fading health, helping to strengthen and accelerate the community’s own vision for the lake. ",
+        "Researchers emerged as key allies when residents sought support to save the lake. They contributed scientific expertise to restore its fading health, helping to strengthen and accelerate the community’s own vision for the lake.",
       map:"/stakeholdermap_researcher.png" 
     },
     {
@@ -58,8 +59,8 @@ const Stakeholders = () => {
       id: 'pastoralists',
       title: 'Pastoralists',
       image: '/pastorial_1.png',
-      description:
-        "The grassland flanking the lake had been the grazing grounds for cattle, sheep and goat, known locally as gomala. It was among the last remaining patches in the neighbourhood with easy access to grass and water. Pastoralists who brought their livestock here not only sustained their livelihoods but supplied milk to the surrounding city.",
+      description:(<span>
+        The grassland flanking the lake had been the grazing grounds for cattle, sheep and goat, known locally as <i>gomala</i>. It was among the last remaining patches in the neighbourhood with easy access to grass and water. Pastoralists who brought their livestock here not only sustained their livelihoods but supplied milk to the surrounding city.</span>),
      map:"/stakeholdermap_pastorial.png" 
     },
     {
@@ -141,6 +142,7 @@ items_Ref.current.forEach((item, index) => {
   return (
     <div className='w-full h-full'>
         <Heading text={"Key Actors"}/>
+        <Bodytext text={"Civilisations evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."}/>
     <div className='flex flex-col gap-2 relative w-full h-full'>
         <img ref={img_ref}
         src={current_map}

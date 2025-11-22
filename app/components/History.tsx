@@ -11,7 +11,7 @@ const History = () => {
                     <Bodytext text={<><i>“Keregalam Kattu, Maragalam Nedu”</i> “Build lakes, plant trees” – is a Kannada saying attributed to the mother of Kempe Gowda, the governor under the Vijayanagara Empire famed for founding Bangalore city. Kempe Gowda is remembered today for creating nearly a hundred lakes and lining the city’s roads with trees, shaping the city’s identity as the ‘City of Lakes’. Over the years, many lakes have been lost but a few like Venkateshpura Lake now stand as renewed hope amid rapid urbanisation.</>} />
                 </div>
                 <div className='lg:w-1/2 flex justify-center items-center p-5'>
-                    <img src='/kg-1.png' className=' w-full h-[400px] object-contain object-left' />
+                    <img src='/kg-1.png' className=' w-full h-[400px] object-contain object-left md:object-center' />
 
                 </div>
             </div>

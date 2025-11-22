@@ -7,7 +7,6 @@ import Introduction from "./components/Introduction";
 import { useRef, useState, useEffect } from "react";
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import Place2 from "./components/Place2";
 import History from "./components/History";
 import Degradation from "./components/Degradation";
 import Stakeholders from "./components/Stakeholders";
@@ -17,12 +16,15 @@ import Goal from "./components/Goal";
 import Restoration from "./components/Restoration";
 import Transformation from "./components/Transformation";
 import Resources from "./components/Resources";
+import Pagebreak from "./components/Pagebreak";
+import Joininghands from "./components/Joininghands";
+import Mascot from "./components/Mascot";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  const spacing='p-5 md:px-20 lg:px-40 md:pt-20  bg-white ';
+  const spacing = 'p-5 md:px-20 lg:px-40 md:pt-20  bg-white ';
 
-    const sectionRefs = {
+  const sectionRefs = {
     Introduction: useRef(null),
     Place: useRef(null),
     History: useRef(null),
@@ -38,8 +40,8 @@ export default function Home() {
   // active section for navbar
   const [activeSection, setActiveSection] = useState('');
 
-   useEffect(() => {  
-     Object.entries(sectionRefs).forEach(([key, ref]) => {
+  useEffect(() => {
+    Object.entries(sectionRefs).forEach(([key, ref]) => {
       ScrollTrigger.create({
         trigger: ref.current,
         start: 'top center',
@@ -49,31 +51,31 @@ export default function Home() {
       });
     });
 
-   },[]);
+  }, []);
 
-   useEffect(() => {
-  const videos = document.querySelectorAll<HTMLVideoElement>(".handle-video")
+  useEffect(() => {
+    const videos = document.querySelectorAll<HTMLVideoElement>(".handle-video")
 
-  const triggers: ScrollTrigger[] = []
+    const triggers: ScrollTrigger[] = []
 
-  videos.forEach((video) => {
-    const t = ScrollTrigger.create({
-      trigger: video,
-      start: "top bottom",      // when the video enters the bottom of viewport
-      end: "bottom top",       // when the video leaves the top of viewport
-      onEnter: () => video.muted = true,
-      onLeave: () => video.pause(),
-      onEnterBack: () => video.pause(),
-      onLeaveBack: () => video.pause(),
+    videos.forEach((video) => {
+      const t = ScrollTrigger.create({
+        trigger: video,
+        start: "top bottom",      // when the video enters the bottom of viewport
+        end: "bottom top",       // when the video leaves the top of viewport
+        onEnter: () => video.muted = true,
+        onLeave: () => video.pause(),
+        onEnterBack: () => video.pause(),
+        onLeaveBack: () => video.pause(),
+      })
+
+      triggers.push(t)
     })
 
-    triggers.push(t)
-  })
-
-  return () => {
-    triggers.forEach(t => t.kill())
-  }
-}, [])
+    return () => {
+      triggers.forEach(t => t.kill())
+    }
+  }, [])
 
 
 
@@ -82,78 +84,92 @@ export default function Home() {
   return (
     <main className='w-full h-full flex flex-col '>
 
-      <BreakpointDisplay/>
-      
+      <BreakpointDisplay />
+
 
 
       {/* banner */}
       <div className="w-full h-full">
-        <Banner/>
+        <Banner />
       </div>
 
 
       {/* navbar */}
       <div className="w-full h-full sticky top-0 z-100">
-        <Navbar activeItem={activeSection} />     
+        <Navbar activeItem={activeSection} />
       </div>
 
 
       {/* introduction */}
-       <div ref={sectionRefs.Introduction} className={`w-full h-full ${spacing} `} id="introduction">
+      <div ref={sectionRefs.Introduction} className={`w-full h-full ${spacing} `} id="introduction">
         <Introduction />
       </div>
 
 
 
       {/* place */}
-       <div ref={sectionRefs.Place} className={`w-full h-full ${spacing} `} id="place">
+      <div ref={sectionRefs.Place} className={`w-full h-full ${spacing} `} id="place">
         <Place />
       </div>
 
 
 
       {/* History */}
-       <div ref={sectionRefs.History} className={`w-full h-full ${spacing} `} id="history">
-       <History />
+      <div ref={sectionRefs.History} className={`w-full h-full ${spacing} `} id="history">
+        <History />
       </div>
 
 
 
       {/* Degradation */}
-       <div ref={sectionRefs.Degradation} className={`w-full h-full `} id="degradation">
-       <Degradation/>
+      <div ref={sectionRefs.Degradation} className={`w-full h-full `} id="degradation">
+        <Degradation />
       </div>
 
 
       {/* Stakeholders */}
-       <div ref={sectionRefs.Stakeholders} className={`w-full h-full ${spacing} `} id="stakeholders">
-        <Stakeholders/>
+      <div ref={sectionRefs.Stakeholders} className={`w-full h-full ${spacing} `} id="stakeholders">
+        <Stakeholders />
+      </div>
+
+
+      <Pagebreak image='/pagebreak_bufello.png' />
+
+      <div className={`w-full h-full ${spacing} `} >
+        <Joininghands />
       </div>
 
 
 
       {/* Goal Setting */}
-       <div ref={sectionRefs.Goal_Setting} className={`w-full h-full ${spacing} `} id="goal">
+      <div ref={sectionRefs.Goal_Setting} className={`w-full h-full ${spacing} `} id="goal">
         <Goal />
       </div>
 
+      <Pagebreak image='/pagebreak_swan.png' />
+
+
+      <div className={`w-full h-full ${spacing} `} >
+        <Mascot />
+      </div>
 
 
       {/* Restoration */}
-       <div ref={sectionRefs.Restoration} className={`w-full h-full ${spacing} `} id="restoration">
+      <div ref={sectionRefs.Restoration} className={`w-full h-full ${spacing} `} id="restoration">
         <Restoration />
       </div>
 
 
 
+
       {/* Transformation */}
-       <div ref={sectionRefs.Transformation} className={`w-full h-full ${spacing} `} id="transformation">
+      <div ref={sectionRefs.Transformation} className={`w-full h-full ${spacing} `} id="transformation">
         <Transformation />
       </div>
 
 
       {/* Resources */}
-       <div ref={sectionRefs.Resources} className={`w-full h-full  `} id="resources">
+      <div ref={sectionRefs.Resources} className={`w-full h-full  `} id="resources">
         <Resources />
       </div>
 

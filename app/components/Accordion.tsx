@@ -20,7 +20,8 @@ const storySections: StorySection[] = [
           <li>Control sewage flow and waste dumping</li>
           <li>Ensure flow between lakes – inlet/outlet</li>
           <li>Install nature-based solutions like aerator, floating island</li>
-          <li>Regular community-driven or automated water quality monitoring</li>
+          <li>Regular community driven water quality monitoring.</li>
+          <li>Re-introduce native fish and other aquatic species.</li>
         </ul>
       </div>
     ),
@@ -33,8 +34,8 @@ const storySections: StorySection[] = [
       <div>
         
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li>Remove Lantana and other weeds.</li>
-          <li>Create natural walking paths with native species.</li>
+          <li>Remove water hyacinth, Lantana and other weeds.</li>
+          <li>Create uncemented walking paths.</li>
           <li>Plant native species suitable for the landscape.</li>
         </ul>
       </div>
@@ -43,14 +44,14 @@ const storySections: StorySection[] = [
   },
   {
     id: '3',
-    title: 'Conserve and Improve Ecosystem Services',
+    title: 'Attract pollinators',
     content: (
       <div>
         
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li>Install bee resorts to support pollinator diversity.</li>
-          <li>Grow food plants for solitary bees.</li>
-          <li>Create a habitat for butterflies.</li>
+          <li>Install bee hotels to support pollinator diversity.</li>
+          <li>Grow food plants for Solitary bees.</li>
+          <li>Create butterfly garden patches.</li>
         </ul>
       </div>
     ),
@@ -63,9 +64,9 @@ const storySections: StorySection[] = [
       <div>
         
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li>Stop rock quarrying in the vicinity.</li>
           <li>Create awareness about the historical structure.</li>
-          <li>Prevent further encroachments.</li>
+          <li>Halt rock quarrying.</li>
+          <li>Be vigilant to further encroachments.</li>
         </ul>
       </div>
     ),
@@ -78,13 +79,11 @@ const storySections: StorySection[] = [
       <div>
         
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li>Conduct community activities to encourage interaction with the lake.</li>
-          <li>Familiarise people with different taxa through nature walks.</li>
-          <li>Organise focused activities for school children.</li>
-          <li>Design a socio-ecological system balancing human needs and biodiversity.</li>
-          <li>Install informative signages.</li>
-          <li>Arrange security services.</li>
-          <li>Form a lake-support WhatsApp group to coordinate activities.</li>
+          <li>Conduct community activities to inculcate a sense of ownership of the lake.</li>
+          <li>Organise focused activities for neighbouring school children to familiarise them with the different taxa through nature walks and trails.</li>
+          <li>Install informative signages to facilitate meaningful interaction with the lake.</li>
+          <li>Form a lake-support group to connect local residents and coordinate activities.</li>
+       
         </ul>
       </div>
     ),

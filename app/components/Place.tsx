@@ -15,11 +15,7 @@ const Place = () => {
             image: "/lake_sky.png",
             content: (
                 <span>
-                    Venkateshpura Lake is a relatively small lake, extending a little over
-                    10 acres. It is managed by the Bruhat Bangalore Mahanagara Palike
-                    (BBMP), Bengaluru’s civic body. Located in Sampigehalli in the
-                    Arkavathy Layout of Jakkur Ward, the lake is sometimes more familiar
-                    to the locals as Sampigehalli Lake, its old name.
+                    Venkateshpura Lake is a relatively small lake in north Bangalore, extending a little over 10 acres. It is managed by the Greater Bengaluru Authority (GBA), Bengaluru’s civic body. Located in Sampigehalli in the Arkavathy Layout of Jakkur Ward, the lake is familiar to the locals as Sampigehalli Lake, its old name. 
                 </span>
             ),
         },
@@ -28,10 +24,8 @@ const Place = () => {
             image: "/place_2.png",
             content: (
                 <span>
-                    The estimated water spread is 8 acres. Venkateshpura Lake has an
-                    independent catchment area that leads to Hebbala Nagara Valley, one of
-                    the five valleys of Bangalore. Being at the apex of a series of lakes,
-                    its outlet joins Rachenahalli Lake downstream.
+                    The estimated water spread is 8 acres. Venkateshpura Lake has an independent catchment area that leads to Hebbala Nagara Valley, one of the five valleys of Bangalore. Being at the apex of a series of lakes, its outlet joins Rachenahalli Lake on the downstream.
+
                 </span>
             ),
         },
@@ -40,14 +34,7 @@ const Place = () => {
             image: "/place_3.png",
             content: (
                 <span>
-                    There is a ruggedness to the lake’s identity that comes from the rocky
-                    outgrowth within and around its periphery. Most of the rock faces that
-                    covered the lake are gone. Only the rocky projection bearing the
-                    nineteenth-century Sampigehalli Auxiliary Tower Station remains as a
-                    reminder. Adjacent to the waterbody is the Jarabandemma Temple, built
-                    on a rock, which holds unique significance due to distinct rituals
-                    still observed. The lake stands amidst towering buildings as a
-                    testament to the struggle put up by residents living around it.
+                   There is a ruggedness to the lake’s identity that comes from the rocky outgrowth both within it and along its periphery. One of its rocky projections bears the nineteenth-century Sampigehalli Auxiliary Tower Station that stands to tell a story. Adjacent to the waterbody is the Jarabandemma Temple, built on a rock, which holds unique significance due to the distinct rituals observed there even today. The lake stands in the neighbourhood, amid residential buildings and schools.
                 </span>
             ),
         },

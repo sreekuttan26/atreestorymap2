@@ -17,6 +17,7 @@ const Transformation = () => {
   return (
     <div className='w-full relative '>
             <Heading text='Trasnformation' />
+            
             <div className='relative w-full  flex flex-col gap-2 md:flex-row' >
 
 
