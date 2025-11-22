@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import Heading from './Heading'
 gsap.registerPlugin(ScrollTrigger)
 
 const Stakeholders = () => {
@@ -139,6 +140,7 @@ items_Ref.current.forEach((item, index) => {
 
   return (
     <div className='w-full h-full'>
+        <Heading text={"Key Actors"}/>
     <div className='flex flex-col gap-2 relative w-full h-full'>
         <img ref={img_ref}
         src={current_map}

@@ -183,7 +183,7 @@ export default function StoryMapResources() {
             placeholder="Search resources, tags, or keywords..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#087f9b] focus:border-transparent"
+            className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#087f9b] focus:border-transparent text-sm"
           />
 
           {/* Category filter */}
@@ -192,7 +192,7 @@ export default function StoryMapResources() {
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`flex items-centre gap-2 px-4 py-2 rounded-full transition-all ${
+                className={`flex items-centre gap-2 px-4 py-2 rounded-full transition-all text-sm ${
                   selectedCategory === cat.id
                     ? 'bg-[#087f9b] text-white shadow-md'
                     : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-300'

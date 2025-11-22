@@ -15,14 +15,12 @@ const storySections: StorySection[] = [
     title: 'Improve Water Quality',
     content: (
       <div>
-        <p className="mb-4">
-          This can be achieved by the following steps:
-        </p>
+       
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li><strong>Control sewage flow and waste dumping</strong></li>
-          <li><strong>Ensure flow between lakes – inlet/outlet</strong></li>
-          <li><strong>Install nature-based solutions like aerator, floating island</strong></li>
-          <li><strong>Regular community-driven or automated water quality monitoring</strong></li>
+          <li>Control sewage flow and waste dumping</li>
+          <li>Ensure flow between lakes – inlet/outlet</li>
+          <li>Install nature-based solutions like aerator, floating island</li>
+          <li>Regular community-driven or automated water quality monitoring</li>
         </ul>
       </div>
     ),
@@ -33,13 +31,11 @@ const storySections: StorySection[] = [
     title: 'Remove Invasives',
     content: (
       <div>
-        <p className="mb-4">
-          This can be achieved by the following steps:
-        </p>
+        
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li><strong>Remove Lantana and other weeds.</strong></li>
-          <li><strong>Create natural walking paths with native species.</strong></li>
-          <li><strong>Plant native species suitable for the landscape.</strong></li>
+          <li>Remove Lantana and other weeds.</li>
+          <li>Create natural walking paths with native species.</li>
+          <li>Plant native species suitable for the landscape.</li>
         </ul>
       </div>
     ),
@@ -50,13 +46,11 @@ const storySections: StorySection[] = [
     title: 'Conserve and Improve Ecosystem Services',
     content: (
       <div>
-        <p className="mb-4">
-          This can be achieved by the following steps:
-        </p>
+        
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li><strong>Install bee resorts to support pollinator diversity.</strong></li>
-          <li><strong>Grow food plants for solitary bees.</strong></li>
-          <li><strong>Create a habitat for butterflies.</strong></li>
+          <li>Install bee resorts to support pollinator diversity.</li>
+          <li>Grow food plants for solitary bees.</li>
+          <li>Create a habitat for butterflies.</li>
         </ul>
       </div>
     ),
@@ -67,13 +61,11 @@ const storySections: StorySection[] = [
     title: 'Save the Historical GTS',
     content: (
       <div>
-        <p className="mb-4">
-          This can be achieved by the following steps:
-        </p>
+        
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li><strong>Stop rock quarrying in the vicinity.</strong></li>
-          <li><strong>Create awareness about the historical structure.</strong></li>
-          <li><strong>Prevent further encroachments.</strong></li>
+          <li>Stop rock quarrying in the vicinity.</li>
+          <li>Create awareness about the historical structure.</li>
+          <li>Prevent further encroachments.</li>
         </ul>
       </div>
     ),
@@ -84,17 +76,15 @@ const storySections: StorySection[] = [
     title: 'Build Lake Stewardship',
     content: (
       <div>
-        <p className="mb-4">
-          This can be achieved by the following steps:
-        </p>
+        
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li><strong>Conduct community activities to encourage interaction with the lake.</strong></li>
-          <li><strong>Familiarise people with different taxa through nature walks.</strong></li>
-          <li><strong>Organise focused activities for school children.</strong></li>
-          <li><strong>Design a socio-ecological system balancing human needs and biodiversity.</strong></li>
-          <li><strong>Install informative signages.</strong></li>
-          <li><strong>Arrange security services.</strong></li>
-          <li><strong>Form a lake-support WhatsApp group to coordinate activities.</strong></li>
+          <li>Conduct community activities to encourage interaction with the lake.</li>
+          <li>Familiarise people with different taxa through nature walks.</li>
+          <li>Organise focused activities for school children.</li>
+          <li>Design a socio-ecological system balancing human needs and biodiversity.</li>
+          <li>Install informative signages.</li>
+          <li>Arrange security services.</li>
+          <li>Form a lake-support WhatsApp group to coordinate activities.</li>
         </ul>
       </div>
     ),
@@ -162,13 +152,13 @@ export default function StoryMapAccordion() {
                 }`}
               >
                 <div className="p-6">
-                  {section.imageUrl && (
+                  {/* {section.imageUrl && (
                     <img
                       src={section.imageUrl}
                       alt={section.title}
                       className="w-full h-64 object-cover rounded-lg mb-4"
                     />
-                  )}
+                  )} */}
                   <div className="text-slate-700 leading-relaxed text-sm">{section.content}</div>
                 </div>
               </div>
