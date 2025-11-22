@@ -72,7 +72,7 @@ export default function Navbar({ activeItem }: MenuBarProps) {
                             e.preventDefault();
                             scrollWithOffset(item.link.replace('#', ''));
                         }}
-                        className={`mx-4 text-sm font-medium text-grey-700 hover:text-[#087f9b] border-0 ${
+                        className={`mx-4 text-sm font-medium text-grey-700 hover:text-[#087f9b] text-gray-700 border-0 ${
                             activeItem === item.name ? 'text-[#087f9b] border-b-2 border-[#087f9b]' : ''
                         }`}
                     >
