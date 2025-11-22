@@ -39,7 +39,7 @@ const History = () => {
                         muted
                         playsInline
                         controls
-                         poster="/GTS.png"
+                        poster="/GTS.png"
                     />
                 </div>
 
@@ -48,7 +48,7 @@ const History = () => {
 
 
             {/* temple */}
-            <h1 className='w-full text-xl  font-semibold color-b mt-10'>The Sampigehalli Auxiliary Tower Station</h1>
+            <h1 className='w-full text-xl  font-semibold color-b mt-10'>Jarabandemma Temple</h1>
             <div className='w-full flex justify-center items-center lg:items-start lg:justify-between  lg:gap-10 lg:flex-row flex-col '>
 
                 <div className='lg:w-1/2 flex justify-left items-left py-5'>
@@ -62,7 +62,7 @@ const History = () => {
                 <div className='lg:w-1/2 '>
                     <Bodytext text={<><i>The Jarabandemma Temple,</i> perched on a rocky outcrop by the lake, is a historic sacred site believed to date back to the Mysore kings’ era. As per local tradition, it was a resting place for soldiers on the move. During the month of Shravan, villagers gathered here to pray for rain, offering <i>Ambali,</i> a millet-based dish. A spring from a natural cleft in the rock near the entrance is seen as a miraculous gift. Inside the temple, uncarved stones represent powerful protectors – <i>Jarubandemma, Akkayamma</i> and the <i>Saptamatheyaru</i> – central to the community.  </>} />
 
-                    
+
                 </div>
 
             </div>

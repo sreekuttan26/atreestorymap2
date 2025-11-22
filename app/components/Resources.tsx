@@ -25,7 +25,7 @@ export default function StoryMapResources() {
       description: 'George, T.J.S. (2016). Askew: A short Biography of Bangalore. Aleph Book Company, Delhi.',
       category: 'research',
       type: 'Research',
-      link: 'https://www.atree.org',
+      link: 'https://www.amazon.in/Askew-Biography-Bangalore-T-George/dp/9384067210',
       tags: ['banglore', 'lakes', 'history']
     },
     {
@@ -34,7 +34,7 @@ export default function StoryMapResources() {
       description: 'Thippaiah, P. (2009). Vanishing Lakes: A Study of Bangalore City. Institute for Social and Economic Change, Bangalore.',
       category: 'research',
       type: 'Research',
-      link: 'https://www.atree.org',
+      link: 'https://www.amazon.in/Vanishing-lakes-study-Bangalore-city/dp/8177911163',
       tags: ['banglore', 'lakes', 'history']
     },
     {
@@ -43,7 +43,7 @@ export default function StoryMapResources() {
       description: 'Rao, Shruthi and Iyer, Meera (2025). India in Triangle: The incredible story of how India was mapped and the Himalayas measured. Penguin, Delhi.',
       category: 'research',
       type: 'Research',
-      link: 'https://www.atree.org',
+      link: 'https://www.amazon.in/India-Triangles-Incredible-Himalayas-Trigonometrical/dp/0143468383',
       tags: ['banglore', 'lakes', 'history']
     },
     {

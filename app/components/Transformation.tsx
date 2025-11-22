@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Heading from './Heading'
 import Accordion from './Accordion'
 import Accordion_transformation from './Accordion_transformation '
+import BeforeAfterSlider from './BeforeAfterSlider'
 
 const Transformation = () => {
     const[current_img,Setcurrent_img]=useState('/goal.png')
@@ -17,7 +18,8 @@ const Transformation = () => {
   return (
     <div className='w-full relative '>
             <Heading text='Trasnformation' />
-            
+            <BeforeAfterSlider/>
+
             <div className='relative w-full  flex flex-col gap-2 md:flex-row' >
 
 
