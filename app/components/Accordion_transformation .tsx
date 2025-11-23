@@ -128,10 +128,10 @@ const storySections: StorySection[] = [
 
                 </ul>
                 <div className='flex flex-col  md:flex-row gap-2'>
-                    <div className='w-1/2'>
+                    <div className='md:w-1/2'>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/pollinator%20thrive%20butterfly.mp4"/>
                     </div>
-                    <div className='w-1/2'>
+                    <div className='md:w-1/2'>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Biodiversity_transformation.mp4"/>
                     </div>
                     
