@@ -29,7 +29,7 @@ export default function Home() {
     Place: useRef(null),
     History: useRef(null),
     Degradation: useRef(null),
-    Stakeholders: useRef(null),
+    Key_Actors: useRef(null),
     Goal_Setting: useRef(null),
     Restoration: useRef(null),
     Transformation: useRef(null),
@@ -128,7 +128,7 @@ export default function Home() {
 
 
       {/* Stakeholders */}
-      <div ref={sectionRefs.Stakeholders} className={`w-full h-full ${spacing} `} id="stakeholders">
+      <div ref={sectionRefs.Key_Actors} className={`w-full h-full ${spacing} `} id="keyactors">
         <Stakeholders />
       </div>
 

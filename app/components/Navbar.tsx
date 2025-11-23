@@ -19,7 +19,7 @@ export default function Navbar({ activeItem }: MenuBarProps) {
         { name: 'Place', link: '#place' },
         { name: 'History', link: '#history' },
         { name: 'Degradation', link: '#degradation' },
-        { name: 'Key Actors', link: '#stakeholders' },
+        { name: 'Key Actors', link: '#keyactors' },
         { name: 'Goal Setting', link: '#goal' },
         { name: 'Restoration', link: '#restoration' },
         { name: 'Transformation', link: '#transformation' },

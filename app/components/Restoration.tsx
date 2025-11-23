@@ -321,7 +321,7 @@ const birdtop_y=[0,20,140,160,200,250,280,340,580]
                         <img
                             src='/bird-fly.gif'
                             alt="flying bird"
-                            className="w-[5vw] absolute left-[20vw] transition-transform duration-300 ease-out"
+                            className="w-[5vw] absolute left-[20vw] transition-transform duration-300 ease-out opacity-0 sm:opacity-100"
                             style={{ transform: `translateY(${birdtop}px)` }}
                         />
 
