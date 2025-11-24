@@ -77,6 +77,7 @@ const PlaceZoom = () => {
                 trigger: element,
                 start: 'top 50%',
                 end: 'bottom 40%',
+                
                 onEnter: () => {
                     zoomImg(zoomlist[index].x, zoomlist[index].y, zoomlist[index].scale);
                 },
@@ -105,7 +106,7 @@ const PlaceZoom = () => {
             <img
                 ref={imgRef}
                 src="svgs/Place_map.svg"
-                className="w-full h-[30vh] top-10 md:h-screen sticky md:top-0 object-cover z-0"
+                className="w-full h-[20vh] top-10 md:h-screen sticky md:top-0 object-cover overflow-hidden z-10"
                 alt="map"
             />
 
