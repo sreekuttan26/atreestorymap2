@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="w-full h-full relative">
         <video
-        src="https://atree-communication.s3.amazonaws.com/Storymap_media/lake_low.mp4"
+        src="https://atree-communication.s3.amazonaws.com/Storymap_media/lake_low_2.mp4"
         loop
         muted
         autoPlay 

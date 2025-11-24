@@ -39,7 +39,7 @@ const History = () => {
                         muted
                         playsInline
                         controls
-                        poster="/GTS.png"
+                        poster="/thumbnail_gts.jpg"
                     />
                 </div>
 
