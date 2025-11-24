@@ -136,10 +136,20 @@ export default function StoryMapResources() {
       link: 'https://bangaloremirror.indiatimes.com/bangalore/civic/lake-glow-up-from-neglect-to-flourish/articleshow/111239359.cms',
       tags: ['Popular article', 'bangalore mirror', 'transformation']
     },
+    {
+      id: '14',
+      title: 'Wetland Field Guide',
+      description: 'A booklet for kids',
+      category: 'fieldguide',
+      type: 'PDF',
+      link: 'https://drive.google.com/file/d/1gEIwSm-eO56r8aWUQsphZrbsxG9_PqHC/view?usp=drive_link',
+      tags: ['Field guide', 'Student materials', 'Education']
+    },
   ];
 
   const categories = [
     { id: 'all', name: 'All Resources' },
+    { id: 'fieldguide', name: 'Field Guides' },
     { id: 'research', name: 'Research' },
     { id: 'articles', name: 'Articles' },
     { id: 'socialmedia', name: 'Social Media' },

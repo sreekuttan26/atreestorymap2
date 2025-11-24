@@ -137,6 +137,27 @@ items_Ref.current.forEach((item, index) => {
        
     }, []);
 
+    
+useEffect(() => {
+    const firstLast = document.querySelectorAll('.first-last');
+
+    firstLast.forEach((item, index) => {
+        ScrollTrigger.create({
+            trigger: item,
+            start: 'top 50%',
+            end: 'bottom 50%',
+            onEnter: () => {
+                changeImage('/stakeholders.png');
+            },
+            onEnterBack: () => {
+                changeImage('/stakeholders.png');
+            }
+        });
+    });
+
+}, []);
+
+
 
 
   return (
@@ -153,6 +174,7 @@ items_Ref.current.forEach((item, index) => {
 
 
         <div ref={last_ref} className='flex flex-col  md:absolute md:top-0 md:right-0 md:items-end  w-full  '>
+          <div className="first-last h-[10px]"></div>
             {spotlightData.map((data,index)=>(
                 <div ref={(el)=>{if(el) items_Ref.current[index]=el}}  key={index} className={`flex flex-col gap-2 bg-white rounded-xl shadow-xl p-2 md:w-1/3 md:p-4  mb-10 ${data.id==='migrant'?'md:mb-0':'md:mb-[40vh]'}`}>
                     <img
@@ -166,8 +188,10 @@ items_Ref.current.forEach((item, index) => {
 
 
                 </div>
+                
 
             ))}
+            <div className="first-last h-[10px]"></div>
             {/* <div className='h-[50vh]'></div> */}
 
         </div>
