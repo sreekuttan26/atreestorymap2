@@ -31,6 +31,8 @@ const storySections: StorySection[] = [
                     <li>Algal blooms reduce.</li>
 
                 </ul>
+
+                <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/waterquality_transformation.mp4"/>
                 
 
             </div>

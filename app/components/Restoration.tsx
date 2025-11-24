@@ -207,6 +207,8 @@ const Restoration = () => {
 
                     </ul>
 
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/The%20Lake%20Explorers.mp4"/>
+
                 </span>
             ),
 

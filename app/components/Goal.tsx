@@ -9,10 +9,10 @@ const Goal = () => {
             <div className='relative w-full  flex flex-col gap-2 md:flex-row' >
                 <img
                     src='/goal.png'
-                    className='w-full md:w-1/3 h-[30vh] md:h-full object-contain object-top sticky top-12 bg-white z-20'
+                    className='w-full md:w-1/2 h-[30vh] md:h-full object-contain object-top sticky top-12 bg-white z-20'
                 />
 
-                <div className='flex flex-col    md:w-2/3  h-auto  '>
+                <div className='flex flex-col    md:w-1/2  h-auto  '>
 
                     <Accordion />
                 </div>
