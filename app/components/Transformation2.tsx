@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Heading from './Heading'
 import Bodytext from './Bodytext'
 import Video from './Video'
+import BeforeAfterSlider from './BeforeAfterSlider'
 gsap.registerPlugin(ScrollTrigger)
 
 const Transformation2 = () => {
@@ -272,11 +273,13 @@ const Transformation2 = () => {
     return (
         <div className='w-full h-full'>
             <Heading text={"Transformation"} />
+            <BeforeAfterSlider/>
+            
             {/* <Bodytext text={"Civilisations evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."} /> */}
             <div className='flex flex-col gap-2 relative w-full h-full'>
                 <img ref={img_ref}
                     src={current_map}
-                    className='w-full md:w-1/2 md:h-[1/2] object-cover sticky top-10 bg-white  transition-opacity duration-700 ease-in-out opacity-100 '
+                    className='w-full md:w-1/2 md:h-[1/2] object-cover sticky top-10 bg-white  transition-opacity duration-700 ease-in-out opacity-100 z-10'
                     alt='transformation image'
                     style={{ opacity: imageVisible ? 1 : 0 }}
                 />
