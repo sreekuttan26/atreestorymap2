@@ -10,6 +10,18 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Restoration = () => {
 
+    const scrollWithOffset = (id: string, offset: number = 100) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        const y = el.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({
+            top: y,
+            behavior: 'smooth',
+        });
+    };
+
     const steps = [
         {
             id: 1,
@@ -312,9 +324,9 @@ const birdtop_y=[0,20,140,160,200,250,280,340,580]
                 <div className="md:w-1/3 relative">
                     <div className="md:sticky md:top-20 flex flex-col gap-4">
                         {steps.map((step, index) => (
-                            <div   ref={el => {stepRefs.current[index] = el!}}
+                            <div   ref={el => {stepRefs.current[index] = el!}} onClick={(()=>{scrollWithOffset('step'+index)})}
                                 key={index}
-                                className={`bg-[#087f9b] ${step.width} ${activeitem === step.title ? "bg-[#087f9b]" : "md:bg-gray-400"}  rounded-xl p-2 md:p-4 text-white font-semibold restoration-container`}
+                                className={`bg-[#087f9b] ${step.width} ${activeitem === step.title ? "bg-[#087f9b]" : "md:bg-gray-400"}  rounded-xl p-2 md:p-4 text-white font-semibold restoration-container cursor-pointer`}
                             >
                                 {step.title} 
                             </div>
@@ -338,7 +350,7 @@ const birdtop_y=[0,20,140,160,200,250,280,340,580]
                 {/* Right column: Accordion */}
                 <div className="md:w-2/3 flex flex-col gap-5 md:gap-[40vh]">
                     {steps.map((step, index) => (
-                        <div key={index} className="p-4 border-2 bg-white px-6 rounded-xl shadow-xl border-gray-200 item_container">
+                        <div id={'step'+index} key={index} className="p-4 border-2 bg-white px-6 rounded-xl shadow-xl border-gray-200 item_container">
                             <h1 className='w-full color-b font-semibold text-lg py-2'>{step.title}</h1>
                             <span className='text-sm'>{step.content}</span>
 

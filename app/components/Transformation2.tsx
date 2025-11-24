@@ -1,0 +1,313 @@
+'use client'
+import React, { useState, useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Heading from './Heading'
+import Bodytext from './Bodytext'
+import Video from './Video'
+gsap.registerPlugin(ScrollTrigger)
+
+const Transformation2 = () => {
+
+    const items_Ref = useRef<HTMLDivElement[]>([]);
+    const img_ref = useRef(null)
+    const last_ref = useRef(null)
+
+
+    const storySections = [
+        {
+            id: '1',
+            title: 'Improved Quality of Water ',
+
+            content: (
+
+                <div>
+
+                    <ul className="list-disc px-4 mb-4 space-y-2">
+                        <li>Water tests show higher dissolved oxygen levels.</li>
+                        <li>Invasive water hyacinth disappears.</li>
+                        <li>Native aquatic plants recover.</li>
+                        <li>The water surface grows clear and free of weeds.</li>
+                        <li>Algal blooms reduce.</li>
+
+                    </ul>
+
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/waterquality_transformation.mp4" />
+
+
+                </div>
+            ),
+
+
+            imageUrl: '/t1.png'
+        },
+        {
+            id: '2',
+            title: 'Walking pathways along the lake ',
+
+            content: (
+                <div>
+                    <ul className="list-disc px-4 mb-4 space-y-2">
+                        <li>Uncemented pathways allow visitors to connect with the landscape.</li>
+                        <li>Repurposed construction material and quarry waste serve as canvases showcasing the lake’s biodiversity.</li>
+                        <li>Artworks, retaining the natural texture of the rocks, help people anticipate what they might encounter at the lake.</li>
+                        <li>Repurposed tyres, debris and Lantana serve as seats.</li>
+
+                    </ul>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/creatures%20on%20canvas.mp4" />
+
+
+
+
+                </div>
+            ),
+
+
+            imageUrl: '/t2.png'
+        },
+        {
+            id: '3',
+            title: 'Introduction of native species',
+
+
+
+            content: (
+
+                <div>
+                    <ul className="list-disc px-4 mb-4 space-y-2">
+                        <li>The local fisherfolk reintroduce native fish species.</li>
+                        <li>Native plant species, prioritised for all planting efforts, thrive under people’s care.</li>
+                        <li>Orchids, placed carefully on trees, bloom seasonally.</li>
+
+
+                    </ul>
+
+
+
+
+                </div>
+            ),
+
+
+            imageUrl: '/t3.png'
+        },
+        {
+            id: '4',
+            title: ' Pollinators Thrive',
+
+
+
+            content: (
+
+                <div>
+
+                    <ul className="list-disc px-4 mb-4 space-y-2">
+                        <li>Carefully curated butterfly host and nectar plants, along with bee-friendly species, welcome diverse wildlife visitors.</li>
+                        <li>Bee hotels provide ample nesting spaces for solitary bees.</li>
+
+                    </ul>
+
+
+
+                    <div className='flex flex-col   gap-4'>
+                        <div className=''>
+                            <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/pollinator%20thrive%20butterfly.mp4" />
+                        </div>
+                        <div className=''>
+                            <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/bee_resort_transformation.mp4" />
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            ),
+
+
+            imageUrl: '/t4.png'
+        },
+        {
+            id: '5',
+            title: 'Biodiversity  Improves',
+
+
+            content: (
+
+                <div>
+                    <ul className="list-disc px-4 mb-4 space-y-2">
+                        <li>Bird species, like cormorants, Oriental darters, stilts, ducks and even pelicans, throng to the lake in healthy numbers.</li>
+                        <li>The floating islands turn nesting grounds for resident water birds.</li>
+                        <li>The crowning moment is the return of the Pied kingfisher, which seeks clean water to dive and hunt for fish.</li>
+
+                    </ul>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Biodiversity_transformation.mp4" />
+
+
+                </div>
+            ),
+
+
+            imageUrl: '/t5.png'
+        },
+        {
+            id: '6',
+            title: 'Community Stewardship',
+
+
+            content: (
+
+                <div>
+                    <ul className="list-disc px-4  mb-4 space-y-2">
+                        <li>A self-sustaining model takes shape at Venkateshpura Lake.</li>
+                        <li>Sustained community-driven efforts transform the lake from a neglected waterbody into a vibrant public space.</li>
+                        <li>The lake attracts a lot of footfall and active daily use by residents. Women are seen even at noon sitting on the benches enjoying the afternoon breeze.</li>
+                        <li>The Lake Forum is well-informed about potential pollution sources and knows whom to alert during issues like algal blooms.</li>
+                        <li>Members regularly document and share photos of birds, sunrises and sunsets, building pride and a sense of connection.</li>
+                        <li>Through the lake trust, residents take charge of the emerging challenges.</li>
+                        <li>Stage is set for a long-term, community-driven model of lake restoration.</li>
+
+                    </ul>
+
+                </div>
+            ),
+
+
+            imageUrl: '/t6.png'
+        }
+    ];
+
+
+
+
+    const [current_map, Setcurrent_map] = useState('/t0.png')
+
+    const [imageVisible, setImageVisible] = useState(true);
+
+    const changeImage = (url: string) => {
+        setImageVisible(false);
+        setTimeout(() => {
+            Setcurrent_map(url);
+            setImageVisible(true);
+        }, 100);
+    };
+
+
+
+    useEffect(() => {
+        const imgEl = img_ref.current;
+        const lastEl = last_ref.current;
+        if (!imgEl || !lastEl) return;
+
+        // Only pin on large screens and above
+        const mm = gsap.matchMedia();
+
+        mm.add("(min-width: 761px)", () => {
+            ScrollTrigger.create({
+                trigger: imgEl,
+                start: "top 10%",
+                endTrigger: lastEl,
+                end: "bottom 70%",
+                pin: imgEl,
+                pinSpacing: true,
+                scrub: true,
+            });
+        });
+
+        return () => mm.revert();
+    }, []);
+
+    useEffect(() => {
+        const imgEl = img_ref.current;
+        const lastEl = last_ref.current;
+        if (!imgEl || !lastEl) return;
+
+        // Only pin on large screens and above
+
+        items_Ref.current.forEach((item, index) => {
+            ScrollTrigger.create({
+                trigger: item,
+                start: "top 50%",
+                end: 'bottom 50%',
+                onEnter: () => {
+                    changeImage(storySections[index].imageUrl);
+                },
+                onEnterBack: () => {
+                    changeImage(storySections[index].imageUrl);
+                }
+            });
+        });
+
+
+
+
+
+    }, []);
+
+
+    useEffect(() => {
+        const firstLast = document.querySelectorAll('.first-last');
+
+        firstLast.forEach((item, index) => {
+            ScrollTrigger.create({
+                trigger: item,
+                start: 'top 50%',
+                end: 'bottom 50%',
+                onEnter: () => {
+                    changeImage('/t0.png');
+                },
+                onEnterBack: () => {
+                    changeImage('/t0.png');
+                }
+            });
+        });
+
+    }, []);
+
+
+
+
+    return (
+        <div className='w-full h-full'>
+            <Heading text={"Transformation"} />
+            {/* <Bodytext text={"Civilisations evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."} /> */}
+            <div className='flex flex-col gap-2 relative w-full h-full'>
+                <img ref={img_ref}
+                    src={current_map}
+                    className='w-full md:w-1/2 md:h-[1/2] object-cover sticky top-10 bg-white  transition-opacity duration-700 ease-in-out opacity-100 '
+                    alt='transformation image'
+                    style={{ opacity: imageVisible ? 1 : 0 }}
+                />
+
+
+                <div ref={last_ref} className='flex flex-col  md:absolute md:top-0 md:right-0 md:items-end  w-full   '>
+                    <div className="first-last h-[10px]"></div>
+                    {storySections.map((data, index) => (
+                        <div ref={(el) => { if (el) items_Ref.current[index] = el }} key={index} className={`flex flex-col gap-2 bg-white rounded-xl shadow-xl p-2 md:w-1/2 md:p-8  mb-10 ${data.id === 'migrant' ? 'md:mb-0' : 'md:mb-[40vh]'}`}>
+
+                            <h1 className="w-full font-semibold color-b">{data.title}</h1>
+                            <span className="text-sm leading-7">
+                                {data.content}
+                            </span>
+
+
+                        </div>
+
+
+                    ))}
+                    <div className=" h-[10px]"></div>
+                    {/* <div className='h-[50vh]'></div> */}
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    )
+}
+
+export default Transformation2

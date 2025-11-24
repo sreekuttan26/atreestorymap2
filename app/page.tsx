@@ -19,6 +19,7 @@ import Resources from "./components/Resources";
 import Pagebreak from "./components/Pagebreak";
 import Joininghands from "./components/Joininghands";
 import Mascot from "./components/Mascot";
+import Transformation2 from "./components/Transformation2";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -164,7 +165,7 @@ export default function Home() {
 
       {/* Transformation */}
       <div ref={sectionRefs.Transformation} className={`w-full h-full ${spacing} `} id="transformation">
-        <Transformation />
+        <Transformation2 />
       </div>
 
 

@@ -32,14 +32,14 @@ const storySections: StorySection[] = [
 
                 </ul>
 
-                <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/waterquality_transformation.mp4"/>
-                
+                <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/waterquality_transformation.mp4" />
+
 
             </div>
         ),
 
 
-        imageUrl: '/plusmap1.png'
+        imageUrl: '/t1.png'
     },
     {
         id: '2',
@@ -54,7 +54,7 @@ const storySections: StorySection[] = [
                     <li>Repurposed tyres, debris and Lantana serve as seats.</li>
 
                 </ul>
-                <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/creatures%20on%20canvas.mp4"/>
+                <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/creatures%20on%20canvas.mp4" />
 
 
 
@@ -63,7 +63,7 @@ const storySections: StorySection[] = [
         ),
 
 
-        imageUrl: '/plusmap2.png'
+        imageUrl: '/t2.png'
     },
     {
         id: '3',
@@ -82,14 +82,14 @@ const storySections: StorySection[] = [
 
                 </ul>
 
-                
+
 
 
             </div>
         ),
 
 
-        imageUrl: '/plusmap3.png'
+        imageUrl: '/t3.png'
     },
     {
         id: '4',
@@ -106,28 +106,28 @@ const storySections: StorySection[] = [
                     <li>Bee hotels provide ample nesting spaces for solitary bees.</li>
 
                 </ul>
-                
-           
+
+
 
                 <div className='flex flex-col  md:flex-row gap-2'>
                     <div className='md:w-1/2'>
-                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/pollinator%20thrive%20butterfly.mp4"/>
+                        <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/pollinator%20thrive%20butterfly.mp4" />
                     </div>
                     <div className='md:w-1/2'>
-                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/bee_resort_transformation.mp4"/>
+                        <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/bee_resort_transformation.mp4" />
                     </div>
-                    
+
 
                 </div>
 
-                
-                
+
+
 
             </div>
         ),
 
 
-        imageUrl: '/plusmap4.png'
+        imageUrl: '/t4.png'
     },
     {
         id: '5',
@@ -143,14 +143,14 @@ const storySections: StorySection[] = [
                     <li>The crowning moment is the return of the Pied kingfisher, which seeks clean water to dive and hunt for fish.</li>
 
                 </ul>
-                <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Biodiversity_transformation.mp4"/>
-                
+                <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Biodiversity_transformation.mp4" />
+
 
             </div>
         ),
 
 
-        imageUrl: '/plusmap5.png'
+        imageUrl: '/t5.png'
     },
     {
         id: '6',
@@ -175,36 +175,50 @@ const storySections: StorySection[] = [
         ),
 
 
-        imageUrl: '/plusmap6.png'
+        imageUrl: '/t6.png'
     }
 ];
 
 const Accordion_transformation = ({ update_img }: probs) => {
 
-    const [openId, setOpenId] = useState<string | null>(null);
 
-    const toggleSection = (id: string, index: number) => {
-        setOpenId(prev => (prev === id ? null : id));
-        // if (index>0) {
-        //     update_img(storySections[index].imageUrl)
+    const scrollWithOffset = (id: string, offset: number = 500) => {
+        const el = document.getElementById(id);
+        if (!el) return;
 
-        // } else {
-        //     update_img('/goal.png')
-        // }
+        const y = el.getBoundingClientRect().top + window.scrollY - offset;
 
+        window.scrollTo({
+            top: y,
+            behavior: 'smooth',
+        });
 
 
     };
 
-    useEffect(() => {
-         if (openId) {
-        const activeIndex = storySections.findIndex(sec => sec.id === openId);
-        if (activeIndex >= 0) {
-            update_img(storySections[activeIndex].imageUrl);
+    const [openId, setOpenId] = useState<string | null>(null);
+
+    const toggleSection = (id: string, index: number) => {
+        const isOpening = openId !== id;   // true only when expanding
+
+        setOpenId(prev => (prev === id ? null : id));
+
+        if (isOpening) {
+            setTimeout(() => {
+                scrollWithOffset('trans' + index);
+            }, 300); // matches transition
         }
-    } else {
-        update_img('/goal.png'); // fallback when no section is open
-    }
+    };
+
+    useEffect(() => {
+        if (openId) {
+            const activeIndex = storySections.findIndex(sec => sec.id === openId);
+            if (activeIndex >= 0) {
+                update_img(storySections[activeIndex].imageUrl);
+            }
+        } else {
+            update_img('/t0.png'); // fallback when no section is open
+        }
 
 
 
@@ -228,7 +242,7 @@ const Accordion_transformation = ({ update_img }: probs) => {
                             className="bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-xl "
                         >
                             {/* Accordion Header */}
-                            <button
+                            <button id={'trans' + index}
                                 onClick={() => toggleSection(section.id, index)}
                                 className="w-full px-6 py-5 flex items-center justify-between cursor-pointer z-100"
                             >
