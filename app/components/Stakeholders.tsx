@@ -66,7 +66,7 @@ const Stakeholders = () => {
     {
       id: 'migrant',
       title: 'Migrants',
-      image: '/migrant.jpg',
+      image: '/migrant.png',
       description:
         'Migrant workers living nearby, who otherwise had to scout around for water to wash their clothes and vessels, could access the open and unfenced lake. Their children were always up for a quick dip, especially with plenty of rocks serving as diving boards.',
       map:"/stakeholdermap_migrant.png" 

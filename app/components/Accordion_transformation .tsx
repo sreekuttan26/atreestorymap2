@@ -105,7 +105,21 @@ const storySections: StorySection[] = [
 
                 </ul>
                 
-                <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/bee_resort_transformation.mp4"/>
+           
+
+                <div className='flex flex-col  md:flex-row gap-2'>
+                    <div className='md:w-1/2'>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/pollinator%20thrive%20butterfly.mp4"/>
+                    </div>
+                    <div className='md:w-1/2'>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/bee_resort_transformation.mp4"/>
+                    </div>
+                    
+
+                </div>
+
+                
+                
 
             </div>
         ),
@@ -127,16 +141,7 @@ const storySections: StorySection[] = [
                     <li>The crowning moment is the return of the Pied kingfisher, which seeks clean water to dive and hunt for fish.</li>
 
                 </ul>
-                <div className='flex flex-col  md:flex-row gap-2'>
-                    <div className='md:w-1/2'>
-                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/pollinator%20thrive%20butterfly.mp4"/>
-                    </div>
-                    <div className='md:w-1/2'>
-                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Biodiversity_transformation.mp4"/>
-                    </div>
-                    
-
-                </div>
+                <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Biodiversity_transformation.mp4"/>
                 
 
             </div>

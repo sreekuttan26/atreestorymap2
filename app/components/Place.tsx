@@ -79,7 +79,7 @@ const Place = () => {
 
             <div className='relative w-full flex flex-col gap-2 md:flex-row' >
                 <img ref={imgref}
-                    src='lake_drawing_ai.png'
+                    src='place_map2.png'
                     className='w-full object-contain sticky top-12'
                 />
 

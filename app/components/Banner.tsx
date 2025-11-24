@@ -11,9 +11,9 @@ const Banner = () => {
         className="w-full h-[90vh] object-cover "  
        />
          {/* overlay */}
-         <div className="absolute top-0 left-0 bg-black z-5 w-full h-full opacity-30 "></div>
+         <div className="absolute top-0 left-0 bg-black z-5 w-full h-full opacity-0 "></div>
 
-       <h1 className=" absolute top-[50%] w-full text-white uppercase text-2xl font-bold px-10 z-10 text-center lg:text-4xl">Urban Lake Restoration Blueprint</h1>
+       <h1 className="  absolute top-[50%] w-full text-white uppercase text-2xl font-bold px-10 z-10 text-center lg:text-4xl">Urban Lake Restoration Blueprint</h1>
       
     </div>
   )
