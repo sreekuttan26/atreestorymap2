@@ -20,6 +20,9 @@ import Pagebreak from "./components/Pagebreak";
 import Joininghands from "./components/Joininghands";
 import Mascot from "./components/Mascot";
 import Transformation2 from "./components/Transformation2";
+import StoryMapScroll from "./components/StoryMapScroll";
+import StoryMap from "./components/Storymap";
+import PlaceZoom from "./components/PlaceZoom";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -106,12 +109,16 @@ export default function Home() {
         <Introduction />
       </div>
 
+      <div ref={sectionRefs.Place} className={`w-full h-full  `} id="place">
+       <PlaceZoom/>
+      </div>
+
 
 
       {/* place */}
-      <div ref={sectionRefs.Place} className={`w-full h-full ${spacing} `} id="place">
+      {/* <div ref={sectionRefs.Place} className={`w-full h-full ${spacing} `} id="place">
         <Place />
-      </div>
+      </div> */}
 
 
 
