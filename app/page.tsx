@@ -21,8 +21,9 @@ import Joininghands from "./components/Joininghands";
 import Mascot from "./components/Mascot";
 import Transformation2 from "./components/Transformation2";
 import StoryMapScroll from "./components/StoryMapScroll";
-import StoryMap from "./components/Storymap";
+import Keyactors from "./components/Keyactors";
 import PlaceZoom from "./components/PlaceZoom";
+import Xy from "./components/Xy";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -89,6 +90,7 @@ export default function Home() {
     <main className='w-full h-full flex flex-col '>
 
       <BreakpointDisplay />
+      <Xy/>
 
 
 
@@ -136,9 +138,13 @@ export default function Home() {
 
 
       {/* Stakeholders */}
-      <div ref={sectionRefs.Key_Actors} className={`w-full h-full ${spacing} `} id="keyactors">
-        <Stakeholders />
+      <div ref={sectionRefs.Key_Actors} className={`w-full h-full  `} id="keyactors">
+        <Keyactors />
       </div>
+
+      {/* <div ref={sectionRefs.Key_Actors} className={`w-full h-full ${spacing} `} id="keyactors">
+        <Stakeholders />
+      </div> */}
 
 
       <Pagebreak image='/pagebreak_bufello.png' />
