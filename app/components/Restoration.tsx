@@ -25,8 +25,8 @@ const Restoration = () => {
     const steps = [
         {
             id: 1,
-            title: "Identifying key issues to be tackled",
-            width: "w-3/4",
+            title: "Identifying key issues ",
+            width: "w-5/12",
             content: (
                 <span>
 
@@ -89,7 +89,7 @@ const Restoration = () => {
         {
             id: 2,
             title: "Lake health check-up",
-            width: "w-4/5",
+            width: "w-6/12",
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
@@ -112,7 +112,7 @@ const Restoration = () => {
         {
             id: 3,
             title: "Lake clean-up",
-            width: "w-6/7",
+            width: "w-7/12",
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
@@ -132,7 +132,7 @@ const Restoration = () => {
         {
             id: 4,
             title: "Installing tech and nature-based solutions",
-            width: "w-8/9",
+            width: "w-8/12",
             content: (
                 <span>
                     <ul className="list-disc mb-4 space-y-2">
@@ -163,7 +163,7 @@ const Restoration = () => {
         {
             id: 5,
             title: "Rewilding the lake",
-            width: "w-10/11",
+            width: "w-9/12",
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
@@ -186,7 +186,7 @@ const Restoration = () => {
         {
             id: 6,
             title: "Formation of lake trust",
-            width: "w-14/15",
+            width: "w-10/12",
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
@@ -209,7 +209,7 @@ const Restoration = () => {
         {
             id: 7,
             title: "Engaging youth through schools",
-            width: "w-full",
+            width: "w-11/12",
             content: (
                 <span>
 
@@ -252,11 +252,13 @@ const Restoration = () => {
 
     const [activeitem, Setactiveitem] = useState('')
     const [birdtop, Setbirdtop] = useState(0)
+    const [birdside, Setbirdside] = useState(0)
 
     const stepRefs = useRef<HTMLDivElement[]>([]);
 stepRefs.current = []; // reset length on each render
 
-const birdtop_y=[0,20,140,160,200,250,280,340,580]
+const birdside_list=[-220,-180,-160,-140,-120,-100,-80,-60,-40,-20,0]
+const[currentbird, Setcurrentbird]=useState('//bird-sit.gif')
 
 
     const handleActive = (index: number) => {
@@ -269,8 +271,24 @@ const birdtop_y=[0,20,140,160,200,250,280,340,580]
     const containerTop = container.getBoundingClientRect().top + window.scrollY;
     const elementTop = stepEl.getBoundingClientRect().top + window.scrollY;
 
-    const top = elementTop - containerTop + stepEl.offsetHeight / 2 - 25; // 25 = half bird height
+    const containerside = container.getBoundingClientRect().top + window.scrollX;
+    const elementside = stepEl.getBoundingClientRect().top + window.scrollX;
+
+    const top = elementTop - containerTop + stepEl.offsetHeight / 2-85 ; // 25 = half bird height
+    const side = elementside - containerside + stepEl.offsetHeight / 2 - 25; // 25 = half bird height
+
+    Setcurrentbird('/bird-fly.gif')
+    setTimeout(() => {
+   Setcurrentbird('/bird-sit.gif')
+}, 500);
+
+    
+
+
+
     Setbirdtop(top );
+    Setbirdside(birdside_list[index]);
+
   }
 };
 
@@ -322,21 +340,25 @@ const birdtop_y=[0,20,140,160,200,250,280,340,580]
 
                 {/* Left column: sticky steps */}
                 <div className="md:w-1/3 relative">
-                    <div className="md:sticky md:top-20 flex flex-col gap-4">
+                    <div className="md:sticky md:top-20 flex flex-col gap-4 relative">
+                        <div className='bg-[#087f9b] h-full absolute top-0 left-0 w-1 my-5 -z-10 mx-10 '></div>
+
+
                         {steps.map((step, index) => (
                             <div   ref={el => {stepRefs.current[index] = el!}} onClick={(()=>{scrollWithOffset('step'+index)})}
                                 key={index}
                                 className={`bg-[#087f9b] ${step.width} ${activeitem === step.title ? "bg-[#087f9b]" : "md:bg-gray-400"}  rounded-xl p-2 md:p-4 text-white font-semibold restoration-container cursor-pointer`}
                             >
-                                {step.title} 
+                                <h1 className="text-[12px] font-normal"> </h1>
+                                <div> {index+1}. {step.title} </div>
                             </div>
                         ))}
 
                         <img
-                            src='/bird-fly.gif'
+                            src={currentbird}
                             alt="flying bird"
-                            className="w-[5vw] absolute left-[20vw] transition-transform duration-300 ease-out opacity-0 sm:opacity-100"
-                            style={{ transform: `translateY(${birdtop}px)` }}
+                            className="w-[8vw] absolute left-[20vw] transition-transform duration-300 ease-out opacity-0 sm:opacity-100"
+                            style={{ transform: `translateY(${birdtop}px) translatex(${birdside}px)` }}
                         />
 
 

@@ -93,7 +93,7 @@ const PlaceZoom = () => {
                                 : "md:items-end md:justify-end"
                         }`}
                     >
-                        <div className="md:p-10 p-4 rounded-xl shadow-xl md:w-1/2 lg:w-1/3 zoom-item bg-white">
+                        <div className="md:p-5 p-4 rounded-xl shadow-xl md:w-1/2 lg:w-1/3 zoom-item bg-white">
                             <img src={item.image} className="w-full h-[200px] object-cover rounded-md mb-4" />
                             <span className="text-sm leading-7">{item.content}</span>
                         </div>

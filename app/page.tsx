@@ -177,7 +177,7 @@ export default function Home() {
 
 
       {/* Transformation */}
-      <div ref={sectionRefs.Transformation} className={`w-full h-full ${spacing} `} id="transformation">
+      <div ref={sectionRefs.Transformation} className={`w-full h-full px-2 `} id="transformation">
         <Transformation2 />
       </div>
 

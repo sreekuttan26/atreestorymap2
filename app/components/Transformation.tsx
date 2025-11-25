@@ -17,7 +17,10 @@ const Transformation = () => {
 
   return (
     <div className='w-full relative '>
-            <Heading text='Transformation' />
+        <div className='px-20'>
+             <Heading text='Transformation' />
+        </div>
+           
             <BeforeAfterSlider/>
 
             <div className={`relative w-full flex flex-col gap-2 md:flex-row `} >

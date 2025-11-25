@@ -272,23 +272,25 @@ const Transformation2 = () => {
 
     return (
         <div className='w-full h-full'>
-            <Heading text={"Transformation"} />
+             <div className='px-20 mt-20'>
+             <Heading text='Transformation' />
+        </div>
             <BeforeAfterSlider/>
             
             {/* <Bodytext text={"Civilisations evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."} /> */}
             <div className='flex flex-col gap-2 relative w-full h-full'>
                 <img ref={img_ref}
                     src={current_map}
-                    className='w-full md:w-1/2 md:h-[1/2] object-cover sticky top-10 bg-white  transition-opacity duration-700 ease-in-out opacity-100 z-10'
+                    className='w-full md:w-1/2  object-cover sticky top-10 bg-white md:bg-transparent  transition-opacity duration-700 ease-in-out opacity-100 z-10 md:top-20 md:mt-[1vh] '
                     alt='transformation image'
                     style={{ opacity: imageVisible ? 1 : 0 }}
                 />
 
 
-                <div ref={last_ref} className='flex flex-col  md:absolute md:top-0 md:right-0 md:items-end  w-full   '>
+                <div ref={last_ref} className='flex flex-col  md:absolute md:right-0 md:items-end  w-full  md:top-[50vh] '>
                     <div className="first-last h-[10px]"></div>
                     {storySections.map((data, index) => (
-                        <div ref={(el) => { if (el) items_Ref.current[index] = el }} key={index} className={`flex flex-col gap-2 bg-white rounded-xl shadow-xl p-2 md:w-1/2 md:p-8  mb-10 ${data.id === 'migrant' ? 'md:mb-0' : 'md:mb-[40vh]'}`}>
+                        <div ref={(el) => { if (el) items_Ref.current[index] = el }} key={index} className={`flex flex-col gap-2 bg-white rounded-xl shadow-xl border-gray-200 p-2 md:w-1/2 md:p-8  mb-10 ${data.id === 'migrant' ? 'md:mb-0' : 'md:mb-[20vh]'}`}>
 
                             <h1 className="w-full font-semibold color-b">{data.title}</h1>
                             <span className="text-sm leading-7">
