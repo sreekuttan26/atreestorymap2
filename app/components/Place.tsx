@@ -6,6 +6,7 @@ import Bodytext from './Bodytext';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Video from './Video';
 gsap.registerPlugin(ScrollTrigger);
 
 const Place = () => {
@@ -15,7 +16,7 @@ const Place = () => {
             image: "/lake_sky.png",
             content: (
                 <span>
-                    Venkateshpura Lake is a relatively small lake in north Bangalore, extending a little over 10 acres. It is managed by the Greater Bengaluru Authority (GBA), Bengaluru’s civic body. Located in Sampigehalli in the Arkavathy Layout of Jakkur Ward, the lake is familiar to the locals as Sampigehalli Lake, its old name. 
+                    Venkateshpura Lake is a relatively small lake in north Bangalore, extending a little over 10 acres. It is managed by the Greater Bengaluru Authority (GBA), Bengaluru’s civic body. Located in Sampigehalli in the Arkavathy Layout of Jakkur Ward, the lake is familiar to the locals as Sampigehalli Lake, its old name.
                 </span>
             ),
         },
@@ -34,7 +35,7 @@ const Place = () => {
             image: "/place_3.png",
             content: (
                 <span>
-                   There is a ruggedness to the lake’s identity that comes from the rocky outgrowth both within it and along its periphery. One of its rocky projections bears the nineteenth-century Sampigehalli Auxiliary Tower Station that stands to tell a story. Adjacent to the waterbody is the Jarabandemma Temple, built on a rock, which holds unique significance due to the distinct rituals observed there even today. The lake stands in the neighbourhood, amid residential buildings and schools.
+                    There is a ruggedness to the lake’s identity that comes from the rocky outgrowth both within it and along its periphery. One of its rocky projections bears the nineteenth-century Sampigehalli Auxiliary Tower Station that stands to tell a story. Adjacent to the waterbody is the Jarabandemma Temple, built on a rock, which holds unique significance due to the distinct rituals observed there even today. The lake stands in the neighbourhood, amid residential buildings and schools.
                 </span>
             ),
         },
@@ -77,15 +78,25 @@ const Place = () => {
                 }
             />
 
-            <div className='relative w-full flex flex-col gap-2 md:flex-row' >
-                <img ref={imgref}
+            <div className='relative w-full flex flex-col gap-2 ' >
+                {/* <img ref={imgref}
                     src='place_map2.png'
                     className='w-full object-contain sticky top-12'
-                />
+                /> */}
+                <div className="w-full sticky top-12 " ref={imgref}>
+                    <video
+                        src="https://atree-communication.s3.amazonaws.com/Storymap_media/lake_eath2.mp4"
+                        
+                        muted
+                        autoPlay
+                        className="w-full  object-cover "
+                    />
+                </div>
 
-                <div ref={last_ref} className='flex flex-col gap-5 mt-10 md:w-full md:absolute md:top-0 md:right-0   '>
+
+                <div ref={last_ref} className='flex flex-col gap-5 mt-10 md:w-full md:absolute md:top-0 md:right-0  md:px-10 mt-20 '>
                     {placeitems.map((item, index) => (
-                        <div key={index} className={`w-full flex flex-col  ${index%2===0?"md:items-end":"md:items-start "} `}>
+                        <div key={index} className={`w-full flex flex-col  ${index % 2 === 0 ? "md:items-end" : "md:items-start "} `}>
                             <div className='md:w-1/3 p-4 border-2 bg-white border-gray-200 shadow-xl rounded-xl flex flex-col gap-2 md:z-10'>
 
 

@@ -6,7 +6,7 @@ const Degradation = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [progress, setProgress] = useState(0);
 
-  const images = Array.from({ length: 5 }, (_, i) => `/${i + 1}Degradation.png`);
+  const images = Array.from({ length: 1 }, (_, i) => `/${i + 1}Degradation.png`);
 
   const texts = [
    " With developmental activities, the lake had lost its natural connection with other lakes. ",
@@ -15,7 +15,7 @@ const Degradation = () => {
     "Untreated sewage was released into the lake from neighbouring buildings. The water turned stagnant and green with algal bloom, killing fishes and other aquatic life.",
     "Plastic and cloth waste and construction debris added to the deterioration of the lake. ",
   ];
-
+ 
   useEffect(() => {
     const handleScroll = () => {
       if (!containerRef.current) return;
@@ -91,7 +91,7 @@ const Degradation = () => {
         {texts.map((text, i) => (
           <div
             key={i}
-            className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-10"
+            className=" flex items-center justify-center px-4 sm:px-6 md:px-10"
           >
             <div className="max-w-2xl w-full">
               <div

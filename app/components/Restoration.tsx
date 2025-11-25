@@ -131,7 +131,7 @@ const Restoration = () => {
         },
         {
             id: 4,
-            title: "Installing tech and nature-based solutions",
+            title: "Installing nature-based solutions",
             width: "w-8/12",
             content: (
                 <span>
@@ -341,7 +341,7 @@ const[currentbird, Setcurrentbird]=useState('//bird-sit.gif')
                 {/* Left column: sticky steps */}
                 <div className="md:w-1/3 relative">
                     <div className="md:sticky md:top-20 flex flex-col gap-4 relative">
-                        <div className='bg-[#087f9b] h-full absolute top-0 left-0 w-1 my-5 -z-10 mx-10 '></div>
+                        <div className='bg-[#087f9b] h-[90%] absolute top-0 left-0 w-1 my-5 -z-10 mx-10  '></div>
 
 
                         {steps.map((step, index) => (

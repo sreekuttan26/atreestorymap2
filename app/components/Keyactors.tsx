@@ -3,6 +3,8 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Heading from './Heading';
+import Bodytext from './Bodytext';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,13 +93,13 @@ const Keyactors = () => {
 
         console.log('x:' + x + " y:" + y)
 
-        gsap.to(stake_Ref.current, {
-            scale,
-            xPercent: -x,
-            yPercent: -y,
-            duration: 1,
-            ease: 'power2.out',
-        });
+        // gsap.to(stake_Ref.current, {
+        //     scale,
+        //     xPercent: -x,
+        //     yPercent: -y,
+        //     duration: 1,
+        //     ease: 'power2.out',
+        // });
     };
 
     useEffect(() => {
@@ -122,13 +124,19 @@ const Keyactors = () => {
 
     return (
         <div className="w-full relative overflow-visible">
+            <div className='p-5 md:px-20 lg:px-40 md:pt-20  bg-white'>
+                <Heading text={"Key Actors"}/>
+        <Bodytext text={"Civilisations evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."}/>
+
+            </div>
+             
             {/* Sticky Map Container */}
-            <div className="sticky top-10 w-full h-screen overflow-hidden z-10">
+            <div className="sticky top-10 w-full h-screen overflow-hidden z-10 flex items-center justify-center">
                 <img
                     id="myImage"
                     ref={stake_Ref}
                     src="\svgs\stakeholders0.svg"
-                    className="w-full max-h-[40vh] md:max-h-full object-cover myImage "
+                    className="w-[80%] max-h-[40vh] md:max-h-full object-cover myImage "
                     alt="map"
                 />
             </div>

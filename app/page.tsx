@@ -24,6 +24,7 @@ import StoryMapScroll from "./components/StoryMapScroll";
 import Keyactors from "./components/Keyactors";
 import PlaceZoom from "./components/PlaceZoom";
 import Xy from "./components/Xy";
+import Degradation_img from "./components/Degradation_img";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -90,7 +91,7 @@ export default function Home() {
     <main className='w-full h-full flex flex-col '>
 
       <BreakpointDisplay />
-      <Xy/>
+     
 
 
 
@@ -111,16 +112,19 @@ export default function Home() {
         <Introduction />
       </div>
 
-      <div ref={sectionRefs.Place} className={`w-full h-full  `} id="place">
+      {/* <div ref={sectionRefs.Place} className={`w-full h-full  `} id="place">
        <PlaceZoom/>
-      </div>
+      </div> */}
 
 
 
       {/* place */}
-      {/* <div ref={sectionRefs.Place} className={`w-full h-full ${spacing} `} id="place">
+      <div ref={sectionRefs.Place} className={`w-full h-full ${spacing} `} id="place">
         <Place />
-      </div> */}
+      </div>
+
+      <Pagebreak image='/pagebreak_rock.png' /> 
+      {/* rockagamam */}
 
 
 
@@ -133,7 +137,7 @@ export default function Home() {
 
       {/* Degradation */}
       <div ref={sectionRefs.Degradation} className={`w-full h-full `} id="degradation">
-        <Degradation />
+        <Degradation_img />
       </div>
 
 
@@ -152,6 +156,8 @@ export default function Home() {
       <div className={`w-full h-full ${spacing} `} >
         <Joininghands />
       </div>
+
+       <Pagebreak image='/pagebreak_hands.png' />
 
 
 
@@ -172,6 +178,8 @@ export default function Home() {
       <div ref={sectionRefs.Restoration} className={`w-full h-full ${spacing} `} id="restoration">
         <Restoration />
       </div>
+
+      <Pagebreak image='/pagebreak_net.png' />
 
 
 

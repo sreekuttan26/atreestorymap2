@@ -7,13 +7,13 @@ type probs={
 const Pagebreak = ({image}:probs) => {
     const spacing = 'p-5 md:px-20  md:pt-10  bg-white ';
   return (
-     <div className={`w-full h-full ${spacing} flex  flex-col items-end pb-0   justify-center `}>
-        <div className={`w-[80vw] flex   justify-center  border-dashed pt-50`}>
+     <div className={`w-full h-full ${spacing} flex  flex-col items-center pb-0   justify-center `}>
+        <div className={`w-[80vw] flex justify-center items-center  pt-50`}>
 
           <img
             src={image}
             alt='pagebreak'
-            className='h-[80px] object-conatin object-bottom '
+            className='h-[150px] object-conatin object-bottom  '
 
           />
         </div>
