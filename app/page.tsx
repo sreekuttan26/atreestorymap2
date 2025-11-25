@@ -25,6 +25,7 @@ import Keyactors from "./components/Keyactors";
 import PlaceZoom from "./components/PlaceZoom";
 import Xy from "./components/Xy";
 import Degradation_img from "./components/Degradation_img";
+import Keyactor_spotlight from "./components/Keyactor_spotlight";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -124,8 +125,7 @@ export default function Home() {
       </div>
 
       <Pagebreak image='/pagebreak_rock.png' /> 
-      {/* rockagamam */}
-
+      
 
 
       {/* History */}
@@ -143,7 +143,7 @@ export default function Home() {
 
       {/* Stakeholders */}
       <div ref={sectionRefs.Key_Actors} className={`w-full h-full  `} id="keyactors">
-        <Keyactors />
+        <Keyactor_spotlight />
       </div>
 
       {/* <div ref={sectionRefs.Key_Actors} className={`w-full h-full ${spacing} `} id="keyactors">
@@ -179,7 +179,7 @@ export default function Home() {
         <Restoration />
       </div>
 
-      <Pagebreak image='/pagebreak_net.png' customclass="h-[150px]" />
+      <Pagebreak image='/pagebreak_net.png' customclass="h-[180px]" />
 
 
 
