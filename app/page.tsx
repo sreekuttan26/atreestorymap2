@@ -179,7 +179,7 @@ export default function Home() {
         <Restoration />
       </div>
 
-      <Pagebreak image='/pagebreak_net.png' />
+      <Pagebreak image='/pagebreak_net.png' customclass="h-[150px]" />
 
 
 
