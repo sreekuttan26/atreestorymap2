@@ -258,7 +258,7 @@ const Restoration = () => {
 stepRefs.current = []; // reset length on each render
 
 const birdside_list=[-220,-180,-160,-140,-120,-100,-80,-60,-40,-20,0]
-const[currentbird, Setcurrentbird]=useState('//bird-sit.gif')
+const[currentbird, Setcurrentbird]=useState('/bird-sit.gif')
 
 
     const handleActive = (index: number) => {

@@ -13,7 +13,7 @@ const Place = () => {
     const placeitems = [
         {
             id: "1",
-            image: "/lake_sky.png",
+            image: "/place_1.png",
             content: (
                 <span>
                     Venkateshpura Lake is a relatively small lake in north Bangalore, extending a little over 10 acres. It is managed by the Greater Bengaluru Authority (GBA), Bengaluru’s civic body. Located in Sampigehalli in the Arkavathy Layout of Jakkur Ward, the lake is familiar to the locals as Sampigehalli Lake, its old name.

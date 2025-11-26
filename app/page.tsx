@@ -124,7 +124,7 @@ export default function Home() {
         <Place />
       </div>
 
-      <Pagebreak image='/pagebreak_rock.png' /> 
+      <Pagebreak image='/pagebreak_rockagama.png' /> 
       
 
 
@@ -179,7 +179,7 @@ export default function Home() {
         <Restoration />
       </div>
 
-      <Pagebreak image='/pagebreak_net.png' customclass="h-[180px]" />
+      <Pagebreak image='/pagebreak_roundboat.png' customclass="" />
 
 
 
@@ -188,6 +188,8 @@ export default function Home() {
       <div ref={sectionRefs.Transformation} className={`w-full h-full px-2 `} id="transformation">
         <Transformation2 />
       </div>
+
+      <Pagebreak image='/pagebreak_rock.png'/>
 
 
       {/* Resources */}
