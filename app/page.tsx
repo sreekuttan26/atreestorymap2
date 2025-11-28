@@ -117,6 +117,9 @@ export default function Home() {
        <PlaceZoom/>
       </div> */}
 
+       <Pagebreak image='/pagebreak_waterbird.png'/>
+
+
 
 
       {/* place */}
