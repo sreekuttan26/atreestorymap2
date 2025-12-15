@@ -26,7 +26,7 @@ const storyData: StoryEvent[] = [
                 <li>Small-scale agriculture and a modest dairy unit operate until 2014.</li>
             </ul>
         ),
-        image: 'https://atree-communication.s3.amazonaws.com/Storymap_media/2025_2010.JPG'
+        image: '/timeline/2025_2010.JPG'
     },
     {
         id: 2,
@@ -40,7 +40,7 @@ const storyData: StoryEvent[] = [
                 <li>BBMP withdraws soon after.</li>
             </ul>
         ),
-        image: 'https://atree-communication.s3.amazonaws.com/Storymap_media/2007.jpg'
+        image: '/timeline/2007.jpg'
     },
     {
         id: 3,
@@ -57,7 +57,7 @@ const storyData: StoryEvent[] = [
                 <li>Official maps procured for watershed conservation.</li>
             </ul>
         ),
-        image: 'https://atree-communication.s3.amazonaws.com/Storymap_media/2010_2014.jpg'
+        image: '/timeline/2010_2014.jpg'
     },
     {
         id: 4,
@@ -74,7 +74,7 @@ const storyData: StoryEvent[] = [
                 <li>Apartment associations join the movement.</li>
             </ul>
         ),
-        image: 'https://atree-communication.s3.amazonaws.com/Storymap_media/2014_2020.jpg'
+        image: '/timeline/2014_2020.jpg'
     },
     {
         id: 5,
@@ -89,7 +89,7 @@ const storyData: StoryEvent[] = [
                 <li>Media engaged and representations made to elected members.</li>
             </ul>
         ),
-        image: 'https://atree-communication.s3.amazonaws.com/Storymap_media/2020_2022.JPG'
+        image: '/timeline/2020_2022.JPG'
     },
     {
         id: 6,
@@ -107,7 +107,7 @@ const storyData: StoryEvent[] = [
                 <li>VIMOS supports implementation alongside BBMP works, including draining and dredging.</li>
             </ul>
         ),
-        image: 'https://atree-communication.s3.amazonaws.com/Storymap_media/2022.jpg'
+        image: '/timeline/2022.jpg'
     },
     {
         id: 7,
@@ -127,7 +127,7 @@ const storyData: StoryEvent[] = [
                 <li><strong>Inclusiveness:</strong> grazing access retained, fishermen engaged, and native fish reintroduced.</li>
             </ul>
         ),
-        image: 'https://atree-communication.s3.amazonaws.com/Storymap_media/2022_2025.jpg'
+        image: '/timeline/2022_2025.jpg'
     },
     {
         id: 8,
