@@ -26,6 +26,7 @@ import PlaceZoom from "./components/PlaceZoom";
 import Xy from "./components/Xy";
 import Degradation_img from "./components/Degradation_img";
 import Keyactor_spotlight from "./components/Keyactor_spotlight";
+import Timeline from "./components/Timeline";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
     Goal_Setting: useRef(null),
     Restoration: useRef(null),
     Transformation: useRef(null),
+    Timeline: useRef(null),
     Resources: useRef(null),
   };
 
@@ -193,6 +195,11 @@ export default function Home() {
       </div>
 
       <Pagebreak image='/pagebreak_rock.png'/>
+
+
+       <div ref={sectionRefs.Timeline} className={`w-full h-full  `} id="timeline">
+        <Timeline/>
+      </div>
 
 
       {/* Resources */}

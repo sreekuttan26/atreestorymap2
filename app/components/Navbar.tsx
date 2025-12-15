@@ -23,6 +23,7 @@ export default function Navbar({ activeItem }: MenuBarProps) {
         { name: 'Goal Setting', link: '#goal' },
         { name: 'Restoration', link: '#restoration' },
         { name: 'Transformation', link: '#transformation' },
+        { name: 'Timeline', link: '#timeline' },
         { name: 'Resources', link: '#resources' },
     ];
 

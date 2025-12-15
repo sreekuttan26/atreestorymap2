@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Bodytext from './Bodytext';
+import Heading from './Heading';
 
 const Degradation = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -7,6 +8,8 @@ const Degradation = () => {
   const spacing = 'p-5 md:px-20 lg:px-40 md:pt-10  bg-white '
 
   const images = Array.from({ length: 10 }, (_, i) => `degradation2/${i + 1}Degradation.png`);
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,6 +35,9 @@ const Degradation = () => {
 
   return (
     <div>
+      <div className={`${spacing}`}>
+        <Heading text="Degradation"></Heading>
+      </div>
 
 
       <div ref={containerRef} className="relative w-full" style={{ height: '200vh' }}>

@@ -13,6 +13,7 @@ const Transformation2 = () => {
     const items_Ref = useRef<HTMLDivElement[]>([]);
     const img_ref = useRef(null)
     const last_ref = useRef(null)
+    const spacing = 'p-5 md:px-20 lg:px-40 md:pt-20  bg-white ';
 
 
     const storySections = [
@@ -272,7 +273,7 @@ const Transformation2 = () => {
 
     return (
         <div className='w-full h-full'>
-             <div className='px-20 mt-20'>
+             <div className={`${spacing}`}>
              <Heading text='Transformation' />
         </div>
             <BeforeAfterSlider/>

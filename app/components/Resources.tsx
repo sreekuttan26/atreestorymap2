@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Heading from './Heading';
 
 interface Resource {
   id: string;
@@ -180,11 +181,15 @@ export default function StoryMapResources() {
   const currentResources = filteredResources.slice(indexOfFirstItem, indexOfLastItem);
 
   const totalPages = Math.ceil(filteredResources.length / itemsPerPage);
+  const spacing = 'p-5 md:px-20 lg:px-40 md:pt-20   ';
 
   return (
     <div className="w-full h-full bg-gradient-to-br from-slate-50 to-blue-50 ">
-
-      <div className="w-4/5 mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className={`${spacing}`}>
+          <Heading text="Resources"/>
+      </div>
+    
+      <div className="w-6/7 mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
         {/* Search */}
         <div className="mb-8 space-y-4">
