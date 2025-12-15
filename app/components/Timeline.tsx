@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+'use client'
+import React, { useEffect, useRef, useState } from 'react';
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import Heading from './Heading';
@@ -159,9 +160,33 @@ export default function StoryTimeline() {
     };
 
     const currentEvent = storyData[currentIndex];
+    const timelinecircle = useRef<(HTMLButtonElement | null)[]>([]);
+
+    useEffect(() => {
+        timelinecircle.current[currentIndex]?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center',
+        });
+
+
+
+    }, [currentIndex])
+
+    const scrollWithOffset = (id: string, offset: number = 100) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        const y = el.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({
+            top: y,
+            behavior: 'smooth',
+        });
+    };
 
     return (
-        <div className="md:px-20 mt-20 bg-gradient-to-br from-gray-100 via-white to-gray-100 pt-10">
+        <div className="xl:px-20 mt-20 bg-gradient-to-br from-gray-100 via-white to-gray-100 pt-10">
             <div className={`${spacing}`}>
                 <Heading text='TimeLine' />
             </div>
@@ -190,8 +215,8 @@ export default function StoryTimeline() {
 
 
 
-                    <div className="relative w-full overflow-x-auto md:overflow-visible  hide-scrollbar ">
-                        <div className="relative flex min-w-max items-center justify-between gap-8 px-4 md:px-8 mt-5">
+                    <div className="relative w-full overflow-x-auto   hide-scrollbar ">
+                        <div className="relative flex min-w-max items-center justify-around  px-4 md:px-8 mt-5">
                             {/* Horizontal Line */}
                             <div className="absolute  top-6 md:top-8 left-4 right-4 md:left-0 md:right-0 h-1 bg-gradient-to-r from-slate-700 via-cyan-500 to-slate-700" />
 
@@ -202,6 +227,9 @@ export default function StoryTimeline() {
                                 return (
                                     <button
                                         key={event.id}
+                                        ref={(el) => {
+                                            timelinecircle.current[index] = el;
+                                        }}
                                         onClick={() => setCurrentIndex(index)}
                                         className="relative z-10 flex shrink-0 flex-col items-center group focus:outline-none"
                                     >
