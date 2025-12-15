@@ -161,7 +161,7 @@ export default function StoryTimeline() {
     const currentEvent = storyData[currentIndex];
 
     return (
-        <div className="px-20 mt-20 bg-gradient-to-br from-gray-100 via-white to-gray-100 pt-10">
+        <div className="md:px-20 mt-20 bg-gradient-to-br from-gray-100 via-white to-gray-100 pt-10">
             <div className={`${spacing}`}>
                 <Heading text='TimeLine' />
             </div>
@@ -183,16 +183,87 @@ export default function StoryTimeline() {
 
 
 
-                <div className="w-full px-20 mx-5 ">
+                <div className="w-full md:px-20 md:mx-5 ">
                     <div className="text-center mb-8 text-slate-500 text-sm">
                         Use arrow buttons or click timeline points to navigate the story
                     </div>
 
 
-                     <div className="relative px-8">
-                        <div className="relative flex  items-center justify-between">
+
+                    <div className="relative w-full overflow-x-auto md:overflow-visible  hide-scrollbar ">
+                        <div className="relative flex min-w-max items-center justify-between gap-8 px-4 md:px-8 mt-5">
+                            {/* Horizontal Line */}
+                            <div className="absolute  top-6 md:top-8 left-4 right-4 md:left-0 md:right-0 h-1 bg-gradient-to-r from-slate-700 via-cyan-500 to-slate-700" />
+
+                            {storyData.map((event, index) => {
+                                const isActive = index === currentIndex;
+                                const isPast = index < currentIndex;
+
+                                return (
+                                    <button
+                                        key={event.id}
+                                        onClick={() => setCurrentIndex(index)}
+                                        className="relative z-10 flex shrink-0 flex-col items-center group focus:outline-none"
+                                    >
+                                        {/* Circle */}
+                                        <div
+                                            className={`flex items-center justify-center rounded-full transition-all duration-300
+                        w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16
+                        ${isActive
+                                                    ? 'bg-gradient-to-br from-[#087f9b] to-[#087f9b] scale-125 ring-4 ring-[#96e3f5] shadow-2xl shadow-cyan-500/50'
+                                                    : isPast
+                                                        ? 'bg-gradient-to-br from-[#087f9b] to-blue-400 hover:scale-110'
+                                                        : 'bg-gradient-to-br from-slate-600 to-slate-700 hover:scale-105'
+                                                }`}
+                                        >
+                                            <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 rounded-full bg-white/30 backdrop-blur-sm" />
+                                        </div>
+
+                                        {/* Labels */}
+                                        <div className="mt-3 text-center max-w-[6rem] sm:max-w-none">
+                                            <div
+                                                className={`text-[10px] sm:text-xs md:text-sm font-semibold whitespace-nowrap transition-colors
+                            ${isActive
+                                                        ? 'text-[#0ca2c4]'
+                                                        : isPast
+                                                            ? 'text-[#087f9b]'
+                                                            : 'text-slate-500'
+                                                    }`}
+                                            >
+                                                {event.date}
+                                            </div>
+
+                                            <div
+                                                className={`mt-1 text-[10px] sm:text-xs transition-opacity
+                            ${isActive
+                                                        ? 'text-white opacity-100'
+                                                        : 'text-slate-400 opacity-0 group-hover:opacity-100'
+                                                    }`}
+                                            >
+                                                {event.title}
+                                            </div>
+                                        </div>
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div className="relative md:px-8 overflow-y-scroll hidden">
+                        <div className="relative flex  items-center justify-between gap-10">
                             {/* Horizontal Line - centered through circles */}
-                            <div className="absolute top-6 md:top-8 left-0 right-0 h-1 bg-gradient-to-r from-slate-700 via-cyan-500 to-slate-700" />
+                            <div className="absolute top-6 md:top-8 left-0 right-0 h-1  bg-gradient-to-r from-slate-700 via-cyan-500 to-slate-700" />
 
                             {/* Timeline Points */}
                             {storyData.map((event, index) => {
@@ -204,7 +275,7 @@ export default function StoryTimeline() {
                                     <button
                                         key={event.id}
                                         onClick={() => setCurrentIndex(index)}
-                                        className="relative flex flex-col items-center group z-10 "
+                                        className="relative flex flex-col items-center group z-10 border-2"
                                     >
                                         {/* Circle Point */}
                                         <div
@@ -245,9 +316,9 @@ export default function StoryTimeline() {
 
                     {/* Story Content Card */}
                     <div className="mb-12 mt-5 ">
-                        <div className="relative bg-white backdrop-blur-xl rounded-3xl overflow-hidden border border-gray-200 shadow-2xl">
+                        <div className="relative bg-white backdrop-blur-xl rounded-3xl  border border-gray-200 shadow-2xl">
                             {/* Image Section */}
-                            <div className="relative h-64 md:h-95 overflow-hidden">
+                            <div className="relative h-64 md:h-95 ">
                                 <img
                                     src={currentEvent.image}
                                     alt={currentEvent.title}
@@ -281,7 +352,7 @@ export default function StoryTimeline() {
 
                             {/* Content Section */}
                             <div className="p-8 md:p-12">
-                                <div className="w-full  flex items-center gap-5 justify-center">
+                                <div className="w-full  flex items-center gap-5 justify-center pb-5">
                                     <button
                                         onClick={goToPrevious}
                                         disabled={currentIndex === 0}
@@ -313,7 +384,7 @@ export default function StoryTimeline() {
                                 </div>
 
                                 {/* Title */}
-                                <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+                                <h2 className="text-2xl md:text-2xl font-bold text-black mb-4">
                                     {currentEvent.title}
                                 </h2>
 
@@ -326,7 +397,7 @@ export default function StoryTimeline() {
                                 )}
 
                                 {/* Description */}
-                                <span className="text-slate-500 text-lg md:text-xl leading-relaxed">
+                                <span className="text-slate-500 text-sm md:text-xl leading-relaxed">
                                     {currentEvent.description}
                                 </span>
 
