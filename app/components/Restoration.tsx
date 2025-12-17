@@ -54,8 +54,8 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li><strong>Secchi Depth</strong>: A method of noting how clear the lake water is, using a disc attached to a rope. </li>
-                        <li><strong>Dissolved Oxygen:</strong> A handheld probe with a metre and a sensor measures the amount of dissolved oxygen available for aquatic life – plants, fish and other organisms.</li>
+                        <li>Secchi Depth: A method of noting how clear the lake water is, using a disc attached to a rope. </li>
+                        <li>Dissolved Oxygen: A handheld probe with a metre and a sensor measures the amount of dissolved oxygen available for aquatic life – plants, fish and other organisms.</li>
                         <li>Shoreline vegetation: Carefully planned and planted shoreline vegetation filters run-off, absorbs excess nutrients and provides shelter for small fish and zooplankton.</li>
                         <li>Systematic baseline surveys of butterflies, bees, odonates, fishes, amphibians, reptiles, birds and vegetation provide valuable data that help chart a roadmap for conserving the lake.</li>
                     </ul>

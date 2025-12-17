@@ -29,6 +29,7 @@ import Keyactor_spotlight from "./components/Keyactor_spotlight";
 import Timeline from "./components/Timeline";
 import BirdCursor from "./components/Birdcursor";
 import NewBegining from "./components/NewBegining";
+import Timeline2 from "./components/Timeline2";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -209,8 +210,12 @@ export default function Home() {
         <NewBegining/>
       </div>
 
-       <div ref={sectionRefs.Timeline} className={`w-full h-full  `} id="timeline">
+       {/* <div ref={sectionRefs.Timeline} className={`w-full h-full  `} id="timeline">
         <Timeline/>
+      </div> */}
+
+       <div ref={sectionRefs.Timeline} className={`w-full h-full  `} id="timeline">
+        <Timeline2/>
       </div>
 
 
