@@ -86,6 +86,8 @@ const Transformation2 = () => {
 
 
                     </ul>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/INTRO_NATIVE_SPECIES.mp4" />
+
 
 
 
@@ -113,19 +115,10 @@ const Transformation2 = () => {
 
 
                     </ul>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/pollinator_thrive_butterfly.mp4" />
 
 
-
-                    <div className='flex flex-col   gap-4'>
-                        <div className=''>
-                            <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/pollinator%20thrive%20butterfly.mp4" />
-                        </div>
-                        <div className=''>
-                            <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/bee_resort_transformation.mp4" />
-                        </div>
-
-
-                    </div>
+                    
 
 
 
@@ -176,17 +169,17 @@ const Transformation2 = () => {
                     <div className='grid md:grid-cols-2 gap-4 h-[200px]'>
                         <a className='relative' href="https://drive.google.com/file/d/1gEIwSm-eO56r8aWUQsphZrbsxG9_PqHC/view?usp=drive_link" target="_blank">
                             <div className="bg-[url('/pocket_guide.jpg')] bg-cover bg-center  w-full h-full rounded-2xl shadow-2xl flex flex-col-reverse">
-                            <div className='bg-[#087f9b]/80 text-center text-white rounded-b-xl p-2 hover:bg-[#087f9b]'>VENKATESHPURA Wetland Field Journal </div>
+                                <div className='bg-[#087f9b]/80 text-center text-white rounded-b-xl p-2 hover:bg-[#087f9b]'>VENKATESHPURA Wetland Field Journal </div>
 
                             </div>
-                           
-                            
-                           
+
+
+
 
                         </a>
-                        <a className='relative' href="https://drive.google.com/file/d/1fEqbJgRtwnJd1EpWRNumGC0Bzrv4mBX6/view?usp=drive_link" target="_blank">
-                           <div className="bg-[url('/butterfly_guide.jpg')] bg-cover bg-center  w-full h-full rounded-2xl shadow-2xl flex flex-col-reverse">
-                            <div className='bg-[#087f9b]/80 text-center text-white rounded-b-xl p-2 hover:bg-[#087f9b]'>Butterfly Field Guide </div>
+                        <a className='relative' href="" target="_blank">
+                            <div className="bg-[url('/butterfly_guide.jpg')] bg-cover bg-center  w-full h-full rounded-2xl shadow-2xl flex flex-col-reverse">
+                                <div className='bg-[#087f9b]/80 text-center text-white rounded-b-xl p-2 hover:bg-[#087f9b]'>Butterfly Field Guide </div>
 
                             </div>
                         </a>

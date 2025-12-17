@@ -28,6 +28,21 @@ const storySections: StorySection[] = [
     imageUrl: 'https://thumbs.dreamstime.com/b/lake-water-india-good-soul-253792778.jpg'
   },
   {
+    id: '2_1',
+    title: 'Address biodiversity loss',
+    content: (
+      <div>
+        
+        <ul className="list-disc px-4 mb-4 space-y-2">
+          <li>Prepare a systematic plan to assess and quantify the lake’s flora and fauna.</li>
+          <li>Implement targeted interventions to restore ecological balance.</li>
+          <li>Rebuild food webs and create conditions that enable the return of bird species that once thronged the lake.</li>
+        </ul>
+      </div>
+    ),
+    imageUrl: 'https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=800&h=400&fit=crop'
+  },
+  {
     id: '2',
     title: 'Remove Invasives',
     content: (

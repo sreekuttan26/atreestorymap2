@@ -26,18 +26,19 @@ const Restoration = () => {
         {
             id: 1,
             title: "Identifying key issues ",
-            width: "w-5/12",
+            width: "w-5/13",
             content: (
                 <span>
 
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Declined water quality with untreated sewage inflow</li>     
+                        <li>Declined water quality with untreated sewage inflow</li>
                         <li>Overgrowth of invasives, such as Lantana and Parthenium.</li>
                         <li>Loss of ecosystem services, like groundwater recharge and biodiversity support.</li>
                         <li>Haven for illegal activities.</li>
                         <li>Inconducive for human use and recreation.</li>
                         <li>Need to involve local community.</li>
                     </ul>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Key%20issues.mp4" />
 
 
 
@@ -50,7 +51,7 @@ const Restoration = () => {
         {
             id: 2,
             title: "Lake health check-up",
-            width: "w-6/12",
+            width: "w-6/13",
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
@@ -59,7 +60,7 @@ const Restoration = () => {
                         <li>Shoreline vegetation: Carefully planned and planted shoreline vegetation filters run-off, absorbs excess nutrients and provides shelter for small fish and zooplankton.</li>
                         <li>Systematic baseline surveys of butterflies, bees, odonates, fishes, amphibians, reptiles, birds and vegetation provide valuable data that help chart a roadmap for conserving the lake.</li>
                     </ul>
-                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/How%20healthy%20is%20your%20lake.mp4"/>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/How%20healthy%20is%20your%20lake.mp4" />
 
 
 
@@ -72,17 +73,23 @@ const Restoration = () => {
         },
         {
             id: 3,
-            title: "Lake clean-up",
-            width: "w-7/12",
+            title: "Biodiversity survey: A peek",
+            width: "w-7/13",
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Removal of water hyacinth, plastic and other accumulated waste.</li>
-                        <li>Uprooting of Lantana and Parthenium from the area surrounding the lake.</li>
-                        <li>Collecting the quarry and construction waste to be repurposed.</li>
+                        
+                            <li>Butterfly: A total of 59 individuals from 16 species were recorded, with the families Lycaenidae and Nymphalidae showing high species richness and abundance.</li>
+                            <li>Fish: Six species from two orders – Cypriniformes and Perciformes – were documented through samples from local fishers’ nets and dip nets. Several dead fish were observed, particularly <em>Labeo</em> sp. The lake was bereft of native species.</li>
+                            <li>Reptiles: Visual encounter surveys for reptiles that remained active during the day and night revealed 14 species, including geckonids and lizards associated with rocky habitats.</li>
+                            <li>Amphibians: Night-time audio-visual encounter surveys threw up five anuran species. Notably, <em>Common pond frog</em>, rare across Bengaluru city, was found in areas impacted by sewage inflow.</li>
+                            <li>Birds: Invertebrate sampling yielded 373 insect specimens, including 18 bees from four species. The most abundant was <em>Halictus</em> sp.</li>
+                            <li>Plants: Aquatic and emergent vegetation was dominated by species like <em>Typha angustifolia</em> and <em>Alternanthera philoxeroides</em>, which covered most part of the lake. Bunds supported grasses and herbaceous plants, while invasives, such as <em>Parthenium hysterophorus</em> and <em>Lantana camara</em>, were prevalent everywhere.</li>
+                        
+
 
                     </ul>
-                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/lake_cleanup.mp4"/>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/biodiversity.mp4" />
 
                 </span>
             ),
@@ -92,8 +99,28 @@ const Restoration = () => {
         },
         {
             id: 4,
+            title: "Lake clean-up",
+            width: "w-8/13",
+            content: (
+                <span>
+                    <ul className="list-disc px-2 mb-4 space-y-2">
+                        <li>Removal of water hyacinth, plastic and other accumulated waste.</li>
+                        <li>Uprooting of Lantana and Parthenium from the area surrounding the lake.</li>
+                        <li>Collecting the quarry and construction waste to be repurposed.</li>
+
+                    </ul>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Lake_cleanup.mp4" />
+
+                </span>
+            ),
+
+            creature: "/rockagama.png",
+
+        },
+        {
+            id: 5,
             title: "Installing tech-integrated nature-based solutions",
-            width: "w-8/12",
+            width: "w-9/13",
             content: (
                 <span>
                     <ul className="list-disc mb-4 space-y-2">
@@ -122,9 +149,9 @@ const Restoration = () => {
 
         },
         {
-            id: 5,
+            id: 6,
             title: "Rewilding the lake",
-            width: "w-9/12",
+            width: "w-10/13",
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
@@ -135,30 +162,7 @@ const Restoration = () => {
 
 
                     </ul>
-                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/rewilding.mp4"/>
-
-
-                </span>
-            ),
-
-            creature: "🦅",
-
-        },
-        {
-            id: 6,
-            title: "Formation of lake trust",
-            width: "w-10/12",
-            content: (
-                <span>
-                    <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Pressure from residents prompts action from the civic body to restore the lake.</li>
-                        <li>When restoration efforts lag, residents shift focus to the heritage value of the lake, citing the GTS Tower, through rallies and collective actions. </li>
-                        <li>Residents form a trust – Chokkanahalli Sampigehalli Abhivriddhi Forum –  attracting significant media attention.</li>
-
-
-                    </ul>
-                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Resident_trust%20formation.mp4"/>
-
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/rewilding%20the%20lake.mp4" />
 
 
                 </span>
@@ -169,8 +173,31 @@ const Restoration = () => {
         },
         {
             id: 7,
+            title: "Formation of lake trust",
+            width: "w-11/13",
+            content: (
+                <span>
+                    <ul className="list-disc px-2 mb-4 space-y-2">
+                        <li>Pressure from residents prompts action from the civic body to restore the lake.</li>
+                        <li>When restoration efforts lag, residents shift focus to the heritage value of the lake, citing the GTS Tower, through rallies and collective actions. </li>
+                        <li>Residents form a trust – Chokkanahalli Sampigehalli Abhivriddhi Forum –  attracting significant media attention.</li>
+
+
+                    </ul>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Resident_trust%20formation.mp4" />
+
+
+
+                </span>
+            ),
+
+            creature: "🦅",
+
+        },
+        {
+            id: 8,
             title: "Engaging youth through schools",
-            width: "w-11/12",
+            width: "w-12/13",
             content: (
                 <span>
 
@@ -181,7 +208,7 @@ const Restoration = () => {
 
                     </ul>
 
-                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/The%20Lake%20Explorers.mp4"/>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/The%20Lake%20Explorers.mp4" />
 
                 </span>
             ),
@@ -190,7 +217,7 @@ const Restoration = () => {
 
         },
         {
-            id: 7,
+            id: 9,
             title: "Participatory water quality monitoring",
             width: "w-full",
             content: (
@@ -202,6 +229,7 @@ const Restoration = () => {
                         <li>Equipped with the right skills, residents take ownership of the lake’s responsibilities.</li>
 
                     </ul>
+                    <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/The%20Lake%20Explorers.mp4" />
 
                 </span>
             ),
@@ -217,42 +245,42 @@ const Restoration = () => {
     const [birdside, Setbirdside] = useState(0)
 
     const stepRefs = useRef<HTMLDivElement[]>([]);
-stepRefs.current = []; // reset length on each render
+    stepRefs.current = []; // reset length on each render
 
-const birdside_list=[-220,-180,-160,-140,-120,-100,-80,-60,-40,-20,0]
-const[currentbird, Setcurrentbird]=useState('/bird-sit.gif')
+    const birdside_list = [-220, -180, -160, -140, -120, -100, -80, -60, -40, -20, 0]
+    const [currentbird, Setcurrentbird] = useState('/bird-sit.gif')
 
 
     const handleActive = (index: number) => {
-  Setactiveitem(steps[index].title);
+        Setactiveitem(steps[index].title);
 
-  const stepEl = stepRefs.current[index];
-  const container = document.querySelector('.restoration-container')!;
+        const stepEl = stepRefs.current[index];
+        const container = document.querySelector('.restoration-container')!;
 
-  if (stepEl && container) {
-    const containerTop = container.getBoundingClientRect().top + window.scrollY;
-    const elementTop = stepEl.getBoundingClientRect().top + window.scrollY;
+        if (stepEl && container) {
+            const containerTop = container.getBoundingClientRect().top + window.scrollY;
+            const elementTop = stepEl.getBoundingClientRect().top + window.scrollY;
 
-    const containerside = container.getBoundingClientRect().top + window.scrollX;
-    const elementside = stepEl.getBoundingClientRect().top + window.scrollX;
+            const containerside = container.getBoundingClientRect().top + window.scrollX;
+            const elementside = stepEl.getBoundingClientRect().top + window.scrollX;
 
-    const top = elementTop - containerTop + stepEl.offsetHeight / 2-85 ; // 25 = half bird height
-    const side = elementside - containerside + stepEl.offsetHeight / 2 - 25; // 25 = half bird height
+            const top = elementTop - containerTop + stepEl.offsetHeight / 2 - 85; // 25 = half bird height
+            const side = elementside - containerside + stepEl.offsetHeight / 2 - 25; // 25 = half bird height
 
-    Setcurrentbird('/bird-fly.gif')
-    setTimeout(() => {
-   Setcurrentbird('/bird-sit.gif')
-}, 500);
-
-    
+            Setcurrentbird('/bird-fly.gif')
+            setTimeout(() => {
+                Setcurrentbird('/bird-sit.gif')
+            }, 500);
 
 
 
-    Setbirdtop(top );
-    Setbirdside(birdside_list[index]);
 
-  }
-};
+
+            Setbirdtop(top);
+            Setbirdside(birdside_list[index]);
+
+        }
+    };
 
 
 
@@ -307,12 +335,12 @@ const[currentbird, Setcurrentbird]=useState('/bird-sit.gif')
 
 
                         {steps.map((step, index) => (
-                            <div   ref={el => {stepRefs.current[index] = el!}} onClick={(()=>{scrollWithOffset('step'+index)})}
+                            <div ref={el => { stepRefs.current[index] = el! }} onClick={(() => { scrollWithOffset('step' + index) })}
                                 key={index}
                                 className={`bg-[#087f9b] ${step.width} ${activeitem === step.title ? "bg-[#087f9b]" : "md:bg-gray-400"}  rounded-xl p-2 md:p-4 text-white font-semibold restoration-container cursor-pointer`}
                             >
                                 <h1 className="text-[12px] font-normal"> </h1>
-                                <div> {index+1}. {step.title} </div>
+                                <div> {index + 1}. {step.title} </div>
                             </div>
                         ))}
 
@@ -334,7 +362,7 @@ const[currentbird, Setcurrentbird]=useState('/bird-sit.gif')
                 {/* Right column: Accordion */}
                 <div className="md:w-2/3 flex flex-col gap-5 md:gap-[40vh]">
                     {steps.map((step, index) => (
-                        <div id={'step'+index} key={index} className="p-4 border-2 bg-white px-6 rounded-xl shadow-xl border-gray-200 item_container">
+                        <div id={'step' + index} key={index} className="p-4 border-2 bg-white px-6 rounded-xl shadow-xl border-gray-200 item_container">
                             <h1 className='w-full color-b font-semibold text-lg py-2'>{step.title}</h1>
                             <span className='text-sm'>{step.content}</span>
 
