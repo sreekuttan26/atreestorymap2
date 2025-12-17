@@ -32,6 +32,7 @@ const Transformation2 = () => {
                         <li>The water surface grows clear and free of weeds.</li>
                         <li>Algal blooms reduce.</li>
 
+
                     </ul>
 
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/waterquality_transformation.mp4" />
@@ -54,6 +55,7 @@ const Transformation2 = () => {
                         <li>Repurposed construction material and quarry waste serve as canvases showcasing the lake’s biodiversity.</li>
                         <li>Artworks, retaining the natural texture of the rocks, help people anticipate what they might encounter at the lake.</li>
                         <li>Repurposed tyres, debris and Lantana serve as seats.</li>
+
 
                     </ul>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/creatures%20on%20canvas.mp4" />
@@ -79,7 +81,8 @@ const Transformation2 = () => {
                     <ul className="list-disc px-4 mb-4 space-y-2">
                         <li>The local fisherfolk reintroduce native fish species.</li>
                         <li>Native plant species, prioritised for all planting efforts, thrive under people’s care.</li>
-                        <li>Orchids, placed carefully on trees, bloom seasonally.</li>
+                        <li>Orchids planted on trees flourish.</li>
+
 
 
                     </ul>
@@ -105,7 +108,9 @@ const Transformation2 = () => {
 
                     <ul className="list-disc px-4 mb-4 space-y-2">
                         <li>Carefully curated butterfly host and nectar plants, along with bee-friendly species, welcome diverse wildlife visitors.</li>
-                        <li>Bee hotels provide ample nesting spaces for solitary bees.</li>
+                        <li>Solitary bees settle into the bee hotels.</li>
+                        <li>A walk along bee hotels helps foster ‘beephilia’ – a fearless appreciation of these important pollinators.</li>
+
 
                     </ul>
 
@@ -140,9 +145,10 @@ const Transformation2 = () => {
 
                 <div>
                     <ul className="list-disc px-4 mb-4 space-y-2">
-                        <li>Bird species, like cormorants, Oriental darters, stilts, ducks and even pelicans, throng to the lake in healthy numbers.</li>
-                        <li>The floating islands turn nesting grounds for resident water birds.</li>
-                        <li>The crowning moment is the return of the Pied kingfisher, which seeks clean water to dive and hunt for fish.</li>
+                        <li>Bird species, like cormorants, Oriental darters, Black-winged stilts, ducks and even pelicans, throng to the lake in healthy numbers.</li>
+                        <li>The floating islands turn into nesting grounds for resident water birds.</li>
+                        <li>The defining moment occurs when the Pied kingfisher returns, realising that the water is clear enough for it to dive and hunt.</li>
+
 
                     </ul>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Biodiversity_transformation.mp4" />
@@ -156,7 +162,45 @@ const Transformation2 = () => {
         },
         {
             id: '6',
-            title: 'Community Stewardship',
+            title: 'Educational material',
+
+
+            content: (
+
+                <div className='flex flex-col gap-5'>
+                    <ul className="list-disc px-4  mb-4 space-y-2">
+                        <li>Researchers put together a pocket guide on the birds and butterflies of Venkateshpura.</li>
+                        <li>A place-based educational kit, designed for youth engagement, outlines varied information, such as the water cycle, lake health monitoring tips, methods for sampling flora and fauna and the ecosystem services of the lake.</li>
+                    </ul>
+
+                    <div className='grid md:grid-cols-2 gap-4 h-[200px]'>
+                        <a className='relative' href="https://drive.google.com/file/d/1gEIwSm-eO56r8aWUQsphZrbsxG9_PqHC/view?usp=drive_link" target="_blank">
+                            <div className="bg-[url('/pocket_guide.jpg')] bg-cover bg-center  w-full h-full rounded-2xl shadow-2xl flex flex-col-reverse">
+                            <div className='bg-[#087f9b]/80 text-center text-white rounded-b-xl p-2 hover:bg-[#087f9b]'>VENKATESHPURA Wetland Field Journal </div>
+
+                            </div>
+                           
+                            
+                           
+
+                        </a>
+                        <a className='relative' href="https://drive.google.com/file/d/1fEqbJgRtwnJd1EpWRNumGC0Bzrv4mBX6/view?usp=drive_link" target="_blank">
+                           <div className="bg-[url('/butterfly_guide.jpg')] bg-cover bg-center  w-full h-full rounded-2xl shadow-2xl flex flex-col-reverse">
+                            <div className='bg-[#087f9b]/80 text-center text-white rounded-b-xl p-2 hover:bg-[#087f9b]'>Butterfly Field Guide </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            ),
+
+
+            imageUrl: '/t6.png'
+        },
+        {
+            id: '7',
+            title: 'Community-led conservation',
 
 
             content: (
@@ -165,11 +209,13 @@ const Transformation2 = () => {
                     <ul className="list-disc px-4  mb-4 space-y-2">
                         <li>A self-sustaining model takes shape at Venkateshpura Lake.</li>
                         <li>Sustained community-driven efforts transform the lake from a neglected waterbody into a vibrant public space.</li>
-                        <li>The lake attracts a lot of footfall and active daily use by residents. Women are seen even at noon sitting on the benches enjoying the afternoon breeze.</li>
-                        <li>The Lake Forum is well-informed about potential pollution sources and knows whom to alert during issues like algal blooms.</li>
+                        <li>The lake attracts considerable daily footfall from the community. Even at noon, women can be seen sitting on the benches, enjoying the afternoon breeze.</li>
+                        <li>The lake forum is well-informed about potential pollution sources and knows whom to alert during issues like algal blooms.</li>
                         <li>Members regularly document and share photos of birds, sunrises and sunsets, building pride and a sense of connection.</li>
                         <li>Through the lake trust, residents take charge of the emerging challenges.</li>
-                        <li>Stage is set for a long-term, community-driven model of lake restoration.</li>
+                        <li>The stage is set for a long-term, community-driven model of lake restoration.</li>
+
+
 
                     </ul>
 
@@ -273,11 +319,11 @@ const Transformation2 = () => {
 
     return (
         <div className='w-full h-full'>
-             <div className={`${spacing}`}>
-             <Heading text='Transformation' />
-        </div>
-            <BeforeAfterSlider/>
-            
+            <div className={`${spacing}`}>
+                <Heading text='Transformation' />
+            </div>
+            <BeforeAfterSlider />
+
             {/* <Bodytext text={"Civilisations evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."} /> */}
             <div className='flex flex-col gap-2 relative w-full h-full'>
                 <img ref={img_ref}
@@ -303,7 +349,7 @@ const Transformation2 = () => {
 
 
                     ))}
-                    <div className=" h-[10px]"></div>
+                    <div className=" h-[30px]"></div>
                     {/* <div className='h-[50vh]'></div> */}
 
                 </div>

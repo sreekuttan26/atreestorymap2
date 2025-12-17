@@ -347,7 +347,7 @@ export default function StoryTimeline() {
                         <div className="relative bg-white backdrop-blur-xl rounded-3xl  border border-gray-200 shadow-2xl">
                             {/* Image Section */}
                             <div className="relative h-64 md:h-95 ">
-                                <img
+                                <img 
                                     src={currentEvent.image}
                                     alt={currentEvent.title}
                                     className="w-full h-full object-cover transition-transform duration-700 object-center"

@@ -17,10 +17,10 @@ const storySections: StorySection[] = [
       <div>
        
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li>Control sewage flow and waste dumping</li>
-          <li>Ensure flow between lakes – inlet/outlet</li>
-          <li>Install nature-based solutions like aerator, floating island</li>
-          <li>Regular community driven water quality monitoring.</li>
+          <li>Control sewage flow and waste dumping.</li>
+          <li>Ensure water from Venkateshpura Lake drains into Rachenahalli Lake. </li>
+          <li>Install tech-integrated nature-based solutions, like floating islands for nutrients and aerators for oxygen.</li>
+          <li>Conduct regular water quality monitoring with the community. </li>
           <li>Re-introduce native fish and other aquatic species.</li>
         </ul>
       </div>
@@ -35,7 +35,7 @@ const storySections: StorySection[] = [
         
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Remove water hyacinth, Lantana and other weeds.</li>
-          <li>Create uncemented walking paths.</li>
+          <li>Create natural, unpaved walking paths.</li>
           <li>Plant native species suitable for the landscape.</li>
         </ul>
       </div>
@@ -50,7 +50,7 @@ const storySections: StorySection[] = [
         
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Install bee hotels to support pollinator diversity.</li>
-          <li>Grow food plants for Solitary bees.</li>
+          <li>Grow food plants for Solitary bees..</li>
           <li>Create butterfly garden patches.</li>
         </ul>
       </div>
@@ -64,7 +64,7 @@ const storySections: StorySection[] = [
       <div>
         
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li>Create awareness about the historical structure.</li>
+          <li>Showcase the heritage significance of the structure.</li>
           <li>Halt rock quarrying.</li>
           <li>Be vigilant to further encroachments.</li>
         </ul>

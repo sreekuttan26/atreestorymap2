@@ -27,6 +27,8 @@ import Xy from "./components/Xy";
 import Degradation_img from "./components/Degradation_img";
 import Keyactor_spotlight from "./components/Keyactor_spotlight";
 import Timeline from "./components/Timeline";
+import BirdCursor from "./components/Birdcursor";
+import NewBegining from "./components/NewBegining";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -87,6 +89,13 @@ export default function Home() {
   }, [])
 
 
+  const [showbird, setShowbird] = useState(false);
+
+  const lockunloackbird = () => {
+    setShowbird(!showbird);
+  }
+
+
 
 
 
@@ -94,6 +103,7 @@ export default function Home() {
     <main className='w-full h-full flex flex-col '>
 
       <BreakpointDisplay />
+      <BirdCursor showbird={showbird} />
      
 
 
@@ -134,7 +144,7 @@ export default function Home() {
 
 
       {/* History */}
-      <div ref={sectionRefs.History} className={`w-full h-full ${spacing} `} id="history">
+      <div ref={sectionRefs.History} className={`w-full h-full ${spacing}  `} id="history">
         <History />
       </div>
 
@@ -151,9 +161,7 @@ export default function Home() {
         <Keyactor_spotlight />
       </div>
 
-      {/* <div ref={sectionRefs.Key_Actors} className={`w-full h-full ${spacing} `} id="keyactors">
-        <Stakeholders />
-      </div> */}
+     
 
 
       <Pagebreak image='/pagebreak_bufello.png' />
@@ -175,7 +183,7 @@ export default function Home() {
 
 
       <div className={`w-full h-full ${spacing} `} >
-        <Mascot />
+        <Mascot lockunloackbird={lockunloackbird} lockedbird={showbird} />
       </div>
 
 
@@ -196,6 +204,10 @@ export default function Home() {
 
       <Pagebreak image='/pagebreak_rock.png'/>
 
+
+       <div  className={`w-full h-full  ${spacing}  `} id="newbegining">
+        <NewBegining/>
+      </div>
 
        <div ref={sectionRefs.Timeline} className={`w-full h-full  `} id="timeline">
         <Timeline/>

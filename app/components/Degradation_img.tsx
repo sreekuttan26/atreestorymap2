@@ -36,11 +36,11 @@ const Degradation = () => {
   return (
     <div>
       <div className={`${spacing}`}>
-        <Heading text="Degradation"></Heading>
+        <Heading text="Degradation of the lake"></Heading>
       </div>
 
 
-      <div ref={containerRef} className="relative w-full" style={{ height: '200vh' }}>
+      <div ref={containerRef} className="relative w-full " style={{ height: '200vh' }}>
         {/* Fixed image container */}
         <div className="sticky top-0 left-0 w-full h-screen overflow-hidden">
           <div className="relative w-full h-full bg-white">
@@ -96,7 +96,7 @@ const Degradation = () => {
 
       </div>
       <div className={`${spacing}`}>
-        <Bodytext text={'As the modern city slowly encroached, the lake lost its natural connection with other lakes. Water hyacinth took over large parts of the lake. Invasives like Lantana and Parthenium spread around the lake crippling its ecological balance. Large scale mining around the lake destroyed its natural rock formation. Quarrying destroyed parts of the historical GTS structure. Untreated sewage was released into the lake from neighbouring buildings. The water turned stagnant and green with algal bloom, killing fish and other aquatic life. Plastic, cloth waste and construction debris added to the deterioration of the lake. '}/>
+        <Bodytext text={'As the modern city slowly encroached, the lake lost its natural connection with its downstream lake. Water hyacinth took over large parts of the waterbody. Invasives like Lantana and Parthenium spread around the lake crippling its ecological balance. Large-scale mining around the lake wrecked the natural rock formation. Quarrying destroyed parts of the historical GTS structure. Untreated sewage was released into the lake from neighbouring buildings. The water turned stagnant and green with algal bloom, killing fish and other aquatic life. Plastic, cloth waste and construction debris added to the deterioration of the lake. '}/>
 
       </div>
       

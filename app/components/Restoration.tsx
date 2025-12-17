@@ -31,52 +31,13 @@ const Restoration = () => {
                 <span>
 
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Declined water quality with untreated sewage inflow.</li>
+                        <li>Declined water quality with untreated sewage inflow</li>     
                         <li>Overgrowth of invasives, such as Lantana and Parthenium.</li>
-                        <li>Loss of ecosystem services, like groundwater recharge and biodiversity.</li>
+                        <li>Loss of ecosystem services, like groundwater recharge and biodiversity support.</li>
                         <li>Haven for illegal activities.</li>
                         <li>Inconducive for human use and recreation.</li>
                         <li>Need to involve local community.</li>
                     </ul>
-
-
-                    {/* <span><b>Secchi Depth:</b> A 20-cm disc attached to a marked rope was lowered into the water to measure its clarity or transparency.                 </span>
-
-                    <div className='mt-10'>
-                        <span>
-                            <b>Dissolved Oxygen:</b> A handheld probe with a meter and a sensor was used to measure the amount of dissolved oxygen available for aquatic life – plants, fish and other organisms.
-                        </span>
-                        <video
-                            src="https://atree-communication.s3.amazonaws.com/Storymap_media/How%20healthy%20is%20your%20lake.mp4"
-                            className="w-full rounded-xl mt-5 object-contain handle-video object-top "
-
-                            muted
-                            playsInline
-                            controls
-                            autoPlay
-
-
-                        />
-
-                    </div>
-
-                    <div className='mt-10'>
-                        <span>
-                            <b>Shoreline Vegetation: </b>Shoreline vegetation was carefully planned and planted to filter run-off, absorb excess nutrients and provide shelter for small fish and zooplankton.
-
-                        </span>
-                        <video
-                            src="https://atree-communication.s3.amazonaws.com/Storymap_media/biodiversity.mp4"
-                            className="w-full max-h-[50vh]  rounded-xl mt-5 object-contain handle-video"
-
-                            muted
-                            playsInline
-                            controls
-                            autoPlay
-
-                        />
-
-                    </div> */}
 
 
 
@@ -93,10 +54,10 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Secchi Depth: A 20-cm disc attached to a marked rope, when lowered into the water, measures water clarity.</li>
-                        <li><strong>Dissolved Oxygen:</strong> A handheld probe with a meter and a sensor measures the amount of dissolved oxygen available for aquatic life – plants, fish and other organisms.</li>
+                        <li><strong>Secchi Depth</strong>: A method of noting how clear the lake water is, using a disc attached to a rope. </li>
+                        <li><strong>Dissolved Oxygen:</strong> A handheld probe with a metre and a sensor measures the amount of dissolved oxygen available for aquatic life – plants, fish and other organisms.</li>
                         <li>Shoreline vegetation: Carefully planned and planted shoreline vegetation filters run-off, absorbs excess nutrients and provides shelter for small fish and zooplankton.</li>
-                        <li>Systematic baseline surveys of butterflies, fishes, reptiles, birds, amphibians, bees and vegetation provide valuable data that help chart a roadmap for conserving the lake.</li>
+                        <li>Systematic baseline surveys of butterflies, bees, odonates, fishes, amphibians, reptiles, birds and vegetation provide valuable data that help chart a roadmap for conserving the lake.</li>
                     </ul>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/How%20healthy%20is%20your%20lake.mp4"/>
 
@@ -131,13 +92,13 @@ const Restoration = () => {
         },
         {
             id: 4,
-            title: "Installing nature-based solutions",
+            title: "Installing tech-integrated nature-based solutions",
             width: "w-8/12",
             content: (
                 <span>
                     <ul className="list-disc mb-4 space-y-2">
                         <li>Aerators, by circulating water, increase the dissolved oxygen.</li>
-                        <li>Floating islands, with native vegetation like Cyperus, Typha and Centella Asiatica, filter contaminants and prevent nutrient build-up.</li>
+                        <li>Floating islands, with native vegetation like Cyperus, Typha and Centella asiatica, filter contaminants and prevent nutrient build-up.</li>
                         <li>Removing water hyacinth and weeds along the shore and planting native species facilitate soil stability and support biodiversity.</li>
 
                     </ul>
@@ -167,10 +128,10 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Butterfly mounds with host plants for caterpillars and nectar plants for adult butterflies.</li>
-                        <li>A “bee hotel”, made of natural materials like dead wood, bamboo and twigs, to attract solitary bees vital for pollination.</li>
-                        <li>Uncemented walking trails instead of conventional paved paths to encourage slower, mindful walking.</li>
-                        <li>Trails mimicking the dry Deccan gardens with grasses that Bangalore historically had.</li>
+                        <li>Butterfly mounds layered with stones, logs, soil and compost to grow host plants for caterpillars and nectar plants for adult butterflies. </li>
+                        <li>A “bee hotel” made of natural materials like dead wood, bamboo and twigs, to attract solitary bees that thrive in cityscapes and are vital for pollination, but increasingly lack nesting and foraging spaces. </li>
+                        <li>Unpaved walking trails instead of conventional cemented paths to encourage slower, mindful walking.</li>
+                        <li>Trails mimicking the dry Deccan gardens with grasses that Bengaluru historically had.</li>
 
 
                     </ul>
@@ -190,9 +151,9 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Pressure from residents prompt action from the civic body to restore the lake.</li>
-                        <li>When restoration efforts lag, residents shift focus to the heritage value of the lake, citing the GTS Tower, through rallies and collective actions.</li>
-                        <li>Residents form a trust – Chokkanahalli Sampigehalli Abhivriddhi Forum – attracting significant media attention.</li>
+                        <li>Pressure from residents prompts action from the civic body to restore the lake.</li>
+                        <li>When restoration efforts lag, residents shift focus to the heritage value of the lake, citing the GTS Tower, through rallies and collective actions. </li>
+                        <li>Residents form a trust – Chokkanahalli Sampigehalli Abhivriddhi Forum –  attracting significant media attention.</li>
 
 
                     </ul>
@@ -214,8 +175,9 @@ const Restoration = () => {
                 <span>
 
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Games, biodiversity walks and other activities introduce schoolchildren to the concept of a wetland and its importance.</li>
-                        <li>Researchers put together a pocket guide on the butterflies and a place-based educational kit on the flora and fauna of the lake.</li>
+                        <li>Games, biodiversity walks and other activities introduce schoolchildren to the concept of a wetland and its importance, as well as the diversity of flora and fauna present at the lake. </li>
+                        <li>School children engage in a game of metaphors to understand the importance of the lake.</li>
+                        <li>Students learn to keep a nature journal and record their observations of the wildlife around the lake.</li>
 
                     </ul>
 
