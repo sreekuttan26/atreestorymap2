@@ -166,7 +166,7 @@ const Transformation2 = () => {
                         <li>A place-based educational kit, designed for youth engagement, outlines varied information, such as the water cycle, lake health monitoring tips, methods for sampling flora and fauna and the ecosystem services of the lake.</li>
                     </ul>
 
-                    <div className='grid md:grid-cols-2 gap-4 h-[200px]'>
+                    <div className='grid md:grid-cols-2 gap-4 h-[400px] md:h-[200px]'>
                         <a className='relative' href="https://drive.google.com/file/d/1gEIwSm-eO56r8aWUQsphZrbsxG9_PqHC/view?usp=drive_link" target="_blank">
                             <div className="bg-[url('/pocket_guide.jpg')] bg-cover bg-center  w-full h-full rounded-2xl shadow-2xl flex flex-col-reverse">
                                 <div className='bg-[#087f9b]/80 text-center text-white rounded-b-xl p-2 hover:bg-[#087f9b]'>VENKATESHPURA Wetland Field Journal </div>
