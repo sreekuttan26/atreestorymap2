@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Heading from './Heading';
 import Bodytext from './Bodytext';
+import ImageSlider from './ImageSlider';
 
 
 interface TimelineEvent {
@@ -91,7 +92,7 @@ const LakeStoryMap = () => {
             </ul>,
 
             color: "from-blue-400 to-[#087f9b]",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2025_2010.JPG"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/2025_2010.JPG"]
         },
         {
             year: "2010 - 2014",
@@ -133,7 +134,7 @@ const LakeStoryMap = () => {
 
 
             color: "from-green-400 to-emerald-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2014_2020.jpg"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/2014_2020.jpg"]
         },
         {
             year: "2014-2020",
@@ -171,7 +172,7 @@ const LakeStoryMap = () => {
             ,
 
             color: "from-orange-400 to-red-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2010_2014.jpg"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/2010_2014.jpg"]
         },
         {
             year: "2020-2022",
@@ -209,7 +210,7 @@ const LakeStoryMap = () => {
             ,
 
             color: "from-green-400 to-green-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2020_2022.JPG"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/2020_2022.JPG"]
         },
         {
             year: "2022",
@@ -261,7 +262,7 @@ const LakeStoryMap = () => {
             ,
 
             color: "from-purple-400 to-pink-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2022.jpg"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/2022.jpg","https://atree-communication.s3.amazonaws.com/Storymap_media/2007.jpg"]
         },
         {
             year: "2022 -2025",
@@ -292,21 +293,21 @@ const LakeStoryMap = () => {
                     </ul>
                 </div>
 
-               
-            
 
 
-               
 
-                
 
-               
+
+
+
+
+
 
             </div>
             ,
 
             color: "from-blue-400 to-indigo-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg","https://atree-communication.s3.amazonaws.com/Storymap_media/2022_2025.jpg"]
         },
 
         {
@@ -315,7 +316,7 @@ const LakeStoryMap = () => {
             title: "0",
             description: <div className="space-y-6">
 
-              
+
 
                 {/* Community engagement and education */}
                 <div>
@@ -340,13 +341,13 @@ const LakeStoryMap = () => {
                     </ul>
                 </div>
 
-                
+
 
             </div>
             ,
 
             color: "from-blue-400 to-indigo-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"]
         },
         {
             year: "2022 -2025",
@@ -354,9 +355,9 @@ const LakeStoryMap = () => {
             title: "0",
             description: <div className="space-y-6">
 
-              
 
-               
+
+
 
                 {/* Design and innovation */}
                 <div>
@@ -381,14 +382,14 @@ const LakeStoryMap = () => {
                     </ul>
                 </div>
 
-                
+
 
 
             </div>
             ,
 
             color: "from-blue-400 to-indigo-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
+           image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"]
         },
         {
             year: "2022 -2025",
@@ -396,11 +397,11 @@ const LakeStoryMap = () => {
             title: "0",
             description: <div className="space-y-6">
 
-              
 
-               
 
-                
+
+
+
 
                 {/* Sustainable initiatives */}
                 <div>
@@ -425,13 +426,13 @@ const LakeStoryMap = () => {
                     </ul>
                 </div>
 
-               
+
 
             </div>
             ,
 
             color: "from-blue-400 to-indigo-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"]
         },
         {
             year: "2022 -2025",
@@ -439,7 +440,7 @@ const LakeStoryMap = () => {
             title: "0",
             description: <div className="space-y-6">
 
-              
+
 
                 {/* Inclusive changes */}
                 <div>
@@ -468,7 +469,7 @@ const LakeStoryMap = () => {
             ,
 
             color: "from-blue-400 to-indigo-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"]
         },
 
 
@@ -507,7 +508,7 @@ const LakeStoryMap = () => {
             ,
 
             color: "from-teal-400 to-green-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2023_2025.JPG"
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/2023_2025.JPG"]
         },
         // {
         //     year: "",
@@ -633,12 +634,17 @@ const LakeStoryMap = () => {
                                     {/* Image Card */}
                                     <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
                                         <div className="relative group w-full h-64 md:h-full">
-                                            <img
+                                            {/* <img
                                                 src={event.image}
                                                 alt={event.title}
                                                 className="w-full h-full min-h-64 object-cover transform group-hover:scale-120 transition-transform duration-700"
+                                            /> */}
+                                            <ImageSlider
+                                                images={event.image}
+                                                autoPlay={false}
+                                                interval={4000}
                                             />
-                                            <div className={`absolute inset-0 bg-gradient-to-t ${event.color} opacity-10 group-hover:opacity-20 transition-opacity`} />
+                                            {/* <div className={`absolute inset-0 bg-gradient-to-t ${event.color} opacity-10 group-hover:opacity-20 transition-opacity`} /> */}
                                         </div>
                                     </div>
                                 </div>
