@@ -292,6 +292,31 @@ const LakeStoryMap = () => {
                     </ul>
                 </div>
 
+               
+            
+
+
+               
+
+                
+
+               
+
+            </div>
+            ,
+
+            color: "from-blue-400 to-indigo-400",
+            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
+        },
+
+        {
+            year: "2022 -2025",
+            period: "Ecological and social restoration",
+            title: "0",
+            description: <div className="space-y-6">
+
+              
+
                 {/* Community engagement and education */}
                 <div>
                     <h3 className="text-slate-800 text-lg font-semibold mb-2">Community engagement and education</h3>
@@ -314,6 +339,24 @@ const LakeStoryMap = () => {
                         </li>
                     </ul>
                 </div>
+
+                
+
+            </div>
+            ,
+
+            color: "from-blue-400 to-indigo-400",
+            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
+        },
+        {
+            year: "2022 -2025",
+            period: "Ecological and social restoration",
+            title: "0",
+            description: <div className="space-y-6">
+
+              
+
+               
 
                 {/* Design and innovation */}
                 <div>
@@ -338,6 +381,27 @@ const LakeStoryMap = () => {
                     </ul>
                 </div>
 
+                
+
+
+            </div>
+            ,
+
+            color: "from-blue-400 to-indigo-400",
+            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
+        },
+        {
+            year: "2022 -2025",
+            period: "Ecological and social restoration",
+            title: "0",
+            description: <div className="space-y-6">
+
+              
+
+               
+
+                
+
                 {/* Sustainable initiatives */}
                 <div>
                     <h3 className="text-slate-800 text-lg font-semibold mb-2">Sustainable initiatives</h3>
@@ -360,6 +424,22 @@ const LakeStoryMap = () => {
                         </li>
                     </ul>
                 </div>
+
+               
+
+            </div>
+            ,
+
+            color: "from-blue-400 to-indigo-400",
+            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
+        },
+        {
+            year: "2022 -2025",
+            period: "Ecological and social restoration",
+            title: "0",
+            description: <div className="space-y-6">
+
+              
 
                 {/* Inclusive changes */}
                 <div>
@@ -390,9 +470,18 @@ const LakeStoryMap = () => {
             color: "from-blue-400 to-indigo-400",
             image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
         },
+
+
+
+
+
+
+
+
+
         {
             year: "2023-2025",
-            period: "Ecological & Social Restoration",
+            period: " A thriving common",
             title: "Transformation Unfolds",
             description: <ul className="space-y-3">
                 <li className="text-slate-600 text-base flex items-start gap-3">
@@ -421,9 +510,9 @@ const LakeStoryMap = () => {
             image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2023_2025.JPG"
         },
         // {
-        //     year: "2023-2025",
-        //     period: "A Thriving Common",
-        //     title: "A Living Legacy",
+        //     year: "",
+        //     period: "Ecological and social restoration",
+        //     title: "0",
         //     description: [
         //         "Rock based microhabitats created for reptiles.",
         //         " Daily footfall reaches fifty to seventy visitors.",
@@ -432,7 +521,7 @@ const LakeStoryMap = () => {
 
         //     ],
         //     color: "from-green-400 to-lime-400",
-        //     image: ""
+        //     image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2023_2025.JPG"
         // }
     ];
 
@@ -490,15 +579,15 @@ const LakeStoryMap = () => {
                             {/* Timeline Icon - On the left line */}
                             <div className="absolute -left-0 md:-left-4 lg:-left-8 top-8 timeline-icon">
                                 <div
-                                    className={`w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center border-4 transition-all duration-500 ${activeSection === index
-                                        ? 'border-white scale-125 shadow-2xl'
-                                        : 'border-slate-200 scale-100'
+                                    className={`w-20 h-20 rounded-full bg-white shadow-lg border-slate-200 scale-100 items-center justify-center border-4 transition-all duration-500 ${event.title === '0'
+                                        ? 'hidden'
+                                        : 'flex'
                                         }`}
                                 >
                                     <div
-                                        className={`w-18 h-18 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] flex items-center justify-center text-center text-white transition-all duration-500 ${activeSection === index
-                                            ? ' animate-pulse'
-                                            : ''
+                                        className={`w-18 h-18 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b]  items-center justify-center text-center text-white transition-all duration-500 ${event.title === '0'
+                                            ? ' hidden'
+                                            : 'flex'
                                             }`}
                                         style={{
                                             // boxShadow: activeSection === index
