@@ -105,7 +105,7 @@ export default function Home() {
 
       <BreakpointDisplay />
       <BirdCursor showbird={showbird} />
-     
+
 
 
 
@@ -130,7 +130,7 @@ export default function Home() {
        <PlaceZoom/>
       </div> */}
 
-       <Pagebreak image='/pagebreak_waterbird.png'/>
+      <Pagebreak image='/pagebreak_waterbird.png' />
 
 
 
@@ -140,8 +140,8 @@ export default function Home() {
         <Place />
       </div>
 
-      <Pagebreak image='/pagebreak_rockagama.png' /> 
-      
+      <Pagebreak image='/pagebreak_rockagama.png' />
+
 
 
       {/* History */}
@@ -162,7 +162,7 @@ export default function Home() {
         <Keyactor_spotlight />
       </div>
 
-     
+
 
 
       <Pagebreak image='/pagebreak_bufello.png' />
@@ -171,7 +171,7 @@ export default function Home() {
         <Joininghands />
       </div>
 
-       <Pagebreak image='/pagebreak_hands.png' />
+      <Pagebreak image='/pagebreak_hands.png' />
 
 
 
@@ -203,21 +203,21 @@ export default function Home() {
         <Transformation2 />
       </div>
 
-      <Pagebreak image='/pagebreak_rock.png'/>
+      <Pagebreak image='/pagebreak_rock.png' />
 
 
-       <div  className={`w-full h-full  ${spacing}  `} id="newbegining">
-        <NewBegining/>
-      </div>
-
-       {/* <div ref={sectionRefs.Timeline} className={`w-full h-full  `} id="timeline">
+      {/* <div ref={sectionRefs.Timeline} className={`w-full h-full  `} id="timeline">
         <Timeline/>
       </div> */}
 
-       <div ref={sectionRefs.Timeline} className={`w-full h-full  `} id="timeline">
-        <Timeline2/>
+      <div ref={sectionRefs.Timeline} className={`w-full h-full  `} id="timeline">
+        <Timeline2 />
       </div>
 
+
+      <div className={`w-full h-full  ${spacing}  `} id="newbegining">
+        <NewBegining />
+      </div>
 
       {/* Resources */}
       <div ref={sectionRefs.Resources} className={`w-full h-full  `} id="resources">

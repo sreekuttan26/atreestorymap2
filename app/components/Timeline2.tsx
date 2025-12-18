@@ -50,125 +50,390 @@ const LakeStoryMap = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const timelineData: TimelineEvent[] = [
+    const timelineData = [
         {
-            year: "2005",
+            year: "2005 -  2010",
             period: "A Quiet Landscape",
             title: "The Beginning: A Clean Lake",
-            description: [
-                "Sampigehalli village renamed to Venkateshpura",
-                "Lake remains clean and clear",
-                "Small-scale agriculture and modest dairy operations"
-            ],
+            description: <ul className="space-y-3">
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Sampigehalli Lake, clean and clear, supports small-scale farming and dairy at Sampigehalli village
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+
+                    <span>
+                        Renamed Venkateshpura Lake as the village officially becomes Venkateshpura
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span
+                        className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`}
+                    />
+                    <span>
+                        Civic body plants native trees, erects partial fencing with community cooperation
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span
+                        className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`}
+                    />
+                    <span>
+                        Civic body gradually withdraws lake engagement
+                    </span>
+                </li>
+            </ul>,
 
             color: "from-blue-400 to-[#087f9b]",
             image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2025_2010.JPG"
         },
         {
-            year: "2007",
-            period: "First BBMP Engagement",
+            year: "2010 - 2014",
+            period: "Urbanisation and crisis",
             title: "Community & Government Unite",
-            description: [
-                "BBMP adopts tree-planting measures and appoints a caretaker",
-                "Partial fencing is erected with community cooperation",
-                "BBMP work at the lake takes a back seat"
-            ],
+            description:
+                <ul className="space-y-3">
+                    <li className="text-slate-600 text-base flex items-start gap-3">
+                        <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                        <span>
+                            Built-up areas expand around the lake; sewage begins to drain in
+                        </span>
+                    </li>
+
+                    <li className="text-slate-600 text-base flex items-start gap-3">
+                        <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                        <span>
+                            Residents repeatedly appeal to the elected local leader and civic body
+                        </span>
+                    </li>
+
+                    <li className="text-slate-600 text-base flex items-start gap-3">
+                        <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                        <span>
+                            People file PILs; trace lake boundaries and buffer zones
+                        </span>
+                    </li>
+
+                    <li className="text-slate-600 text-base flex items-start gap-3">
+                        <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                        <span>
+                            Residents procure official maps for watershed conservation
+                        </span>
+                    </li>
+                </ul>
+
+
+            ,
 
 
             color: "from-green-400 to-emerald-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2007.jpg"
+            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2014_2020.jpg"
         },
         {
-            year: "2010-2014",
-            period: "Urbanisation and Crisis",
+            year: "2014-2020",
+            period: "Growing pressures",
             title: "Growing Pains",
-            description: [
-                "Built-up areas expand around the lake",
-                "Sewage begins entering the lake",
-                "The community makes repeated representations to the MLA and BBMP",
-                "Residents trace the lake boundaries and buffer zones",
-                "PILs are filed to protect the lake",
-                "Official maps are procured for watershed conservation"
-            ],
+            description: <ul className="space-y-3">
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Apartments rise around the lake; sewage inflow intensifies
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Water hyacinth spreads; weeds overtake the bunds
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Cycle rally organised to save the lake
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Apartment associations join the movement
+                    </span>
+                </li>
+            </ul>
+            ,
 
             color: "from-orange-400 to-red-400",
             image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2010_2014.jpg"
         },
         {
-            year: "2014-2020",
-            period: "Growing Pressures",
-            title: "The Dark Years",
-            description: [
-                "Apartments rise around the lake",
-                "Sewage inflow intensifies",
-                "Water hyacinth spreads",
-                "Bunds become overgrown with Lantana and Parthenium",
-                "A cycle rally is organised to save the lake",
-                "Apartment associations join the movement"
-            ],
-
-            color: "from-amber-400 to-orange-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2014_2020.jpg"
-        },
-        {
             year: "2020-2022",
-            period: "Covid Neglect & Turning Point",
-            title: "Crisis to Catalyst",
-            description: [
-                "The lake becomes fully covered by hyacinth during Covid",
-                "BDA denotifies the lake buffer for Odisha Bhavan and a private school",
-                "Community mobilisation intensifies",
-                "The media takes note, and representations are made to elected members"
-            ],
+            period: "COVID neglect and a turning point",
+            title: "The Dark Years",
+            description: <ul className="space-y-3">
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Lake chokes under hyacinth during COVID
+                    </span>
+                </li>
 
-            color: "from-purple-400 to-pink-400",
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Government body denotifies lake buffer for private buildings
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Community mobilisation intensifies
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Media takes note; residents again appeal to elected bodies
+                    </span>
+                </li>
+            </ul>
+            ,
+
+            color: "from-green-400 to-green-400",
             image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2020_2022.JPG"
         },
         {
             year: "2022",
-            period: "Scientific Restoration Begins",
-            title: "Hope Restored",
-            description: [
-                "BBMP agrees to restore the six-acre lake",
-                "ATREE provides scientific inputs",
-                "A basic DPR is prepared by ALCON",
-                "ATREE receives the research permit and grant",
-                "The restoration framework is co-created with the community",
-                "PLUS develops an expanded DPR, partially realised",
-                "VIMOS supports the implementation of select design elements alongside BBMP plans, including draining and dredging"
-            ],
+            period: "Scientific restoration begins",
+            title: "Crisis to Catalyst",
+            description: <ul className="space-y-3">
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Civic body agrees to restore the lake
+                    </span>
+                </li>
 
-            color: "from-blue-400 to-indigo-400",
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        NGO ATREE joins hands, provides scientific inputs
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        ALCON Laboratories prepares detailed project report (DPR)
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        Restoration framework co-created with community
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        PLUS, a partner, develops expanded DPR
+                    </span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>
+                        VIMOS supports implementation of select design elements along with BBMP plans, draining, and dredging
+                    </span>
+                </li>
+            </ul>
+            ,
+
+            color: "from-purple-400 to-pink-400",
             image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2022.jpg"
         },
         {
-            year: "2022-2025",
-            period: "Ecological & Social Restoration",
-            title: "Transformation Unfolds",
-            description: [
-                "Baseline Work",
-                "Habitat Restoration",
-                "Water quality monitoring shows improvement",
-                "Heritage signages installed for GTS tower and temple"
-            ],
+            year: "2022 -2025",
+            period: "Ecological and social restoration",
+            title: "Hope Restored",
+            description: <div className="space-y-6">
 
-            color: "from-teal-400 to-green-400",
-            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2022_2025.jpg"
+                {/* Rebuilding ecosystem */}
+                <div>
+                    <h3 className="text-slate-800 text-lg font-semibold mb-2">Rebuilding ecosystem</h3>
+                    <ul className="space-y-3">
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Biodiversity surveys conducted</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Water monitored continuously</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Lantana removal initiated</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Butterfly trails established</span>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Community engagement and education */}
+                <div>
+                    <h3 className="text-slate-800 text-lg font-semibold mb-2">Community engagement and education</h3>
+                    <ul className="space-y-3">
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Signages installed about GTS Tower and Temple</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Stakeholder meetings organised</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Nature education module developed</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Day and night walks conducted for community</span>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Design and innovation */}
+                <div>
+                    <h3 className="text-slate-800 text-lg font-semibold mb-2">Design and innovation</h3>
+                    <ul className="space-y-3">
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>PLUS develops zoning and visualisation plans</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Tech-integrated nature-based solutions identified</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Plans roll for floating islands and aerators</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>VIMOS helps implement key design elements</span>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Sustainable initiatives */}
+                <div>
+                    <h3 className="text-slate-800 text-lg font-semibold mb-2">Sustainable initiatives</h3>
+                    <ul className="space-y-3">
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Lantana and tyres repurposed into seating</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Construction rubble used for biodiversity art</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Bee resort installed</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Pied kingfisher declared lake mascot</span>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Inclusive changes */}
+                <div>
+                    <h3 className="text-slate-800 text-lg font-semibold mb-2">Inclusive changes</h3>
+                    <ul className="space-y-3">
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Grazing access maintained for villagers</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Edible grasses and summer water trough established</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Fishermen engaged in restoration process</span>
+                        </li>
+                        <li className="text-slate-600 text-base flex items-start gap-3">
+                            <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                            <span>Native fishes reintroduced alongside commercial species</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            ,
+
+            color: "from-blue-400 to-indigo-400",
+            image: "https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"
         },
         {
             year: "2023-2025",
-            period: "A Thriving Common",
-            title: "A Living Legacy",
-            description: [
-                "Rock based microhabitats created for reptiles.",
-                " Daily footfall reaches fifty to seventy visitors.",
-                "Slow walk trails planned.",
-                "Visitor observation dashboard developed.",
+            period: "Ecological & Social Restoration",
+            title: "Transformation Unfolds",
+            description: <ul className="space-y-3">
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>Rock-based microhabitats created for reptiles</span>
+                </li>
 
-            ],
-            color: "from-green-400 to-lime-400",
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>Lake receives nearly seventy visitors daily</span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>Slow walk trails planned</span>
+                </li>
+
+                <li className="text-slate-600 text-base flex items-start gap-3">
+                    <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
+                    <span>Visitor observation dashboard developed</span>
+                </li>
+            </ul>
+            ,
+
+            color: "from-teal-400 to-green-400",
             image: "https://atree-communication.s3.amazonaws.com/Storymap_media/2023_2025.JPG"
-        }
+        },
+        // {
+        //     year: "2023-2025",
+        //     period: "A Thriving Common",
+        //     title: "A Living Legacy",
+        //     description: [
+        //         "Rock based microhabitats created for reptiles.",
+        //         " Daily footfall reaches fifty to seventy visitors.",
+        //         "Slow walk trails planned.",
+        //         "Visitor observation dashboard developed.",
+
+        //     ],
+        //     color: "from-green-400 to-lime-400",
+        //     image: ""
+        // }
     ];
 
     const scrollToSection = (index: number) => {
@@ -180,7 +445,7 @@ const LakeStoryMap = () => {
         <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-slate-100">
             <div className={`${spacing}`}>
                 <Heading text='TimeLine' />
-                <Bodytext text="Venkateshpura Nagar Lake Story (2005 to 2025)"/>
+                <Bodytext text="Venkateshpura Nagar Lake Story (2005 to 2025)" />
             </div>
             {/* Progress Bar */}
             <div className="fixed top-0 left-0 w-full h-1 bg-slate-200 z-50 ">
@@ -266,12 +531,13 @@ const LakeStoryMap = () => {
                                         <h3 className="text-xl md:text-2xl font-bold mb-2 text-slate-800">{event.period}</h3>
                                         <p className="text-lg text-slate-500 mb-6 font-medium">{ }</p>
                                         <ul className="space-y-3">
-                                            {event.description.map((item, i) => (
+                                            {event.description}
+                                            {/* {event.description.map((item, i) => (
                                                 <li key={i} className="text-slate-600 text-base flex items-start gap-3">
                                                     <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
                                                     <span>{item}</span>
                                                 </li>
-                                            ))}
+                                            ))} */}
                                         </ul>
                                     </div>
 
