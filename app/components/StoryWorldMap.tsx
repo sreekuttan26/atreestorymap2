@@ -77,7 +77,7 @@ const countryData: Record<string, { countryName: string; coordinates: [number, n
         coordinates: [80.7718, 7.8731],
         zoom: 4.8,
         story: <>
-            Sri Lanka is a tropical island nation in the Indian Ocean, known for its rich biodiversity,
+            Sri-- Lanka is a tropical island nation in the Indian Ocean, known for its rich biodiversity,
             ancient irrigation systems, and long history of human settlement. Despite its small size,
             the island contains rainforests, dry zone plains, montane ecosystems, and extensive coastal
             habitats, supporting a high level of endemic flora and fauna.
