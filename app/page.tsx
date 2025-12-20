@@ -30,6 +30,7 @@ import Timeline from "./components/Timeline";
 import BirdCursor from "./components/Birdcursor";
 import NewBegining from "./components/NewBegining";
 import Timeline2 from "./components/Timeline2";
+import StoryWorldMap from "./components/StoryWorldMap";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -222,6 +223,10 @@ export default function Home() {
       {/* Resources */}
       <div ref={sectionRefs.Resources} className={`w-full h-full  `} id="resources">
         <Resources />
+      </div>
+
+      <div className={`w-full h-full `} >
+        <StoryWorldMap />
       </div>
 
 
