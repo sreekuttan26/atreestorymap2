@@ -4,6 +4,8 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+
+/* Custom font */
 @font-face {
   font-family: 'Bogue Slab';
   src: url('/fonts/BogueSlab-Regular.otf') format('opentype');
@@ -12,38 +14,36 @@
   font-display: swap;
 }
 
+/* Tailwind theme variables */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'Bogue Slab', serif;
+  --font-mono: monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-   --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
-/*  */
-
-
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Bogue Slab', serif; 
-
+  font-family: 'Bogue Slab', serif;
 }
-.color-b{
-  color:#087f9b
+
+.color-b {
+  color: #087f9b;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .hide-scrollbar {
-    -ms-overflow-style: none;  /* IE & Edge */
-    scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
