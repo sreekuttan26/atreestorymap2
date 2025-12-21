@@ -35,7 +35,7 @@ import Hydrology from "./components/Hydrology";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
+ 
   const spacing = 'p-5 md:px-20 lg:px-40 md:pt-20  bg-white ';
 
   const sectionRefs = {
@@ -101,28 +101,48 @@ export default function Home() {
     setShowbird(!showbird);
   }
 
+  const [loading, setLoading] = useState(true);
+
+  const Loader = () => (
+  <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white flex-col">
+    <div className="flex flex-col items-center gap-4">
+      <img src="/logo.png" alt="ATREE Logo" className="w-32 h-auto mb-4" />
+      <div className="w-12 h-12 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+      <p className="text-sm tracking-wide text-gray-600">Loading ATREE's Restoration Storymap</p>
+    </div>
+  </div>
+);
+
+
+
+
   useEffect(() => {
+    // Disable scrolling while loading
+    document.body.style.overflow = 'hidden';
+
     const onLoad = () => {
       setTimeout(() => {
         setLoading(false);
-        ScrollTrigger.refresh();
-      }, 300); // slight delay for smoothness
+        document.body.style.overflow = 'auto'; // re-enable scrolling
+      }, 5000); // slight delay for smoother transition
     };
 
-    if (document.readyState === "complete") {
+    if (document.readyState === 'complete') {
       onLoad();
     } else {
-      window.addEventListener("load", onLoad);
+      window.addEventListener('load', onLoad);
     }
 
-    return () => window.removeEventListener("load", onLoad);
+    return () => window.removeEventListener('load', onLoad);
   }, []);
 
 
 
 
 
-  return (
+  return (<>
+    {loading && <Loader />}
+
     <main className='w-full h-full flex flex-col '>
 
 
@@ -262,5 +282,6 @@ export default function Home() {
 
 
     </main>
+  </>
   );
 }
