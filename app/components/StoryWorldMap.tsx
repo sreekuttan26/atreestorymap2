@@ -53,7 +53,7 @@ export default function StoryWorldMap() {
 
     const countryData: Record<string, { countryName: string; coordinates: [number, number]; zoom: number; story: React.ReactNode; img?: string; font_color: string, font_size: number, country_code?: string }> = {
 
-      
+
 
         '480': {
             countryName: 'Mauritius',
@@ -925,7 +925,7 @@ export default function StoryWorldMap() {
 
                     <div className="py-4">
                         <h1 className="py-4 text-xl font-semibold">Approach</h1>
-                        <ul className ="list-disc px-4 mb-4 space-y-2">
+                        <ul className="list-disc px-4 mb-4 space-y-2">
                             <li>
                                 Rights based and institution centred conservation, placing decision making authority with local communities.
                             </li>
@@ -1750,6 +1750,18 @@ export default function StoryWorldMap() {
 
 
             <div onWheel={handleWheel} className="relative w-full max-w-[85rem] bg-white rounded-xl shadow-xl ">
+
+                <div className="text-center mt-12 flex flex-col items-center ">
+                    <p className="text-slate-400 text-sm">
+                        Click on each labeled countries to explore restoration case studies. 
+                    </p>
+                    <p className="text-slate-400 text-sm">
+                       (Scroll inside the map to zoom in/out.)
+                    </p>
+                </div>
+
+
+
                 <ComposableMap
                     projectionConfig={{ scale: 160 }} //160
                     className="w-full h-auto"

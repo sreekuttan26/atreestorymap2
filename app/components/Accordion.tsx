@@ -15,12 +15,12 @@ const storySections: StorySection[] = [
     title: 'Improve Water Quality',
     content: (
       <div>
-       
+
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Control sewage flow and waste dumping.</li>
-          <li>Ensure water from Venkateshpura Lake drains into Rachenahalli Lake. </li>
-          <li>Install tech-integrated nature-based solutions, like floating islands for nutrients and aerators for oxygen.</li>
-          <li>Conduct regular water quality monitoring with the community. </li>
+          <li>Ensure water from Venkateshpura Lake drains into Rachenahalli Lake.</li>
+          <li>Install tech-integrated nature-based solutions, such as floating islands for nutrient retention and aerators for oxygenation.</li>
+          <li>Conduct regular water quality monitoring with community participation.</li>
           <li>Re-introduce native fish and other aquatic species.</li>
         </ul>
       </div>
@@ -32,7 +32,7 @@ const storySections: StorySection[] = [
     title: 'Address biodiversity loss',
     content: (
       <div>
-        
+
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Prepare a systematic plan to assess and quantify the lake’s flora and fauna.</li>
           <li>Implement targeted interventions to restore ecological balance.</li>
@@ -47,9 +47,9 @@ const storySections: StorySection[] = [
     title: 'Remove Invasives',
     content: (
       <div>
-        
+
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li>Remove water hyacinth, Lantana and other weeds.</li>
+          <li>Remove water hyacinth, lantana, and other invasive weeds.</li>
           <li>Create natural, unpaved walking paths.</li>
           <li>Plant native species suitable for the landscape.</li>
         </ul>
@@ -62,10 +62,10 @@ const storySections: StorySection[] = [
     title: 'Attract pollinators',
     content: (
       <div>
-        
+
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Install bee hotels to support pollinator diversity.</li>
-          <li>Grow food plants for Solitary bees..</li>
+          <li>Grow food plants for solitary bees.</li>
           <li>Create butterfly garden patches.</li>
         </ul>
       </div>
@@ -77,11 +77,11 @@ const storySections: StorySection[] = [
     title: 'Save the Historical GTS',
     content: (
       <div>
-        
+
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Showcase the heritage significance of the structure.</li>
           <li>Halt rock quarrying.</li>
-          <li>Be vigilant to further encroachments.</li>
+          <li>Be vigilant against further encroachments.</li>
         </ul>
       </div>
     ),
@@ -92,13 +92,14 @@ const storySections: StorySection[] = [
     title: 'Build Lake Stewardship',
     content: (
       <div>
-        
+
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Conduct community activities to inculcate a sense of ownership of the lake.</li>
-          <li>Organise focused activities for neighbouring school children to familiarise them with the different taxa through nature walks and trails.</li>
-          <li>Install informative signages to facilitate meaningful interaction with the lake.</li>
+          <li>Create awareness about using treatment plants efficiently and reusing treated water for secondary purposes within buildings.</li>
+          <li>Organise focused activities for neighbouring schoolchildren to familiarise them with different taxa through nature walks and trails.</li>
+          <li>Install informative signage to facilitate meaningful interaction with the lake.</li>
           <li>Form a lake-support group to connect local residents and coordinate activities.</li>
-       
+
         </ul>
       </div>
     ),
@@ -107,11 +108,11 @@ const storySections: StorySection[] = [
 ];
 
 export default function StoryMapAccordion() {
-  const [openId, setOpenId] = useState<string| null>(null); // first open by default
+  const [openId, setOpenId] = useState<string | null>(null); // first open by default
 
- const toggleSection = (id: string) => {
-  setOpenId(prev => (prev === id ? null : id));
-};
+  const toggleSection = (id: string) => {
+    setOpenId(prev => (prev === id ? null : id));
+  };
 
   return (
     <div className=" max-w-4xl mx-auto mt-0">
@@ -143,9 +144,8 @@ export default function StoryMapAccordion() {
                 </div>
                 {/* Rotating Arrow */}
                 <div
-                  className={`transition-transform duration-300 ${
-                    isOpen ? 'rotate-180' : 'rotate-0'
-                  }`}
+                  className={`transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'
+                    }`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -161,9 +161,8 @@ export default function StoryMapAccordion() {
 
               {/* Accordion Content */}
               <div
-                className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                  isOpen ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
-                }`}
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}
               >
                 <div className="p-6">
                   {/* {section.imageUrl && (

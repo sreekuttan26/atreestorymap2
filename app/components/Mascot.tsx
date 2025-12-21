@@ -28,7 +28,7 @@ const Mascot = ({lockunloackbird, lockedbird}:MascotProps) => {
                     </div>
                 </div>
 
-                <Bodytext text={"The Pied kingfisher, a striking black-and-white bird  – seeks clear lakes and rivers, diving effortlessly in pursuit of fish and other aquatic prey. However, as pollution clouded the waters and stagnant conditions prevailed, the kingfisher, which was once seen here, disappeared. It became the natural choice as the indicator species for a healthy lake."} />
+                <Bodytext text={"The pied kingfisher, a striking black-and-white bird, seeks clear lakes and rivers, diving effortlessly in pursuit of fish and other aquatic prey. However, as pollution clouded the waters and stagnant conditions prevailed, the kingfisher, which was once seen here, disappeared. It became the natural choice as the indicator species for a healthy lake."} />
 
             </div>
 

@@ -96,7 +96,7 @@ const Degradation = () => {
 
       </div>
       <div className={`${spacing}`}>
-        <Bodytext text={'As the modern city slowly encroached, the lake lost its natural connection with its downstream lake. Water hyacinth took over large parts of the waterbody. Invasives like Lantana and Parthenium spread around the lake crippling its ecological balance. Large-scale mining around the lake wrecked the natural rock formation. Quarrying destroyed parts of the historical GTS structure. Untreated sewage was released into the lake from neighbouring buildings. The water turned stagnant and green with algal bloom, killing fish and other aquatic life. Plastic, cloth waste and construction debris added to the deterioration of the lake. '}/>
+        <Bodytext text={'AAs the modern city slowly encroached, the lake lost its natural connection with its downstream lake. Water hyacinth took over large parts of the waterbody. Invasive plants like lantana and parthenium spread around the lake crippling its ecological balance. Large-scale mining around the lake wrecked the natural rock formation. Quarrying destroyed parts of the historical GTS structure. Untreated sewage was released into the lake from neighbouring buildings. The water turned stagnant and green with algal bloom, killing fish and other aquatic life. Plastic, cloth waste and construction debris added to the deterioration of the lake.'}/>
 
       </div>
       

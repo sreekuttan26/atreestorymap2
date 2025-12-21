@@ -31,15 +31,18 @@ import BirdCursor from "./components/Birdcursor";
 import NewBegining from "./components/NewBegining";
 import Timeline2 from "./components/Timeline2";
 import StoryWorldMap from "./components/StoryWorldMap";
+import Hydrology from "./components/Hydrology";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
   const spacing = 'p-5 md:px-20 lg:px-40 md:pt-20  bg-white ';
 
   const sectionRefs = {
     Introduction: useRef(null),
     Place: useRef(null),
     History: useRef(null),
+    Hydrology: useRef(null),
     Degradation: useRef(null),
     Key_Actors: useRef(null),
     Goal_Setting: useRef(null),
@@ -63,6 +66,7 @@ export default function Home() {
         onEnterBack: () => setActiveSection(key.replace('_', ' ')),
       });
     });
+    setLoading(false)
 
   }, []);
 
@@ -97,12 +101,30 @@ export default function Home() {
     setShowbird(!showbird);
   }
 
+  useEffect(() => {
+    const onLoad = () => {
+      setTimeout(() => {
+        setLoading(false);
+        ScrollTrigger.refresh();
+      }, 300); // slight delay for smoothness
+    };
+
+    if (document.readyState === "complete") {
+      onLoad();
+    } else {
+      window.addEventListener("load", onLoad);
+    }
+
+    return () => window.removeEventListener("load", onLoad);
+  }, []);
+
 
 
 
 
   return (
     <main className='w-full h-full flex flex-col '>
+
 
       <BreakpointDisplay />
       <BirdCursor showbird={showbird} />
@@ -148,6 +170,10 @@ export default function Home() {
       {/* History */}
       <div ref={sectionRefs.History} className={`w-full h-full ${spacing}  `} id="history">
         <History />
+      </div>
+
+      <div ref={sectionRefs.Hydrology} className={`w-full h-full ${spacing}  `} id="hydrology">
+        <Hydrology />
       </div>
 
 

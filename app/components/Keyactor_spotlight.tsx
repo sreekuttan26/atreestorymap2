@@ -20,35 +20,35 @@ const Keyactors = () => {
             title: 'Biodiversity',
             image: '/biodiversity_1.png',
             description:
-                "Venkateshpura Lake – stagnant and overrun by invasives and waste – still supported life. Grey-headed swamphens, Eurasian coots and Black-winged stilts went about their business as usual, while a few cormorants lingered. Introduced fish survived though native ones had vanished. Rock agamas basked, geckos slipped through crevices, butterflies flitted and keelbacks rippled the water. The lake’s flora was dominated by invasives.",
+                "Venkateshpura Lake – stagnant and overrun by invasives and waste – still supported life. Grey-headed swamphens, Eurasian coots and black-winged stilts went about their business as usual, while a few cormorants lingered. Introduced fish survived, though native ones had vanished. Rock agamas basked, geckos slipped through crevices, butterflies flitted and keelbacks rippled the water. The lake’s flora was dominated by invasives.",
         },
         {
             id: 'fisher',
             title: 'Fisher folk',
             image: '/fisher_1.png',
             description:
-                "The lake, a traditional fishing ground, is periodically leased by the municipal body to local fisherfolk. The current leaseholder had stocked the lake with commercial fishes, such as Rohu and Catla. But the dense algal bloom and pollution rendered even these resilient fish vulnerable. As the lake’s health declined, so too did the fragile livelihood of the fisherfolk.",
+                "The lake, a traditional fishing ground, is periodically leased by the municipal body to local fisherfolk. The current leaseholder had stocked the lake with commercial fish, such as rohu and catla. But the dense algal bloom and pollution rendered even these resilient fish vulnerable. As the lake’s health declined, so too did the fragile livelihood of the fisherfolk.",
         },
         {
             id: 'residents',
             title: 'Residents',
             image: '/residents.png',
             description:
-                "For residents, the small lake with its green grass, trees and rocky outcrops was an oasis amid the bustling city. The rocks held traces of history. Though never really maintained, the lake kept the neighbourhood cool and fresh. Gradually, however, development choked its inlets and outlets, transforming the wetland into a wasteland.",
+                "For residents, the small lake, with its green grass, trees and rocky outcrops, was an oasis amid the bustling city. The rocks held traces of history. Though never really maintained, the lake kept the neighbourhood cool and fresh. Gradually, however, development choked its inlets and outlets, transforming the wetland into a wasteland. ",
         },
         {
             id: 'researcher',
             title: 'Researchers',
             image: '/researcher.png',
             description:
-                "Researchers emerged as key allies when residents sought support to save the lake. They contributed scientific expertise to restore its fading health, helping to strengthen and accelerate the community’s own vision for the lake. ",
+                "Researchers emerged as key allies when residents sought support to save the lake. They contributed scientific expertise to restore its fading health, helping to strengthen and accelerate the community’s own vision for the lake.",
         },
         {
             id: 'gov',
             title: 'Government',
             image: '/bbmp.jpeg',
             description:
-                "Venkateshpura Lake came under the management of Greater Bengaluru Authority in 2016. It faced several challenges like encroachments, quarrying, illegal dumping and algal bloom. Local conservation efforts to restore it, however, generated enough data and momentum that prompted government action. Krishna Byre Gowda, the local MLA and now the State Revenue Minister, publicly aligned himself with the restoration initiative. This move was crucial in galvanising all-round support for the lake’s revival.",
+                "Venkateshpura Lake came under the management of the Greater Bengaluru Authority in 2016. It faced several challenges like encroachments, quarrying, illegal dumping and algal bloom. Local conservation efforts to restore it, however, generated enough data and momentum that prompted government action. Krishna Byre Gowda, the local MLA and now the State Revenue Minister, publicly aligned himself with the restoration initiative. This move was crucial in galvanising all-round support for the lake’s revival.",
         },
         {
             id: 'pastoralists',

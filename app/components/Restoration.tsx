@@ -31,12 +31,12 @@ const Restoration = () => {
                 <span>
 
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Declined water quality with untreated sewage inflow</li>
-                        <li>Overgrowth of invasives, such as Lantana and Parthenium.</li>
-                        <li>Loss of ecosystem services, like groundwater recharge and biodiversity support.</li>
-                        <li>Haven for illegal activities.</li>
-                        <li>Inconducive for human use and recreation.</li>
-                        <li>Need to involve local community.</li>
+                        <li>Declining water quality due to untreated sewage inflow.</li>
+                        <li>Overgrowth of invasive species, such as lantana and parthenium.</li>
+                        <li>Loss of ecosystem services, including groundwater recharge and biodiversity support.</li>
+                        <li>Becoming a haven for illegal activities.</li>
+                        <li>Inconducive conditions for human use and recreation.</li>
+                        <li>Need for active involvement of the local community.</li>
                     </ul>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Key%20issues.mp4" />
 
@@ -55,10 +55,9 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Secchi Depth: A method of noting how clear the lake water is, using a disc attached to a rope. </li>
-                        <li>Dissolved Oxygen: A handheld probe with a metre and a sensor measures the amount of dissolved oxygen available for aquatic life – plants, fish and other organisms.</li>
-                        <li>Shoreline vegetation: Carefully planned and planted shoreline vegetation filters run-off, absorbs excess nutrients and provides shelter for small fish and zooplankton.</li>
-                        <li>Systematic baseline surveys of butterflies, bees, odonates, fishes, amphibians, reptiles, birds and vegetation provide valuable data that help chart a roadmap for conserving the lake.</li>
+                        <li>Secchi depth: A method of noting how clear the lake water is, using a disc attached to a rope.</li>
+                        <li>Dissolved oxygen: A handheld probe with a metre and a sensor measures the amount of dissolved oxygen available for aquatic life – plants, fish, and other organisms.</li>
+                        <li>Shoreline vegetation: Carefully planned and planted shoreline vegetation filters run-off, absorbs excess nutrients, and provides shelter for small fish and zooplankton.</li>
                     </ul>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/How%20healthy%20is%20your%20lake.mp4" />
 
@@ -78,14 +77,14 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        
-                            <li>Butterfly: A total of 59 individuals from 16 species were recorded, with the families Lycaenidae and Nymphalidae showing high species richness and abundance.</li>
-                            <li>Fish: Six species from two orders – Cypriniformes and Perciformes – were documented through samples from local fishers’ nets and dip nets. Several dead fish were observed, particularly <em>Labeo</em> sp. The lake was bereft of native species.</li>
-                            <li>Reptiles: Visual encounter surveys for reptiles that remained active during the day and night revealed 14 species, including geckonids and lizards associated with rocky habitats.</li>
-                            <li>Amphibians: Night-time audio-visual encounter surveys threw up five anuran species. Notably, <em>Common pond frog</em>, rare across Bengaluru city, was found in areas impacted by sewage inflow.</li>
-                            <li>Birds: Invertebrate sampling yielded 373 insect specimens, including 18 bees from four species. The most abundant was <em>Halictus</em> sp.</li>
-                            <li>Plants: Aquatic and emergent vegetation was dominated by species like <em>Typha angustifolia</em> and <em>Alternanthera philoxeroides</em>, which covered most part of the lake. Bunds supported grasses and herbaceous plants, while invasives, such as <em>Parthenium hysterophorus</em> and <em>Lantana camara</em>, were prevalent everywhere.</li>
-                        
+
+                        <li>Butterfly: A total of 59 individuals from 16 species were recorded, with the families <em>Lycaenidae</em> and <em>Nymphalidae</em> showing high species richness and abundance.</li>
+                        <li>Fish: Six species from two orders – <em>Cypriniformes</em> and <em>Perciformes</em> – were documented through samples from local fishers’ nets and dip nets. Several dead fish were observed, particularly <em>Labeo</em> sp. The lake was bereft of native species.</li>
+                        <li>Reptiles: Visual encounter surveys for reptiles active during the day and night revealed 14 species, including geckonids and lizards associated with rocky habitats.</li>
+                        <li>Amphibians: Night-time audio-visual encounter surveys recorded five anuran species. Notably, the common pond frog, rare across Bengaluru city, was found in areas impacted by sewage inflow.</li>
+                        <li>Birds: Invertebrate sampling yielded 373 insect specimens, including 18 bees from four species. The most abundant was <em>Halictus</em> sp.</li>
+                        <li>Plants: Aquatic and emergent vegetation was dominated by species such as <em>Typha angustifolia</em> and <em>Alternanthera philoxeroides</em>, which covered most of the lake. Bunds supported grasses and herbaceous plants, while invasives, such as <em>Parthenium</em> and <em>Lantana</em>, were prevalent throughout.</li>
+
 
 
                     </ul>
@@ -104,9 +103,9 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Removal of water hyacinth, plastic and other accumulated waste.</li>
-                        <li>Uprooting of Lantana and Parthenium from the area surrounding the lake.</li>
-                        <li>Collecting the quarry and construction waste to be repurposed.</li>
+                        <li>Removal of water hyacinth, plastic, and other accumulated waste.</li>
+                        <li>Uprooting of lantana and parthenium from the area surrounding the lake.</li>
+                        <li>Collecting quarry and construction waste for repurposing.</li>
 
                     </ul>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/Lake_cleanup.mp4" />
@@ -124,9 +123,9 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc mb-4 space-y-2">
-                        <li>Aerators, by circulating water, increase the dissolved oxygen.</li>
-                        <li>Floating islands, with native vegetation like Cyperus, Typha and Centella asiatica, filter contaminants and prevent nutrient build-up.</li>
-                        <li>Removing water hyacinth and weeds along the shore and planting native species facilitate soil stability and support biodiversity.</li>
+                        <li>Aerators, by circulating water, increase dissolved oxygen levels.</li>
+                        <li>Floating islands, with native vegetation such as <em>Centella asiatica</em>, filter contaminants and prevent nutrient build-up.</li>
+                        <li>Removing water hyacinth and other weeds along the shore, and planting native species, facilitates soil stability and supports biodiversity.</li>
 
                     </ul>
 
@@ -155,10 +154,10 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Butterfly mounds layered with stones, logs, soil and compost to grow host plants for caterpillars and nectar plants for adult butterflies. </li>
-                        <li>A “bee hotel” made of natural materials like dead wood, bamboo and twigs, to attract solitary bees that thrive in cityscapes and are vital for pollination, but increasingly lack nesting and foraging spaces. </li>
+                        <li>Butterfly mounds layered with stones, logs, soil, and compost to grow host plants for caterpillars and nectar plants for adult butterflies.</li>
+                        <li>A “bee hotel” made of natural materials such as dead wood, bamboo, and twigs to attract solitary bees that thrive in cityscapes and are vital for pollination, but increasingly lack nesting and foraging spaces.</li>
                         <li>Unpaved walking trails instead of conventional cemented paths to encourage slower, mindful walking.</li>
-                        <li>Trails mimicking the dry Deccan gardens with grasses that Bengaluru historically had.</li>
+                        <li>Trails mimicking dry Deccan gardens with the grasses Bengaluru historically supported.</li>
 
 
                     </ul>
@@ -178,9 +177,9 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Pressure from residents prompts action from the civic body to restore the lake.</li>
-                        <li>When restoration efforts lag, residents shift focus to the heritage value of the lake, citing the GTS Tower, through rallies and collective actions. </li>
-                        <li>Residents form a trust – Chokkanahalli Sampigehalli Abhivriddhi Forum –  attracting significant media attention.</li>
+                        <li>Pressure from residents prompts the civic body to take action to restore the lake.</li>
+                        <li>When restoration efforts lag, residents shift focus to the lake’s heritage value, citing the GTS tower through rallies and collective action.</li>
+                        <li>Residents form a trust – Chokkanahalli Sampigehalli Abhivriddhi Forum – attracting significant media attention.</li>
 
 
                     </ul>
@@ -202,9 +201,9 @@ const Restoration = () => {
                 <span>
 
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Games, biodiversity walks and other activities introduce schoolchildren to the concept of a wetland and its importance, as well as the diversity of flora and fauna present at the lake. </li>
-                        <li>School children engage in a game of metaphors to understand the importance of the lake.</li>
-                        <li>Students learn to keep a nature journal and record their observations of the wildlife around the lake.</li>
+                        <li>Games, biodiversity walks, and other activities introduce schoolchildren to the concept of wetlands, their importance, and the diversity of flora and fauna present at the lake.</li>
+                        <li>Schoolchildren engage in a game of metaphors to understand the importance of the lake.</li>
+                        <li>Students learn to maintain a nature journal and record their observations of wildlife around the lake.</li>
 
                     </ul>
 
@@ -224,12 +223,12 @@ const Restoration = () => {
                 <span>
 
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Residents take part in the step-by-step restoration activities, including water quality monitoring.</li>
-                        <li>Infomercials and water quality monitoring kits equip them to conduct systematic water quality checks.</li>
-                        <li>Equipped with the right skills, residents take ownership of the lake’s responsibilities.</li>
+                        <li>Residents take part in step-by-step restoration activities, including water quality monitoring.</li>
+                        <li>Infomercials and water-quality monitoring kits equip them to conduct systematic water-quality checks.</li>
+                        <li>Equipped with the right skills, residents take ownership of the lake’s management and responsibilities.</li>
 
                     </ul>
-                    
+
 
                 </span>
             ),
