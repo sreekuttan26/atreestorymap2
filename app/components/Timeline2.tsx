@@ -537,13 +537,7 @@ const LakeStoryMap = () => {
                 <Heading text='TimeLine' />
                 <Bodytext text="Venkateshpura Nagar Lake Story (2005 to 2025)" />
             </div>
-            {/* Progress Bar */}
-            {/* <div className="fixed top-0 left-0 w-full h-1 bg-slate-200 z-50 ">
-                <div
-                    className="h-full bg-gradient-to-r from-blue-400 to-[#087f9b] transition-all duration-300"
-                    style={{ width: `${scrollProgress}%` }}
-                />
-            </div> */}
+            
 
 
 
