@@ -19,7 +19,7 @@ const Transformation2 = () => {
     const storySections = [
         {
             id: '1',
-            title: 'Improved Quality of Water ',
+            title: 'Improved quality of water ',
 
             content: (
 
