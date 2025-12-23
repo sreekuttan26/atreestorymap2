@@ -125,7 +125,7 @@ export default function Home() {
       setTimeout(() => {
         setLoading(false);
         document.body.style.overflow = 'auto'; // re-enable scrolling
-      }, 5000); // slight delay for smoother transition
+      }, 1000); // slight delay for smoother transition
     };
 
     if (document.readyState === 'complete') {
