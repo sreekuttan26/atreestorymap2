@@ -20,7 +20,7 @@ const Keyactors = () => {
             title: 'Biodiversity',
             image: '/biodiversity_1.png',
             description:
-                "Venkateshpura Lake – stagnant and overrun by invasives and waste – still supported life. Grey-headed swamphens, Eurasian coots and black-winged stilts went about their business as usual, while a few cormorants lingered. Introduced fish survived, though native ones had vanished. Rock agamas basked, geckos slipped through crevices, butterflies flitted and keelbacks rippled the water. The lake’s flora was dominated by invasives.",
+                "Venkateshpura Lake – stagnant and overrun by invasives and waste – still supported life. Birds like grey-headed swamphens, Eurasian coots and black-winged stilts went about their business as usual, while a few cormorants lingered. Introduced fish survived, though native ones had vanished. Rock agamas basked, geckos slipped through crevices, butterflies flitted and keelbacks rippled the water. The lake’s flora was dominated by invasives.",
         },
         {
             id: 'fisher',
@@ -119,8 +119,8 @@ const Keyactors = () => {
     return (
         <div className="w-full relative overflow-visible">
             <div className='p-5 md:px-20 lg:px-40 md:pt-20 bg-white'>
-                <Heading text={"Key Actors"} />
-                <Bodytext text={"Civilisations evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."} />
+                <Heading text={"Key actors"} />
+                <Bodytext text={"Civilisations have evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."} />
             </div>
 
             {/* Sticky Map Container with Spotlight */}

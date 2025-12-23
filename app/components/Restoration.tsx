@@ -56,8 +56,8 @@ const Restoration = () => {
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
                         <li>Secchi depth: A method of noting how clear the lake water is, using a disc attached to a rope.</li>
-                        <li>Dissolved oxygen: A handheld probe with a metre and a sensor measures the amount of dissolved oxygen available for aquatic life – plants, fish, and other organisms.</li>
-                        <li>Shoreline vegetation: Carefully planned and planted shoreline vegetation filters run-off, absorbs excess nutrients, and provides shelter for small fish and zooplankton.</li>
+                        <li>Dissolved oxygen: A handheld probe with a metre and a sensor measures the amount of dissolved oxygen available for aquatic life – plants, fish and other organisms.</li>
+                        <li>Shoreline vegetation: Carefully planned and planted shoreline vegetation filters run-off, absorbs excess nutrients and provides shelter for small fish and zooplankton.</li>
                     </ul>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/How%20healthy%20is%20your%20lake.mp4" />
 
@@ -83,7 +83,7 @@ const Restoration = () => {
                         <li>Reptiles: Visual encounter surveys for reptiles active during the day and night revealed 14 species, including geckonids and lizards associated with rocky habitats.</li>
                         <li>Amphibians: Night-time audio-visual encounter surveys recorded five anuran species. Notably, the common pond frog, rare across Bengaluru city, was found in areas impacted by sewage inflow.</li>
                         <li>Birds: Invertebrate sampling yielded 373 insect specimens, including 18 bees from four species. The most abundant was <em>Halictus</em> sp.</li>
-                        <li>Plants: Aquatic and emergent vegetation was dominated by species such as <em>Typha angustifolia</em> and <em>Alternanthera philoxeroides</em>, which covered most of the lake. Bunds supported grasses and herbaceous plants, while invasives, such as <em>Parthenium</em> and <em>Lantana</em>, were prevalent throughout.</li>
+                        <li>Plants: Aquatic and emergent vegetation was dominated by species such as <em>Typha angustifolia</em> and <em>Alternanthera philoxeroides</em>, which covered most of the lake. Bunds supported grasses and herbaceous plants, while invasives, such as parthenium and lantana, were prevalent throughout.</li>
 
 
 
@@ -103,7 +103,7 @@ const Restoration = () => {
             content: (
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Removal of water hyacinth, plastic, and other accumulated waste.</li>
+                        <li>Removal of water hyacinth, plastic and other accumulated waste.</li>
                         <li>Uprooting of lantana and parthenium from the area surrounding the lake.</li>
                         <li>Collecting quarry and construction waste for repurposing.</li>
 
@@ -155,7 +155,7 @@ const Restoration = () => {
                 <span>
                     <ul className="list-disc px-2 mb-4 space-y-2">
                         <li>Butterfly mounds layered with stones, logs, soil, and compost to grow host plants for caterpillars and nectar plants for adult butterflies.</li>
-                        <li>A “bee hotel” made of natural materials such as dead wood, bamboo, and twigs to attract solitary bees that thrive in cityscapes and are vital for pollination, but increasingly lack nesting and foraging spaces.</li>
+                        <li>A “bee hotel” made of natural materials such as dead wood, bamboo and twigs to attract solitary bees that thrive in cityscapes and are vital for pollination, but increasingly lack nesting and foraging spaces.</li>
                         <li>Unpaved walking trails instead of conventional cemented paths to encourage slower, mindful walking.</li>
                         <li>Trails mimicking dry Deccan gardens with the grasses Bengaluru historically supported.</li>
 
@@ -201,7 +201,7 @@ const Restoration = () => {
                 <span>
 
                     <ul className="list-disc px-2 mb-4 space-y-2">
-                        <li>Games, biodiversity walks, and other activities introduce schoolchildren to the concept of wetlands, their importance, and the diversity of flora and fauna present at the lake.</li>
+                        <li>Games, biodiversity walks and other activities introduce schoolchildren to the concept of a wetland and its importance, as well as the diversity of flora and fauna present at the lake.</li>
                         <li>Schoolchildren engage in a game of metaphors to understand the importance of the lake.</li>
                         <li>Students learn to maintain a nature journal and record their observations of wildlife around the lake.</li>
 

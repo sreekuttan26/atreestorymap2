@@ -32,6 +32,7 @@ import NewBegining from "./components/NewBegining";
 import Timeline2 from "./components/Timeline2";
 import StoryWorldMap from "./components/StoryWorldMap";
 import Hydrology from "./components/Hydrology";
+import WorldMapScroll from "./components/WorldMapScroll";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -271,8 +272,12 @@ export default function Home() {
         <Resources />
       </div>
 
-      <div className={`w-full h-full `} >
+      {/* <div className={`w-full h-full `} >
         <StoryWorldMap />
+      </div> */}
+
+       <div className={`w-full h-full `} >
+        <WorldMapScroll />
       </div>
 
 

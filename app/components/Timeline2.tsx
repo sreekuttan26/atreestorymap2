@@ -53,7 +53,7 @@ const LakeStoryMap = () => {
 
     const timelineData = [
         {
-            year: "2005 -  2010",
+            year: "2005-2010",
             period: "A Quiet Landscape",
             title: "The Beginning: A Clean Lake",
             description: <ul className="space-y-3">
@@ -95,7 +95,7 @@ const LakeStoryMap = () => {
             image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/2025_2010.JPG"]
         },
         {
-            year: "2010 - 2014",
+            year: "2010-2014",
             period: "Urbanisation and crisis",
             title: "Community & Government Unite",
             description:
@@ -220,7 +220,7 @@ const LakeStoryMap = () => {
                 <li className="text-slate-600 text-base flex items-start gap-3">
                     <span className={`inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-[#087f9b] mt-2 flex-shrink-0`} />
                     <span>
-                        Civic body agrees to restore the lake
+                        Civic body recruits an infra company to implement design and part of the DPR
                     </span>
                 </li>
 
@@ -265,7 +265,7 @@ const LakeStoryMap = () => {
             image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/2022.jpg","https://atree-communication.s3.amazonaws.com/Storymap_media/2007.jpg"]
         },
         {
-            year: "2022 -2025",
+            year: "2022-2025",
             period: "Ecological and social restoration",
             title: "Hope Restored",
             description: <div className="space-y-6">
@@ -312,7 +312,7 @@ const LakeStoryMap = () => {
 
         {
             year: "2022 -2025",
-            period: "Ecological and social restoration",
+            period: "",
             title: "0",
             description: <div className="space-y-6">
 
@@ -351,7 +351,7 @@ const LakeStoryMap = () => {
         },
         {
             year: "2022 -2025",
-            period: "Ecological and social restoration",
+            period: "",
             title: "0",
             description: <div className="space-y-6">
 
@@ -393,7 +393,7 @@ const LakeStoryMap = () => {
         },
         {
             year: "2022 -2025",
-            period: "Ecological and social restoration",
+            period: "",
             title: "0",
             description: <div className="space-y-6">
 
@@ -436,7 +436,7 @@ const LakeStoryMap = () => {
         },
         {
             year: "2022 -2025",
-            period: "Ecological and social restoration",
+            period: "",
             title: "0",
             description: <div className="space-y-6">
 

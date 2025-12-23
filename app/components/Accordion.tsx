@@ -12,7 +12,7 @@ interface StorySection {
 const storySections: StorySection[] = [
   {
     id: '1',
-    title: 'Improve Water Quality',
+    title: 'Improve water quality',
     content: (
       <div>
 
@@ -44,12 +44,12 @@ const storySections: StorySection[] = [
   },
   {
     id: '2',
-    title: 'Remove Invasives',
+    title: 'Remove invasives',
     content: (
       <div>
 
         <ul className="list-disc px-4 mb-4 space-y-2">
-          <li>Remove water hyacinth, lantana, and other invasive weeds.</li>
+          <li>Remove water hyacinth, lantana and other invasive weeds.</li>
           <li>Create natural, unpaved walking paths.</li>
           <li>Plant native species suitable for the landscape.</li>
         </ul>
@@ -74,7 +74,7 @@ const storySections: StorySection[] = [
   },
   {
     id: '4',
-    title: 'Save the Historical GTS',
+    title: 'Save the historical GTS',
     content: (
       <div>
 
@@ -89,14 +89,14 @@ const storySections: StorySection[] = [
   },
   {
     id: '5',
-    title: 'Build Lake Stewardship',
+    title: 'Build lake stewardship',
     content: (
       <div>
 
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Conduct community activities to inculcate a sense of ownership of the lake.</li>
           <li>Create awareness about using treatment plants efficiently and reusing treated water for secondary purposes within buildings.</li>
-          <li>Organise focused activities for neighbouring schoolchildren to familiarise them with different taxa through nature walks and trails.</li>
+          <li>Organise focused activities such as nature walks for neighbouring schoolchildren to familiarise them with different taxa.</li>
           <li>Install informative signage to facilitate meaningful interaction with the lake.</li>
           <li>Form a lake-support group to connect local residents and coordinate activities.</li>
 

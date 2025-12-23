@@ -10,7 +10,7 @@ const Joininghands = () => {
 
         <Bodytext text="Researchers led multiple biodiversity walks like bird, butterfly, bat, ant and bee trails that helped residents appreciate the abundance of life in and around the lake. "/>
 
-        <Bodytext text="Volunteering activities, film screenings and festive gatherings around the lake brought the diverse groups together and helped them understand and appreciate the varied needs of each actor and chart a common vision for the lake."/>
+        <Bodytext text="Volunteering activities, film screenings and festive gatherings around the lake brought the diverse groups together. It helped them understand and appreciate the varied needs of each actor, and chart a common vision for the lake."/>
 
         <Bodytext text="The community understood the watershed’s role in sustaining the lake and opposed any diversion of catchment land for infrastructure. They pursued the issue rigorously, including filing PILs, to protect the lake and its watershed."/>
       
