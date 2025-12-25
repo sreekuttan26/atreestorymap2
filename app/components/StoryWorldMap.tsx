@@ -1557,7 +1557,7 @@ export default function StoryWorldMap() {
         '222': {
             countryName: 'El Salvador',
             country_code: '222',
-            coordinates: [-88.8965, 13.7942],
+            coordinates: [-89.8965, 12.8942],
             zoom: 15,
             story: <>
                 <h1 className="font-semibold text-2xl w-full pt-2">More Trees, Less Water Stress</h1>
