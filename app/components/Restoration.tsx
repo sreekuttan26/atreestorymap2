@@ -343,21 +343,21 @@ const Restoration = () => {
             <Heading text="Restoration" />
             <Bodytext text="Venkateshpura Lake presented several challenges, and addressing them needed to be done step by step." />
 
-            <div className="relative flex flex-col md:flex-row gap-6 mt-5">
+            <div className="relative flex flex-col lg:flex-row gap-6 mt-5">
 
                 {/* Left column: sticky steps */}
-                <div className="md:w-1/3 relative">
-                    <div className="md:sticky md:top-20 flex flex-col gap-4 relative">
+                <div className="lg:w-1/3 relative">
+                    <div className="lg:sticky lg:top-20 flex flex-col gap-4 relative">
                         <div className='bg-[#087f9b] h-[90%] absolute top-0 left-0 w-1 my-5 -z-10 mx-10  '></div>
 
 
                         {steps.map((step, index) => (
                             <div ref={el => { stepRefs.current[index] = el! }} onClick={(() => { scrollWithOffset('step' + index) })}
                                 key={index}
-                                className={`bg-[#087f9b] ${step.width} ${activeitem === step.title ? "bg-[#087f9b]" : "md:bg-gray-400"}  rounded-xl p-2 md:p-4 text-white font-semibold restoration-container cursor-pointer`}
+                                className={`bg-[#087f9b] ${step.width} ${activeitem === step.title ? "bg-[#087f9b]" : "lg:bg-gray-400"}  rounded-xl p-2 lg:p-4 text-white font-semibold restoration-container cursor-pointer`}
                             >
                                 <h1 className="text-[12px] font-normal"> </h1>
-                                <div> {index + 1}. {step.title} </div>
+                                <div className="text-[12px] xl:text-[16px]"> {index + 1}. {step.title} </div>
                             </div>
                         ))}
 
@@ -377,7 +377,7 @@ const Restoration = () => {
                 </div>
 
                 {/* Right column: Accordion */}
-                <div className="md:w-2/3 flex flex-col gap-5 md:gap-[40vh]">
+                <div className="lg:w-2/3 flex flex-col gap-5 lg:gap-[40vh]">
                     {steps.map((step, index) => (
                         <div id={'step' + index} key={index} className="p-4 border-2 bg-white px-6 rounded-xl shadow-xl border-gray-200 item_container">
                             <h1 className='w-full color-b font-semibold text-lg py-2'>{step.title}</h1>
