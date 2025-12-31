@@ -276,9 +276,9 @@ export default function Home() {
         <StoryWorldMap />
       </div> */}
 
-       <div className={`w-full h-full `} >
+       {/* <div className={`w-full h-full `} >
         <WorldMapScroll />
-      </div>
+      </div> */}
 
 
 

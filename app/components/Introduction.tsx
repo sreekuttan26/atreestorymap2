@@ -7,7 +7,7 @@ const Introduction = () => {
     <div>
         <Heading text='Introduction'/>
         <Bodytext text={<span>
-            This is a story of Venkateshpura Lake – a neighbourhood lake tucked away in the northern part of Bengaluru. As the city grew around it, the lake gradually lost its ecological health, eventually slipping into stagnation and decline. Until, a group of concerned citizens chose to bring it back to life — not only for the lake’s future, but for their own well-being. Their story of collective action lays out some important signposts for any community looking to embark on a journey to rejuvenate a lake.   
+            This is a story of Venkateshpura Lake – a neighbourhood lake tucked away in the northern part of Bengaluru. As the city grew around it, the lake gradually lost its ecological health, eventually slipping into stagnation and decline. Until a group of concerned citizens chose to bring it back to life – not only for the lake’s future, but for their own well-being. Their story of collective action offers important signposts for any community seeking to rejuvenate a lake.    
 
         </span>}/>
       

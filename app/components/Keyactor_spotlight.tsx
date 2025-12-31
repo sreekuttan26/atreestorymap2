@@ -20,11 +20,11 @@ const Keyactors = () => {
             title: 'Biodiversity',
             image: '/biodiversity_1.png',
             description:
-                "Venkateshpura Lake – stagnant and overrun by invasives and waste – still supported life. Birds like grey-headed swamphens, Eurasian coots and black-winged stilts went about their business as usual, while a few cormorants lingered. Introduced fish survived, though native ones had vanished. Rock agamas basked, geckos slipped through crevices, butterflies flitted and keelbacks rippled the water. The lake’s flora was dominated by invasives.",
+                "Venkateshpura Lake – stagnant and overrun by invasives and waste – still supported life. Grey-headed swamphens, Eurasian coots and black-winged stilts went about their business as usual, while a few cormorants lingered. Introduced fish survived, though native ones had vanished. Rock agamas basked, geckos slipped through crevices, butterflies flitted and keelbacks rippled the water. The lake’s flora was dominated by invasives.",
         },
         {
             id: 'fisher',
-            title: 'Fisher folk',
+            title: 'Fisherfolk',
             image: '/fisher_1.png',
             description:
                 "The lake, a traditional fishing ground, is periodically leased by the municipal body to local fisherfolk. The current leaseholder had stocked the lake with commercial fish, such as rohu and catla. But the dense algal bloom and pollution rendered even these resilient fish vulnerable. As the lake’s health declined, so too did the fragile livelihood of the fisherfolk.",
@@ -34,21 +34,21 @@ const Keyactors = () => {
             title: 'Residents',
             image: '/residents.png',
             description:
-                "For residents, the small lake, with its green grass, trees and rocky outcrops, was an oasis amid the bustling city. The rocks held traces of history. Though never really maintained, the lake kept the neighbourhood cool and fresh. Gradually, however, development choked its inlets and outlets, transforming the wetland into a wasteland. ",
+                "For residents, the small lake, with its green grass, trees and rocky outcrops, was an oasis amid the bustling city. The rocks held traces of history. Though never really maintained, the lake kept the neighbourhood cool and fresh. Gradually, however, development choked its inlets and outlets, transforming the wetland into a wasteland.  ",
         },
         {
             id: 'researcher',
             title: 'Researchers',
             image: '/researcher.png',
             description:
-                "Researchers emerged as key allies when residents sought support to save the lake. They contributed scientific expertise to restore its fading health, helping to strengthen and accelerate the community’s own vision for the lake.",
+                "Researchers emerged as key allies when residents sought support to save the lake. They contributed scientific expertise to restore its fading health, helping  strengthen and accelerate the community’s vision for the lake.",
         },
         {
             id: 'gov',
             title: 'Government',
             image: '/bbmp.jpeg',
             description:
-                "Venkateshpura Lake came under the management of the Greater Bengaluru Authority in 2016. It faced several challenges like encroachments, quarrying, illegal dumping and algal bloom. Local conservation efforts to restore it, however, generated enough data and momentum that prompted government action. Krishna Byre Gowda, the local MLA and now the State Revenue Minister, publicly aligned himself with the restoration initiative. This move was crucial in galvanising all-round support for the lake’s revival.",
+                "Venkateshpura Lake came under the management of the Greater Bengaluru Authority in 2016. It faced several challenges, like encroachments, quarrying, illegal dumping and algal bloom. Local conservation efforts to restore it, however, generated sufficient data and momentum to prompt government action. Krishna Byre Gowda, the local MLA and now the State Revenue Minister, publicly endorsed the restoration initiative. This move was crucial in galvanising all-round support for the lake’s revival.",
         },
         {
             id: 'pastoralists',
@@ -61,7 +61,7 @@ const Keyactors = () => {
             title: 'Migrants',
             image: '/migrant.png',
             description:
-                'Migrant workers living nearby, who otherwise had to scout around for water to wash their clothes and vessels, could access the open and unfenced lake. Their children were always up for a quick dip, especially with plenty of rocks serving as diving boards.',
+                'Migrant workers living nearby, who otherwise had to scout around for water to wash their clothes and vessels, could access the open, unfenced lake. Their children were always up for a quick dip, especially with plenty of rocks serving as diving boards.',
         }
     ];
 
@@ -120,7 +120,7 @@ const Keyactors = () => {
         <div className="w-full relative overflow-visible">
             <div className='p-5 md:px-20 lg:px-40 md:pt-20 bg-white'>
                 <Heading text={"Key actors"} />
-                <Bodytext text={"Civilisations have evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."} />
+                <Bodytext text={"Civilisations evolved around waterbodies. Be it a pond or a lake, a waterbody is a shared resource. For its communities, it sustains livelihoods, shapes cultural practices and supports ecological balance."} />
             </div>
 
             {/* Sticky Map Container with Spotlight */}

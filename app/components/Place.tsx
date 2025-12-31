@@ -16,7 +16,7 @@ const Place = () => {
             image: "/place_1.png",
             content: (
                 <span>
-                    Venkateshpura Lake is a relatively small lake, extending a little over 10 acres. It is managed by the Greater Bengaluru Authority (GBA), Bengaluru’s civic body. Located in Sampigehalli in the Arkavathy Layout of Jakkur Ward, the lake is familiar to the locals as Sampigehalli Lake, its old name.
+                    Venkateshpura Lake is a relatively small lake, covering just over 10 acres. It is managed by the Greater Bengaluru Authority (GBA), Bengaluru’s civic body. Located in Sampigehalli, Arkavathy Layout, Jakkur Ward, the lake is known locally as Sampigehalli Lake, its old name.
                 </span>
             ),
         },
@@ -25,7 +25,7 @@ const Place = () => {
             image: "/place_2.png",
             content: (
                 <span>
-                    Once standing amid open farmland, the lake area offered pasture and water to the livestock. As Bengaluru city spread outward, these fields made way for residential complexes and public utility buildings, transforming a pastoral landscape into a dense urban setting.
+                    Once standing amid open farmland, the lake area provided pasture and water for livestock. As Bengaluru expanded outward, these fields gave way to residential complexes and public utility buildings, transforming a pastoral landscape into a dense urban setting.
 
                 </span>
             ),
@@ -35,7 +35,7 @@ const Place = () => {
             image: "/place_3.png",
             content: (
                 <span>
-                    There is a ruggedness to the lake’s identity that comes from the rocky outgrowth both within it and along its periphery. One of its rocky projections bears the nineteenth-century Sampigehalli Auxiliary Tower Station – a site with a subcontinental story to tell. Adjacent to the waterbody is the Jarabandemma Temple, built on an imposing rock, which holds unique significance due to the distinct rituals observed even to this day. 
+                    There is a ruggedness to the lake’s identity that comes from the rocky outgrowth both within it and along its periphery. One of its rocky projections bears the nineteenth-century Sampigehalli Auxiliary Tower Station – a site with a subcontinental story to tell. Adjacent to the waterbody is the Jarabandemma Temple, built on an imposing rock, which holds unique significance due to the distinct rituals observed even to this day.  
                 </span>
             ),
         },

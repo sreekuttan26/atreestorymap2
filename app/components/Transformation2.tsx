@@ -33,6 +33,7 @@ const Transformation2 = () => {
                         <li>Algal blooms reduce.</li>
 
 
+
                     </ul>
 
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/waterquality_transformation.mp4" />
@@ -53,8 +54,9 @@ const Transformation2 = () => {
                     <ul className="list-disc px-4 mb-4 space-y-2">
                         <li>Uncemented pathways allow visitors to connect with the landscape.</li>
                         <li>Repurposed construction material and quarry waste serve as canvases showcasing the lake’s biodiversity.</li>
-                        <li>Artworks, retaining the natural texture of the rocks, help people anticipate what they might encounter at the lake.</li>
-                        <li>Repurposed tyres, debris and lantana serve as seating.</li>
+                        <li>Artworks, retaining the natural texture of the rocks, help visitors anticipate what they might encounter at the lake.</li>
+                        <li>Repurposed tyres, debris and lantana serve as seats.</li>
+
 
 
                     </ul>
@@ -80,8 +82,9 @@ const Transformation2 = () => {
                 <div>
                     <ul className="list-disc px-4 mb-4 space-y-2">
                         <li>The local fisherfolk reintroduce native fish species.</li>
-                        <li>Native plant species, prioritised for all planting efforts, thrive under people’s care.</li>
+                        <li>Native plant species, such as butterfly bush (<em>Buddleja indica</em>) and peacock flower (<em>Caesalpinia pulcherrima</em>), prioritised for all planting efforts, thrive under people’s care.</li>
                         <li>Orchids planted on trees flourish.</li>
+
 
 
 
@@ -114,6 +117,7 @@ const Transformation2 = () => {
                         <li>A walk along bee hotels helps foster ‘beephilia’ – a fearless appreciation of these important pollinators.</li>
 
 
+
                     </ul>
                     <Video url="https://atree-communication.s3.amazonaws.com/Storymap_media/pollinator_thrive_butterfly.mp4" />
 
@@ -138,9 +142,10 @@ const Transformation2 = () => {
 
                 <div>
                     <ul className="list-disc px-4 mb-4 space-y-2">
-                        <li>Bird species, such as cormorants, oriental darters, black-winged stilts, ducks and even pelicans, throng the lake in healthy numbers.</li>
+                        <li>Bird species, like cormorants, oriental darters, black-winged stilts, ducks and even pelicans, throng to the lake in healthy numbers.</li>
                         <li>The floating islands turn into nesting grounds for resident waterbirds.</li>
-                        <li>The defining moment occurs when the pied kingfisher returns, recognising that the water is clear enough for it to dive and hunt.</li>
+                        <li>The defining moment occurs when the pied kingfisher returns, realising that the water is clear enough for it to dive and hunt.</li>
+
 
 
                     </ul>
@@ -162,8 +167,9 @@ const Transformation2 = () => {
 
                 <div className='flex flex-col gap-5'>
                     <ul className="list-disc px-4  mb-4 space-y-2">
-                        <li>Researchers put together a pocket guide on the birds and butterflies of Venkateshpura.</li>
-                        <li>A place-based educational kit, designed for youth engagement, outlines varied information such as the water cycle, lake health monitoring tips, methods for sampling flora and fauna, and the ecosystem services of the lake.</li>
+                        <li>Researchers developed a pocket guide to the birds and butterflies of Venkateshpura.</li>
+                        <li>A place-based educational kit, designed for youth engagement, outlines a range of topics, including the water cycle, lake health monitoring tips, methods for sampling flora and fauna, and the lake's ecosystem services.</li>
+
                     </ul>
 
                     <div className='grid md:grid-cols-2 gap-4 h-[400px] md:h-[200px]'>
@@ -200,14 +206,13 @@ const Transformation2 = () => {
 
                 <div>
                     <ul className="list-disc px-4  mb-4 space-y-2">
-                       
+
                         <li>Sustained community-driven efforts transform the lake from a neglected waterbody into a vibrant public space.</li>
                         <li>The lake attracts considerable daily footfall from the community. Even at noon, women can be seen sitting on the benches, enjoying the afternoon breeze.</li>
-                        <li>The lake forum is well-informed about potential pollution sources and knows who to alert during issues like algal blooms.</li>
+                        <li>The lake forum is well-informed about potential pollution sources and knows whom to alert when issues arise, such as algal blooms.</li>
                         <li>Members regularly document and share photos of birds, sunrises and sunsets, building pride and a sense of connection.</li>
-                        <li>Through the lake trust, residents take charge of emerging challenges.</li>
+                        <li>Through the lake trust, residents take charge of the emerging challenges.</li>
                         <li>The stage is set for a long-term, community-driven model of lake restoration.</li>
-
 
 
                     </ul>

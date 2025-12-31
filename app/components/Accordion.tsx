@@ -20,7 +20,7 @@ const storySections: StorySection[] = [
           <li>Control sewage flow and waste dumping.</li>
           <li>Ensure water from Venkateshpura Lake drains into Rachenahalli Lake.</li>
           <li>Install tech-integrated nature-based solutions, such as floating islands for nutrient retention and aerators for oxygenation.</li>
-          <li>Conduct regular water quality monitoring with community participation.</li>
+          <li>Conduct regular water quality monitoring with community.</li>
           <li>Re-introduce native fish and other aquatic species.</li>
         </ul>
       </div>
@@ -81,7 +81,7 @@ const storySections: StorySection[] = [
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Showcase the heritage significance of the structure.</li>
           <li>Halt rock quarrying.</li>
-          <li>Be vigilant against further encroachments.</li>
+          <li>Be vigilant to further encroachments.</li>
         </ul>
       </div>
     ),
@@ -95,8 +95,8 @@ const storySections: StorySection[] = [
 
         <ul className="list-disc px-4 mb-4 space-y-2">
           <li>Conduct community activities to inculcate a sense of ownership of the lake.</li>
-          <li>Create awareness about using treatment plants efficiently and reusing treated water for secondary purposes within buildings.</li>
-          <li>Organise focused activities such as nature walks for neighbouring schoolchildren to familiarise them with different taxa.</li>
+          <li>Create awareness about using treatment plants efficiently and reusing treated water for secondary purposes within the buildings.</li>
+          <li>Organise focused activities for neighbouring school children to familiarise them with the different taxa through nature walks and trails.</li>
           <li>Install informative signage to facilitate meaningful interaction with the lake.</li>
           <li>Form a lake-support group to connect local residents and coordinate activities.</li>
 
