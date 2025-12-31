@@ -307,7 +307,7 @@ const LakeStoryMap = () => {
             ,
 
             color: "from-blue-400 to-indigo-400",
-            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg","https://atree-communication.s3.amazonaws.com/Storymap_media/2022_2025.jpg"]
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/Butterfly_mound.jpg","https://atree-communication.s3.amazonaws.com/Storymap_media/2022_2025.jpg"]
         },
 
         {
@@ -347,7 +347,7 @@ const LakeStoryMap = () => {
             ,
 
             color: "from-blue-400 to-indigo-400",
-            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"]
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/signboard_gts.JPG"]
         },
         {
             year: "2022 -2025",
@@ -389,7 +389,7 @@ const LakeStoryMap = () => {
             ,
 
             color: "from-blue-400 to-indigo-400",
-           image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"]
+           image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/Aerator.JPG"]
         },
         {
             year: "2022 -2025",
@@ -469,7 +469,7 @@ const LakeStoryMap = () => {
             ,
 
             color: "from-blue-400 to-indigo-400",
-            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/climber_over_lantana_seate_sm.jpg"]
+            image: ["https://atree-communication.s3.amazonaws.com/Storymap_media/goat.png"]
         },
 
 
